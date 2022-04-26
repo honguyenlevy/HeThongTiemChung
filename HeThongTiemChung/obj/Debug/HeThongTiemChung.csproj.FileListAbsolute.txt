@@ -31,3 +31,35 @@ D:\PTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.TopDangKyLi
 D:\PTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.BoPhanQuanLy.resources
 D:\PTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NV_XemLichLamViec.resources
 D:\PTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.TopXemLichLamViec.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\bin\Debug\HeThongTiemChung.exe.config
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\bin\Debug\HeThongTiemChung.exe
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\bin\Debug\HeThongTiemChung.pdb
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.csprojAssemblyReference.cache
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.BoPhanQuanLy.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.KH_DangKyTiem.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.DangKyThongTin.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.DangNhap.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.KhachHang.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.KH_DatMua.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.KH_ThanhToan.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.KH_ThanhToan_Dot.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.KH_ThanhToan_MotLan.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.Main.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NhanVien.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NhanVienKeToan.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NhanVienQuanLy.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NhanVienTiepTan.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NhapThongTinCaNhan.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NVTT_DangKyTiem.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NVTT_DatMua.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NV_DangKyLichRanh.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NV_XemLichLamViec.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.Properties.Resources.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.TopDangKyLichRanh.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.TopDangKyTiem.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.TopDatMua.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.TopThanhToan.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.TopXemLichLamViec.resources
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.csproj.GenerateResource.cache
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.exe
+C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.pdb
