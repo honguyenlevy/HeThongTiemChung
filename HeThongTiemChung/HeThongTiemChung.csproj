@@ -52,6 +52,19 @@
     <Compile Include="BoPhanQuanLy.Designer.cs">
       <DependentUpon>BoPhanQuanLy.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConnectData.cs" />
+    <Compile Include="Controller\GoiVacxin_Controller.cs" />
+    <Compile Include="Controller\KhachHang_Controller.cs" />
+    <Compile Include="Controller\TaiKhoan.cs" />
+    <Compile Include="Controller\ThanNhan_Controller.cs" />
+    <Compile Include="Controller\TrungTam_Controller.cs" />
+    <Compile Include="Controller\Vacxin_Controller.cs" />
+    <Compile Include="DataBase\GoiVaccxin_DB.cs" />
+    <Compile Include="DataBase\KhachHang_DB.cs" />
+    <Compile Include="DataBase\TaiKhoan_DB.cs" />
+    <Compile Include="DataBase\ThanNhan_DB.cs" />
+    <Compile Include="DataBase\TrungTam_DB.cs" />
+    <Compile Include="DataBase\Vacxin_DB.cs" />
     <Compile Include="KH_DangKyTiem.cs">
       <SubType>Form</SubType>
     </Compile>

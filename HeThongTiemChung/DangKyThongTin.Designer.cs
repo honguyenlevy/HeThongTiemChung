@@ -29,6 +29,7 @@ namespace HeThongTiemChung
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -54,6 +55,8 @@ namespace HeThongTiemChung
             this.comboBoxQuanHe = new System.Windows.Forms.ComboBox();
             this.buttonSubmit = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
+            this.textBoxMaKH = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -128,6 +131,7 @@ namespace HeThongTiemChung
             this.tableLayoutPanel2.Controls.Add(this.comboBoxQuanHe, 3, 8);
             this.tableLayoutPanel2.Controls.Add(this.buttonSubmit, 5, 10);
             this.tableLayoutPanel2.Controls.Add(this.label12, 1, 10);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxMaKH, 3, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 11;
@@ -225,6 +229,7 @@ namespace HeThongTiemChung
             this.dateTimePickerNgaySinh.Name = "dateTimePickerNgaySinh";
             this.dateTimePickerNgaySinh.Size = new System.Drawing.Size(344, 30);
             this.dateTimePickerNgaySinh.TabIndex = 6;
+            this.dateTimePickerNgaySinh.ValueChanged += new System.EventHandler(this.dateTimePickerNgaySinh_ValueChanged);
             // 
             // comboBoxGioiTinh
             // 
@@ -374,6 +379,20 @@ namespace HeThongTiemChung
             this.label12.TabIndex = 20;
             this.label12.Text = "(Nếu là trẻ em cần có thông tin người giám hộ)";
             // 
+            // textBoxMaKH
+            // 
+            this.textBoxMaKH.Location = new System.Drawing.Point(443, 63);
+            this.textBoxMaKH.Name = "textBoxMaKH";
+            this.textBoxMaKH.Size = new System.Drawing.Size(344, 30);
+            this.textBoxMaKH.TabIndex = 21;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            // 
             // DangKyThongTin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -385,6 +404,7 @@ namespace HeThongTiemChung
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DangKyThongTin";
             this.Text = "DangKyThongTin";
+            this.Load += new System.EventHandler(this.DangKyThongTin_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -405,7 +425,6 @@ namespace HeThongTiemChung
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxHoVaTen;
         private System.Windows.Forms.DateTimePicker dateTimePickerNgaySinh;
         private System.Windows.Forms.ComboBox comboBoxGioiTinh;
         private System.Windows.Forms.Label label6;
@@ -421,5 +440,8 @@ namespace HeThongTiemChung
         private System.Windows.Forms.ComboBox comboBoxQuanHe;
         private System.Windows.Forms.Button buttonSubmit;
         private System.Windows.Forms.Label label12;
+        public System.Windows.Forms.TextBox textBoxHoVaTen;
+        private System.Windows.Forms.TextBox textBoxMaKH;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

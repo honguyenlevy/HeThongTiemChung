@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using HeThongTiemChung.Controller;
 namespace HeThongTiemChung
 {
     public partial class DangNhap : Form
@@ -42,7 +43,7 @@ namespace HeThongTiemChung
 
         private void DangNhap_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void buttonDangKyThongTin_Click(object sender, EventArgs e)
@@ -53,23 +54,83 @@ namespace HeThongTiemChung
 
         private void buttonDangNhap_Click(object sender, EventArgs e)
         {
-            //Khách hàng
-            //OpenChilForm(new KhachHang(), sender);
 
-            //Nhân viên tiếp tân
-            //OpenChilForm(new NhanVienTiepTan(), sender);
+            if (textBoxSDT.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập SDT", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxSDT.Focus();
+                return;
+            }
+            if (textBoxMatKhau.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxMatKhau.Focus();
+                return;
+            }
 
-            //Nhân viên kế toán
-            OpenChilForm(new NhanVienKeToan(), sender);
+            string check = textBoxSDT.Text.Substring(0, 1);
+            
 
-            //Nhân viên quản lý
-            //OpenChilForm(new NhanVienQuanLy(), sender);
+            if (check == "0")
+            {
+                bool ok = TaiKhoan.KiemTraTaiKhoan_KH(textBoxSDT.Text);
 
-            //Nhân viên 
-            //OpenChilForm(new NhanVien(), sender);
+                if (!ok)
+                {
+                    MessageBox.Show("Sai");
+                }
+                else
+                {
+                   
+                    OpenChilForm(new KhachHang(), sender);
+                }
+            }
 
-            //Bộ phận quản lý
-            //OpenChilForm(new BoPhanQuanLy(), sender);
+            else
+            {
+                
+
+                //Nhân viên tiếp tân 1
+                string Loai = TaiKhoan.KiemTraTaiKhoan_NV(textBoxSDT.Text);
+
+
+                if (Loai == "-1")
+                {
+                    MessageBox.Show("SAI TÊN ĐĂNG NHẬP HOẶC MẬT KHẨU");
+                }
+                
+                if (Loai.Substring(0, 1) == "1")
+                {
+                    OpenChilForm(new NhanVienTiepTan(), sender);
+                }
+                else if (Loai.Substring(0, 1) == "2")
+                {
+                    //Nhân viên kế toán 2
+                    OpenChilForm(new NhanVienKeToan(), sender);
+                }
+
+                //Nhân viên quản lý 3
+                else if (Loai.Substring(0, 1) == "3")
+                {
+                    //Nhân viên kế toán 2
+                    OpenChilForm(new NhanVienQuanLy(), sender);
+                }
+
+                else if (Loai.Substring(0, 1) == "0")
+                {
+                    //Nhân viên0
+                    OpenChilForm(new NhanVien(), sender);
+                }
+
+                else if (Loai.Substring(0, 1) == "4")
+                {
+                    //QUanr ly
+                    OpenChilForm(new BoPhanQuanLy(), sender);
+                }
+            }
+
         }
     }
 }
+
+

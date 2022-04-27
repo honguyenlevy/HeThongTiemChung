@@ -35,7 +35,6 @@ namespace HeThongTiemChung
             this.dateTimePickerNgayDangKy = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerNgayMuonTiem = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBoxTenGoiVaccine = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxTrungTam = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -46,7 +45,6 @@ namespace HeThongTiemChung
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxSoLuongTonGoiVaccine = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBoxTenVaccine = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBoxSoLuongTonVaccine = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -60,10 +58,13 @@ namespace HeThongTiemChung
             this.label15 = new System.Windows.Forms.Label();
             this.radioButtonChonGoiVaccine = new System.Windows.Forms.RadioButton();
             this.radioButtonChonVaccine = new System.Windows.Forms.RadioButton();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridViewVaccine = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.dateTimePickerThoiGianTiem = new System.Windows.Forms.DateTimePicker();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.dataGridViewVaccine = new System.Windows.Forms.DataGridView();
+            this.textBoxTenGoi = new System.Windows.Forms.TextBox();
+            this.textBoxTenVacxin = new System.Windows.Forms.TextBox();
+            this.buttonSearchKH = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVaccine)).BeginInit();
@@ -86,7 +87,6 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.Controls.Add(this.dateTimePickerNgayDangKy, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.dateTimePickerNgayMuonTiem, 3, 5);
             this.tableLayoutPanel1.Controls.Add(this.label3, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.comboBoxTenGoiVaccine, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.label4, 5, 4);
             this.tableLayoutPanel1.Controls.Add(this.comboBoxTrungTam, 5, 5);
             this.tableLayoutPanel1.Controls.Add(this.label6, 3, 7);
@@ -97,7 +97,6 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.Controls.Add(this.label7, 5, 7);
             this.tableLayoutPanel1.Controls.Add(this.textBoxSoLuongTonGoiVaccine, 5, 8);
             this.tableLayoutPanel1.Controls.Add(this.label9, 1, 10);
-            this.tableLayoutPanel1.Controls.Add(this.comboBoxTenVaccine, 1, 11);
             this.tableLayoutPanel1.Controls.Add(this.label10, 3, 10);
             this.tableLayoutPanel1.Controls.Add(this.textBoxSoLuongTonVaccine, 5, 11);
             this.tableLayoutPanel1.Controls.Add(this.label11, 5, 10);
@@ -113,6 +112,9 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.Controls.Add(this.radioButtonChonVaccine, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.label13, 7, 10);
             this.tableLayoutPanel1.Controls.Add(this.dateTimePickerThoiGianTiem, 7, 11);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxTenGoi, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxTenVacxin, 1, 11);
+            this.tableLayoutPanel1.Controls.Add(this.buttonSearchKH, 5, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -189,16 +191,6 @@ namespace HeThongTiemChung
             this.label3.TabIndex = 4;
             this.label3.Text = "Tên gói vaccine";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // comboBoxTenGoiVaccine
-            // 
-            this.comboBoxTenGoiVaccine.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxTenGoiVaccine.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.comboBoxTenGoiVaccine.FormattingEnabled = true;
-            this.comboBoxTenGoiVaccine.Location = new System.Drawing.Point(63, 223);
-            this.comboBoxTenGoiVaccine.Name = "comboBoxTenGoiVaccine";
-            this.comboBoxTenGoiVaccine.Size = new System.Drawing.Size(344, 33);
-            this.comboBoxTenGoiVaccine.TabIndex = 6;
             // 
             // label4
             // 
@@ -304,16 +296,6 @@ namespace HeThongTiemChung
             this.label9.TabIndex = 17;
             this.label9.Text = "Tên vaccine";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // comboBoxTenVaccine
-            // 
-            this.comboBoxTenVaccine.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxTenVaccine.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.comboBoxTenVaccine.FormattingEnabled = true;
-            this.comboBoxTenVaccine.Location = new System.Drawing.Point(63, 293);
-            this.comboBoxTenVaccine.Name = "comboBoxTenVaccine";
-            this.comboBoxTenVaccine.Size = new System.Drawing.Size(344, 33);
-            this.comboBoxTenVaccine.TabIndex = 18;
             // 
             // label10
             // 
@@ -461,6 +443,27 @@ namespace HeThongTiemChung
             this.radioButtonChonVaccine.UseVisualStyleBackColor = true;
             this.radioButtonChonVaccine.CheckedChanged += new System.EventHandler(this.radioButtonChonVaccine_CheckedChanged);
             // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(1143, 260);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(134, 30);
+            this.label13.TabIndex = 34;
+            this.label13.Text = "Thời gian tiêm";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // dateTimePickerThoiGianTiem
+            // 
+            this.dateTimePickerThoiGianTiem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateTimePickerThoiGianTiem.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePickerThoiGianTiem.Location = new System.Drawing.Point(1143, 293);
+            this.dateTimePickerThoiGianTiem.Name = "dateTimePickerThoiGianTiem";
+            this.dateTimePickerThoiGianTiem.Size = new System.Drawing.Size(344, 30);
+            this.dateTimePickerThoiGianTiem.TabIndex = 35;
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
@@ -486,27 +489,31 @@ namespace HeThongTiemChung
             this.dataGridViewVaccine.RowTemplate.Height = 24;
             this.dataGridViewVaccine.Size = new System.Drawing.Size(1443, 345);
             this.dataGridViewVaccine.TabIndex = 0;
+            this.dataGridViewVaccine.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewVaccine_CellContentClick);
             // 
-            // label13
+            // textBoxTenGoi
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(1143, 260);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(134, 30);
-            this.label13.TabIndex = 34;
-            this.label13.Text = "Thời gian tiêm";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.textBoxTenGoi.Location = new System.Drawing.Point(63, 223);
+            this.textBoxTenGoi.Name = "textBoxTenGoi";
+            this.textBoxTenGoi.Size = new System.Drawing.Size(344, 30);
+            this.textBoxTenGoi.TabIndex = 36;
             // 
-            // dateTimePickerThoiGianTiem
+            // textBoxTenVacxin
             // 
-            this.dateTimePickerThoiGianTiem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePickerThoiGianTiem.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePickerThoiGianTiem.Location = new System.Drawing.Point(1143, 293);
-            this.dateTimePickerThoiGianTiem.Name = "dateTimePickerThoiGianTiem";
-            this.dateTimePickerThoiGianTiem.Size = new System.Drawing.Size(344, 30);
-            this.dateTimePickerThoiGianTiem.TabIndex = 35;
+            this.textBoxTenVacxin.Location = new System.Drawing.Point(63, 293);
+            this.textBoxTenVacxin.Name = "textBoxTenVacxin";
+            this.textBoxTenVacxin.Size = new System.Drawing.Size(344, 30);
+            this.textBoxTenVacxin.TabIndex = 37;
+            // 
+            // buttonSearchKH
+            // 
+            this.buttonSearchKH.Location = new System.Drawing.Point(783, 83);
+            this.buttonSearchKH.Name = "buttonSearchKH";
+            this.buttonSearchKH.Size = new System.Drawing.Size(344, 23);
+            this.buttonSearchKH.TabIndex = 38;
+            this.buttonSearchKH.Text = "Search";
+            this.buttonSearchKH.UseVisualStyleBackColor = true;
+            this.buttonSearchKH.Click += new System.EventHandler(this.button1_Click);
             // 
             // NVTT_DangKyTiem
             // 
@@ -519,6 +526,7 @@ namespace HeThongTiemChung
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "NVTT_DangKyTiem";
             this.Text = "NVTT_DangKyTiem";
+            this.Load += new System.EventHandler(this.NVTT_DangKyTiem_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -535,7 +543,6 @@ namespace HeThongTiemChung
         private System.Windows.Forms.DateTimePicker dateTimePickerNgayDangKy;
         private System.Windows.Forms.DateTimePicker dateTimePickerNgayMuonTiem;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBoxTenGoiVaccine;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBoxTrungTam;
         private System.Windows.Forms.Label label6;
@@ -546,7 +553,6 @@ namespace HeThongTiemChung
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBoxSoLuongTonGoiVaccine;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBoxTenVaccine;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBoxSoLuongTonVaccine;
         private System.Windows.Forms.Label label11;
@@ -564,5 +570,8 @@ namespace HeThongTiemChung
         private System.Windows.Forms.RadioButton radioButtonChonVaccine;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DateTimePicker dateTimePickerThoiGianTiem;
+        private System.Windows.Forms.TextBox textBoxTenGoi;
+        private System.Windows.Forms.TextBox textBoxTenVacxin;
+        private System.Windows.Forms.Button buttonSearchKH;
     }
 }

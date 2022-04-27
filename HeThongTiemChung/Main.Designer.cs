@@ -45,7 +45,7 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96.77419F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 212F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 181F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 182F));
             this.tableLayoutPanel1.Controls.Add(this.labelDangKy, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelDangXuat, 4, 0);
@@ -57,13 +57,14 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1448, 100);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // labelDangKy
             // 
             this.labelDangKy.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelDangKy.AutoSize = true;
-            this.labelDangKy.Location = new System.Drawing.Point(877, 0);
+            this.labelDangKy.Location = new System.Drawing.Point(876, 0);
             this.labelDangKy.Name = "labelDangKy";
             this.labelDangKy.Size = new System.Drawing.Size(163, 100);
             this.labelDangKy.TabIndex = 2;
@@ -89,7 +90,7 @@ namespace HeThongTiemChung
             this.labelDangXuat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelDangXuat.AutoSize = true;
-            this.labelDangXuat.Location = new System.Drawing.Point(1269, 0);
+            this.labelDangXuat.Location = new System.Drawing.Point(1268, 0);
             this.labelDangXuat.Name = "labelDangXuat";
             this.labelDangXuat.Size = new System.Drawing.Size(101, 100);
             this.labelDangXuat.TabIndex = 3;
@@ -102,7 +103,7 @@ namespace HeThongTiemChung
             this.labelDangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelDangNhap.AutoSize = true;
-            this.labelDangNhap.Location = new System.Drawing.Point(1089, 0);
+            this.labelDangNhap.Location = new System.Drawing.Point(1088, 0);
             this.labelDangNhap.Name = "labelDangNhap";
             this.labelDangNhap.Size = new System.Drawing.Size(108, 100);
             this.labelDangNhap.TabIndex = 1;

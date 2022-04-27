@@ -36,7 +36,7 @@ namespace HeThongTiemChung
             this.label3 = new System.Windows.Forms.Label();
             this.buttonDangNhap = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxSDT = new System.Windows.Forms.TextBox();
             this.textBoxMatKhau = new System.Windows.Forms.TextBox();
             this.panelDangNhap = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
@@ -80,7 +80,7 @@ namespace HeThongTiemChung
             this.tableLayoutPanel2.Controls.Add(this.label3, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.buttonDangNhap, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.label4, 1, 7);
-            this.tableLayoutPanel2.Controls.Add(this.textBox1, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxSDT, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.textBoxMatKhau, 1, 4);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
@@ -147,13 +147,13 @@ namespace HeThongTiemChung
             this.label4.Text = "Hoặc đăng ký thông tin, nếu chưa đăng ký!";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // textBoxSDT
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(402, 243);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(394, 30);
-            this.textBox1.TabIndex = 7;
+            this.textBoxSDT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxSDT.Location = new System.Drawing.Point(402, 243);
+            this.textBoxSDT.Name = "textBoxSDT";
+            this.textBoxSDT.Size = new System.Drawing.Size(394, 30);
+            this.textBoxSDT.TabIndex = 7;
             // 
             // textBoxMatKhau
             // 
@@ -203,7 +203,7 @@ namespace HeThongTiemChung
         private System.Windows.Forms.Button buttonDangNhap;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panelDangNhap;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxSDT;
         private System.Windows.Forms.TextBox textBoxMatKhau;
     }
 }

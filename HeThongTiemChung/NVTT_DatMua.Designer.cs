@@ -41,6 +41,7 @@ namespace HeThongTiemChung
             this.textBoxTenKhachHang = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridViewVaccine = new System.Windows.Forms.DataGridView();
+            this.buttonSearchKH = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVaccine)).BeginInit();
@@ -63,6 +64,7 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.Controls.Add(this.label3, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.textBoxSoDienThoaiKhachHang, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.textBoxTenKhachHang, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.buttonSearchKH, 4, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -205,6 +207,16 @@ namespace HeThongTiemChung
             this.dataGridViewVaccine.TabIndex = 0;
             this.dataGridViewVaccine.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewVaccine_CellContentClick);
             // 
+            // buttonSearchKH
+            // 
+            this.buttonSearchKH.Location = new System.Drawing.Point(906, 103);
+            this.buttonSearchKH.Name = "buttonSearchKH";
+            this.buttonSearchKH.Size = new System.Drawing.Size(294, 23);
+            this.buttonSearchKH.TabIndex = 12;
+            this.buttonSearchKH.Text = "Search";
+            this.buttonSearchKH.UseVisualStyleBackColor = true;
+            this.buttonSearchKH.Click += new System.EventHandler(this.buttonSearchKH_Click);
+            // 
             // NVTT_DatMua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -216,6 +228,7 @@ namespace HeThongTiemChung
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "NVTT_DatMua";
             this.Text = "NVTT_DatMua";
+            this.Load += new System.EventHandler(this.NVTT_DatMua_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -238,5 +251,6 @@ namespace HeThongTiemChung
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxSoDienThoaiKhachHang;
         private System.Windows.Forms.TextBox textBoxTenKhachHang;
+        private System.Windows.Forms.Button buttonSearchKH;
     }
 }
