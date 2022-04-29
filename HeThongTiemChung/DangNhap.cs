@@ -13,6 +13,7 @@ namespace HeThongTiemChung
 {
     public partial class DangNhap : Form
     {
+        public static string SDT;
         public DangNhap()
         {
             InitializeComponent();
@@ -50,7 +51,7 @@ namespace HeThongTiemChung
         {
 
         }
-
+       
 
         private void buttonDangNhap_Click(object sender, EventArgs e)
         {
@@ -67,6 +68,8 @@ namespace HeThongTiemChung
                 textBoxMatKhau.Focus();
                 return;
             }
+
+            SDT = textBoxSDT.Text;
 
             string check = textBoxSDT.Text.Substring(0, 1);
             
@@ -127,6 +130,8 @@ namespace HeThongTiemChung
                     //QUanr ly
                     OpenChilForm(new BoPhanQuanLy(), sender);
                 }
+
+                
             }
 
         }

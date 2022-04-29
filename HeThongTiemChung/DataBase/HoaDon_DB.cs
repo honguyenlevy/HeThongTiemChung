@@ -14,9 +14,9 @@ namespace HeThongTiemChung.DataBase
     class HoaDon_DB
     {
         public static SqlConnection conn = ConnectData.SqlConnect();
-        public static DataSet LayDSHD()
+        public static DataSet LayDSHD(string sdt)
         {
-            string sql = "SELECT FROM HOADON";
+            string sql = "SELECT *  FROM HOADON where MAKHACHHANG IN (SELECT MAKHACHHANG from khachhang where sodienthoai = '" + sdt + "')";
 
 
             DataSet data = new DataSet();
@@ -25,6 +25,17 @@ namespace HeThongTiemChung.DataBase
 
 
             return data;
+        }
+
+        public static bool ThemHoaDon(string MaHD, string MaKh, string MaNV, int DuNo, string LoaiTT, string NgayLap, int Tongtien)
+        {
+
+
+            string sql = "insert into hoadon values('" + MaHD + "', '" + MaKh + "' , '" + MaNV + " ','" + DuNo + "', '" + LoaiTT + "', '" + NgayLap + "', '" + Tongtien+ "' )";
+
+            ConnectData.RunSQL(sql);
+            return true;
+
         }
     }
 }

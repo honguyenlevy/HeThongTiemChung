@@ -32,16 +32,35 @@ namespace HeThongTiemChung
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-
+            DatMua_Controller a = DatMua_Controller.TaoDatMua(textBoxTen.Text, Int32.Parse(textBoxSoLuong.Text));
+            DatMua_Controller.CapNhatDatMua(a);
         }
 
         private void dataGridViewVaccine_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
         {
-            if (dataGridViewVaccine.CurrentRow != null && dataGridViewVaccine.CurrentRow.Index > -1)
+            if (radioButtonChonGoiVaccine.Checked == true)
             {
-                string value1 = dataGridViewVaccine.CurrentRow.Cells[0].Value != null ? dataGridViewVaccine.CurrentRow.Cells[0].Value.ToString() : "";
-                textBoxTen.Text = value1;
+                if (dataGridViewVaccine.CurrentRow != null && dataGridViewVaccine.CurrentRow.Index > -1)
+                {
+                    string value1 = dataGridViewVaccine.CurrentRow.Cells[3].Value != null ? dataGridViewVaccine.CurrentRow.Cells[3].Value.ToString() : "";
+                    textBoxTen.Text = value1;
+                }
             }
+
+            else
+            {
+                if (dataGridViewVaccine.CurrentRow != null && dataGridViewVaccine.CurrentRow.Index > -1)
+                {
+                    string value1 = dataGridViewVaccine.CurrentRow.Cells[1].Value != null ? dataGridViewVaccine.CurrentRow.Cells[1].Value.ToString() : "";
+                    textBoxTen.Text = value1;
+                }
+            }
+        }
+
+        private void KH_DatMua_Load(object sender, EventArgs e)
+        {
+            radioButtonChonVaccine.Checked = true;
         }
     }
 }

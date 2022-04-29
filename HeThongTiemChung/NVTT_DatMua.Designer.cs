@@ -39,9 +39,9 @@ namespace HeThongTiemChung
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxSoDienThoaiKhachHang = new System.Windows.Forms.TextBox();
             this.textBoxTenKhachHang = new System.Windows.Forms.TextBox();
+            this.buttonSearchKH = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridViewVaccine = new System.Windows.Forms.DataGridView();
-            this.buttonSearchKH = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVaccine)).BeginInit();
@@ -179,6 +179,16 @@ namespace HeThongTiemChung
             this.textBoxTenKhachHang.Size = new System.Drawing.Size(364, 30);
             this.textBoxTenKhachHang.TabIndex = 11;
             // 
+            // buttonSearchKH
+            // 
+            this.buttonSearchKH.Location = new System.Drawing.Point(906, 103);
+            this.buttonSearchKH.Name = "buttonSearchKH";
+            this.buttonSearchKH.Size = new System.Drawing.Size(294, 23);
+            this.buttonSearchKH.TabIndex = 12;
+            this.buttonSearchKH.Text = "Search";
+            this.buttonSearchKH.UseVisualStyleBackColor = true;
+            this.buttonSearchKH.Click += new System.EventHandler(this.buttonSearchKH_Click);
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
@@ -206,16 +216,6 @@ namespace HeThongTiemChung
             this.dataGridViewVaccine.Size = new System.Drawing.Size(1154, 404);
             this.dataGridViewVaccine.TabIndex = 0;
             this.dataGridViewVaccine.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewVaccine_CellContentClick);
-            // 
-            // buttonSearchKH
-            // 
-            this.buttonSearchKH.Location = new System.Drawing.Point(906, 103);
-            this.buttonSearchKH.Name = "buttonSearchKH";
-            this.buttonSearchKH.Size = new System.Drawing.Size(294, 23);
-            this.buttonSearchKH.TabIndex = 12;
-            this.buttonSearchKH.Text = "Search";
-            this.buttonSearchKH.UseVisualStyleBackColor = true;
-            this.buttonSearchKH.Click += new System.EventHandler(this.buttonSearchKH_Click);
             // 
             // NVTT_DatMua
             // 

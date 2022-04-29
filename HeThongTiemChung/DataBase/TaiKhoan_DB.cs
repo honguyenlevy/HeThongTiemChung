@@ -18,10 +18,11 @@ namespace HeThongTiemChung.DataBase
 
         public static DataSet GetTTTaiKhoan_KH(string SDT)
         {
-            string sql = "select count(*) from khachhang where  sodienthoai =" + SDT;
+            string sql = "select count(*) from khachhang where  sodienthoai = " + SDT;
 
             DataSet data = new DataSet();
             SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
+
             dap.Fill(data);
 
            

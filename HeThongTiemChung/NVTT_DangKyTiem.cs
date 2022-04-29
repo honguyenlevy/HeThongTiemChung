@@ -35,10 +35,11 @@ namespace HeThongTiemChung
 
         private void NVTT_DangKyTiem_Load(object sender, EventArgs e)
         {
-            dataGridViewVaccine.DataSource = Vacxin_Controller.LayDSVacXin().Tables[0];
+            //dataGridViewVaccine.DataSource = Vacxin_Controller.LayDSVacXin().Tables[0];
 
             DataSet dt = TrungTam_Controller.LayThongTinTT();
 
+            radioButtonChonVaccine.Checked = true;
 
             comboBoxTrungTam.DataSource = dt.Tables[0];
             comboBoxTrungTam.DisplayMember = "MATRUNGTAM";
@@ -89,6 +90,7 @@ namespace HeThongTiemChung
             else
             {
                 MessageBox.Show("Co khach");
+                
                 textBoxTenKhachHang.Text = KH.Tables[0].Rows[0][3].ToString();
                 textBoxDiaChi.Text = KH.Tables[0].Rows[0][1].ToString();
             }

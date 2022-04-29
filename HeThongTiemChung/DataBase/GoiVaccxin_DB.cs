@@ -17,7 +17,7 @@ namespace HeThongTiemChung.DataBase
         public static SqlConnection conn = ConnectData.SqlConnect();
         public static DataSet GetTDsGoiVacxin()
         {
-            string sql = "SELECT TENGOI, GIAGOI, SOLUONG FROM GOITIEM";
+            string sql = "SELECT * FROM GOITIEM";
 
 
             DataSet data = new DataSet();

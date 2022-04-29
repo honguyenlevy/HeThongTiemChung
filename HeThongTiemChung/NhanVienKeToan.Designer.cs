@@ -60,6 +60,7 @@ namespace HeThongTiemChung
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.buttonSearch = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelTopNhanVienTiepTan.SuspendLayout();
             this.panelNhanVienKeToan.SuspendLayout();
@@ -173,6 +174,7 @@ namespace HeThongTiemChung
             this.tableLayoutPanel2.Controls.Add(this.label13, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.label7, 1, 8);
             this.tableLayoutPanel2.Controls.Add(this.label2, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.buttonSearch, 4, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -468,6 +470,16 @@ namespace HeThongTiemChung
             this.label2.Text = "2. Chọn hình thức thanh toán.";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // buttonSearch
+            // 
+            this.buttonSearch.Location = new System.Drawing.Point(778, 133);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(193, 34);
+            this.buttonSearch.TabIndex = 24;
+            this.buttonSearch.Text = "Search";
+            this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
+            // 
             // NhanVienKeToan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -479,6 +491,7 @@ namespace HeThongTiemChung
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "NhanVienKeToan";
             this.Text = "NhanVienKeToan";
+            this.Load += new System.EventHandler(this.NhanVienKeToan_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panelTopNhanVienTiepTan.ResumeLayout(false);
             this.panelTopNhanVienTiepTan.PerformLayout();
@@ -524,5 +537,6 @@ namespace HeThongTiemChung
         private System.Windows.Forms.RadioButton radioButtonTienMat;
         private System.Windows.Forms.RadioButton radioButtonThe;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button buttonSearch;
     }
 }

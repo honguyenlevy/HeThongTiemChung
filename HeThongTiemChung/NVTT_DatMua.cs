@@ -57,7 +57,8 @@ namespace HeThongTiemChung
 
         private void NVTT_DatMua_Load(object sender, EventArgs e)
         {
-            dataGridViewVaccine.DataSource = Vacxin_Controller.LayDSVacXin().Tables[0];
+            //dataGridViewVaccine.DataSource = Vacxin_Controller.LayDSVacXin().Tables[0];
+            radioButtonChonVaccine.Checked = true;
         }
 
         private void buttonSearchKH_Click(object sender, EventArgs e)

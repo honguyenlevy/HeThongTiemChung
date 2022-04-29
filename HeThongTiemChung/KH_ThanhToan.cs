@@ -45,5 +45,12 @@ namespace HeThongTiemChung
         {
             OpenChilForm(new KH_ThanhToan_MotLan(), sender);
         }
+
+        private void KH_ThanhToan_Load(object sender, EventArgs e)
+        {
+            radioButtonThanhToanMotLan.Checked = true;
+
+
+        }
     }
 }

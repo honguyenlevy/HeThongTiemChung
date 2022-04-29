@@ -37,11 +37,37 @@ namespace HeThongTiemChung
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-            if (radioButtonChonGoiVaccine.Checked == true)
-            {
-                //KhachHang_Controller a = KhachHang_Controller.DangKyTiemGoi(dateTimePickerNgayDangKy.Text, dateTimePickerNgayMuonTiem.Text, comboBoxTrungTam.Text, textBoxDiaChi.Text, comboBoxTenGoiVaccine.Text, textBoxGiaGoiVaccine.Text, textBoxSoLuongTonGoiVaccine.Text, textBoxChonSoLuong.Text);
+
+            Random Ma = new Random();
+            string MaPDK = "DK" + Ma.Next(00000001, 99999999).ToString();
+            PhieuDangKy_Controller pdk = PhieuDangKy_Controller.TaoPhieuDangKy(MaPDK, "MaKH", dateTimePickerNgayDangKy.Text, dateTimePickerNgayMuonTiem.Text, comboBoxTrungTam.Text);
+
+            PhieuDangKy_Controller.ThemPhieuDangKy(pdk);
+
+            string MaVaccine = comboBoxTenGoiVaccine.Text;
+            string Gia = textBoxGiaGoiVaccine.Text;
+
+            if (radioButtonChonGoiVaccine.Checked == true) {
+                MaVaccine = comboBoxTenGoiVaccine.Text;
+                Gia = textBoxGiaVaccine.Text;
+
+              
 
             }
+            int SoLuong = Int32.Parse(textBoxChonSoLuong.Text);
+            
+            ChitietPhieuTiem_Controller ct = ChitietPhieuTiem_Controller.TaoChiTiet(MaPDK, MaVaccine, Int32.Parse(Gia), SoLuong);
+
+            ChitietPhieuTiem_Controller.ThemChiTiet(ct);
+
+            Ma = new Random();
+            string MaHD = "HD" + Ma.Next(00000001, 99999999).ToString();
+
+            int tongtien = Int32.Parse(textBoxChonSoLuong.Text) * Int32.Parse(Gia);
+
+            HoaDon_Controller hd = HoaDon_Controller.TaoHoaDon(MaHD, "MaKH", "NULL", 0, "Mot Lan", dateTimePickerNgayDangKy.Text, tongtien);
+            HoaDon_Controller.ThemHoaDon(hd);
+
 
 
 
@@ -57,6 +83,12 @@ namespace HeThongTiemChung
             comboBoxTenGoiVaccine.DisplayMember = "TENGOI";
             comboBoxTenGoiVaccine.ValueMember = "TENGOI";
             comboBoxTenGoiVaccine.SelectedIndex = -1;
+
+            textBoxGiaVaccine.Text = "";
+
+            comboBoxTenVaccine.Text = "";
+
+            textBoxSoLuongTonVaccine.Text = "";
         }
 
         private void radioButtonChonVaccine_CheckedChanged(object sender, EventArgs e)
@@ -69,13 +101,26 @@ namespace HeThongTiemChung
             comboBoxTenVaccine.DisplayMember = "TENVACXIN";
             comboBoxTenVaccine.ValueMember = "TENVACXIN";
             comboBoxTenVaccine.SelectedIndex = -1;
+
+
+            textBoxGiaGoiVaccine.Text =  "";
+
+            comboBoxTenGoiVaccine.Text =  "";
+
+            textBoxSoLuongTonGoiVaccine.Text = "";
+
         }
 
         private void KH_DangKyTiem_Load(object sender, EventArgs e)
         {
+
+           
+
+            radioButtonChonVaccine.Checked = true;
+
+
+
             DataSet dt = TrungTam_Controller.LayThongTinTT();
-
-
             comboBoxTrungTam.DataSource = dt.Tables[0];
             comboBoxTrungTam.DisplayMember = "TENTRUNGTAM";
             comboBoxTrungTam.ValueMember = "TENTRUNGTAM";
@@ -89,19 +134,46 @@ namespace HeThongTiemChung
 
         private void comboBoxTenGoiVaccine_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textBoxGiaGoiVaccine.Text = GoiVacxin_Controller.LayGiaGoiVaccine(comboBoxTenGoiVaccine.Text);
-            textBoxSoLuongTonGoiVaccine.Text = GoiVacxin_Controller.LaySoLuongGoiVaccine(comboBoxTenGoiVaccine.Text);
+            //textBoxGiaGoiVaccine.Text = GoiVacxin_Controller.LayGiaGoiVaccine(comboBoxTenGoiVaccine.Text);
+            //textBoxSoLuongTonGoiVaccine.Text = GoiVacxin_Controller.LaySoLuongGoiVaccine(comboBoxTenGoiVaccine.Text);
 
         }
 
         private void comboBoxTenVaccine_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textBoxGiaVaccine.Text = Vacxin_Controller.LayGiaVaccine(comboBoxTenVaccine.Text);
-            textBoxSoLuongTonVaccine.Text = Vacxin_Controller.LaySoLuongVaccine(comboBoxTenVaccine.Text);
+            //textBoxGiaVaccine.Text = Vacxin_Controller.LayGiaVaccine(comboBoxTenVaccine.Text);
+            //textBoxSoLuongTonVaccine.Text = Vacxin_Controller.LaySoLuongVaccine(comboBoxTenVaccine.Text);
         }
 
         private void dataGridViewVaccine_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (radioButtonChonGoiVaccine.Checked == true)
+            {
+                if (dataGridViewVaccine.CurrentRow != null && dataGridViewVaccine.CurrentRow.Index > -1)
+                {
+                    textBoxGiaGoiVaccine.Text = dataGridViewVaccine.CurrentRow.Cells[1].Value != null ? dataGridViewVaccine.CurrentRow.Cells[1].Value.ToString() : "";
+
+                    comboBoxTenGoiVaccine.Text = dataGridViewVaccine.CurrentRow.Cells[3].Value != null ? dataGridViewVaccine.CurrentRow.Cells[3].Value.ToString() : "";
+
+                    textBoxSoLuongTonGoiVaccine.Text = dataGridViewVaccine.CurrentRow.Cells[2].Value != null ? dataGridViewVaccine.CurrentRow.Cells[2].Value.ToString() : "";
+
+                }
+            }
+            else
+            {
+                if (dataGridViewVaccine.CurrentRow != null && dataGridViewVaccine.CurrentRow.Index > -1)
+                {
+                    textBoxGiaVaccine.Text = dataGridViewVaccine.CurrentRow.Cells[2].Value != null ? dataGridViewVaccine.CurrentRow.Cells[2].Value.ToString() : "";
+
+                    comboBoxTenVaccine.Text = dataGridViewVaccine.CurrentRow.Cells[1].Value != null ? dataGridViewVaccine.CurrentRow.Cells[1].Value.ToString() : "";
+
+                    textBoxSoLuongTonVaccine.Text = dataGridViewVaccine.CurrentRow.Cells[3].Value != null ? dataGridViewVaccine.CurrentRow.Cells[3].Value.ToString() : "";
+
+                }
+
+            }
+
+
 
         }
     }

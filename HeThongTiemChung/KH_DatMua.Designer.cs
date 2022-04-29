@@ -37,6 +37,8 @@ namespace HeThongTiemChung
             this.buttonSubmit = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridViewVaccine = new System.Windows.Forms.DataGridView();
+            this.textBoxSoLuong = new System.Windows.Forms.TextBox();
+            this.labelSL = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVaccine)).BeginInit();
@@ -55,6 +57,8 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.Controls.Add(this.radioButtonChonGoiVaccine, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.radioButtonChonVaccine, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.buttonSubmit, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxSoLuong, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.labelSL, 1, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -155,6 +159,24 @@ namespace HeThongTiemChung
             this.dataGridViewVaccine.TabIndex = 0;
             this.dataGridViewVaccine.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewVaccine_CellContentClick);
             // 
+            // textBoxSoLuong
+            // 
+            this.textBoxSoLuong.Location = new System.Drawing.Point(516, 153);
+            this.textBoxSoLuong.Name = "textBoxSoLuong";
+            this.textBoxSoLuong.Size = new System.Drawing.Size(364, 30);
+            this.textBoxSoLuong.TabIndex = 8;
+            // 
+            // labelSL
+            // 
+            this.labelSL.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelSL.AutoSize = true;
+            this.labelSL.Location = new System.Drawing.Point(413, 162);
+            this.labelSL.Name = "labelSL";
+            this.labelSL.Size = new System.Drawing.Size(97, 25);
+            this.labelSL.TabIndex = 9;
+            this.labelSL.Text = "Số Lượng";
+            this.labelSL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // KH_DatMua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -166,6 +188,7 @@ namespace HeThongTiemChung
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "KH_DatMua";
             this.Text = "KH_DatMua";
+            this.Load += new System.EventHandler(this.KH_DatMua_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -184,5 +207,7 @@ namespace HeThongTiemChung
         private System.Windows.Forms.Button buttonSubmit;
         private System.Windows.Forms.RadioButton radioButtonChonGoiVaccine;
         private System.Windows.Forms.RadioButton radioButtonChonVaccine;
+        private System.Windows.Forms.TextBox textBoxSoLuong;
+        private System.Windows.Forms.Label labelSL;
     }
 }

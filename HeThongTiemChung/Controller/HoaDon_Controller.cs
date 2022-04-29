@@ -15,9 +15,35 @@ namespace HeThongTiemChung.Controller
 {
     class HoaDon_Controller
     {
-        public static DataSet LayDSHD()
+        private string MaHoaDon;
+        private string MaKhachHang;
+        private string MaNhanVien;
+        private int DuNo;
+        private string LoaiThanhToan;
+        private string NgayLap;
+        private int TongTien;
+
+       public static  HoaDon_Controller TaoHoaDon(string MaHD,string MaKh,string MaNV, int DuNo, string LoaiTT, string NgayLap,int Tongtien )
         {
-            DataSet dt = HoaDon_DB.LayDSHD();
+            HoaDon_Controller hd = new HoaDon_Controller();
+            hd.MaHoaDon = MaHD;
+            hd.MaKhachHang = MaKh;
+            hd.MaNhanVien = MaNV;
+            hd.DuNo = DuNo;
+            hd.LoaiThanhToan = LoaiTT;
+            hd.NgayLap = NgayLap;
+            hd.TongTien = Tongtien;
+
+            return hd;
+
+        }
+        public static void ThemHoaDon(HoaDon_Controller Hd)
+        {
+            HoaDon_DB.ThemHoaDon(Hd.MaHoaDon, Hd.MaKhachHang, Hd.MaNhanVien, Hd.DuNo, Hd.LoaiThanhToan, Hd.NgayLap, Hd.TongTien);
+        }
+        public static DataSet LayDSHD(string sdt)
+        {
+            DataSet dt = HoaDon_DB.LayDSHD( sdt );
             return dt;
         }
     }

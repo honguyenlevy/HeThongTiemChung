@@ -38,6 +38,8 @@ namespace HeThongTiemChung
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxMaDon = new System.Windows.Forms.TextBox();
             this.buttonDuyet = new System.Windows.Forms.Button();
+            this.textBoxSoLuong = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panelTopNhanVienTiepTan.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDonDat)).BeginInit();
@@ -112,10 +114,12 @@ namespace HeThongTiemChung
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.38931F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 507F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 595F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel2.Controls.Add(this.label2, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.textBoxMaDon, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.buttonDuyet, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxSoLuong, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label3, 3, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -131,7 +135,7 @@ namespace HeThongTiemChung
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(442, 35);
+            this.label2.Location = new System.Drawing.Point(439, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 35);
             this.label2.TabIndex = 0;
@@ -141,7 +145,7 @@ namespace HeThongTiemChung
             // textBoxMaDon
             // 
             this.textBoxMaDon.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxMaDon.Location = new System.Drawing.Point(526, 38);
+            this.textBoxMaDon.Location = new System.Drawing.Point(523, 38);
             this.textBoxMaDon.Name = "textBoxMaDon";
             this.textBoxMaDon.Size = new System.Drawing.Size(287, 30);
             this.textBoxMaDon.TabIndex = 1;
@@ -150,13 +154,32 @@ namespace HeThongTiemChung
             // 
             this.buttonDuyet.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonDuyet.Location = new System.Drawing.Point(876, 73);
+            this.buttonDuyet.Location = new System.Drawing.Point(873, 73);
             this.buttonDuyet.Name = "buttonDuyet";
             this.buttonDuyet.Size = new System.Drawing.Size(151, 34);
             this.buttonDuyet.TabIndex = 2;
             this.buttonDuyet.Text = "Duyệt";
             this.buttonDuyet.UseVisualStyleBackColor = true;
             this.buttonDuyet.Click += new System.EventHandler(this.buttonDuyet_Click);
+            // 
+            // textBoxSoLuong
+            // 
+            this.textBoxSoLuong.Location = new System.Drawing.Point(1030, 38);
+            this.textBoxSoLuong.Name = "textBoxSoLuong";
+            this.textBoxSoLuong.Size = new System.Drawing.Size(560, 30);
+            this.textBoxSoLuong.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(1522, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 35);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Số Lượng";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // NhanVienQuanLy
             // 
@@ -169,6 +192,7 @@ namespace HeThongTiemChung
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "NhanVienQuanLy";
             this.Text = "NhanVienQuanLy";
+            this.Load += new System.EventHandler(this.NhanVienQuanLy_Load);
             this.panelTopNhanVienTiepTan.ResumeLayout(false);
             this.panelTopNhanVienTiepTan.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -191,5 +215,7 @@ namespace HeThongTiemChung
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxMaDon;
         private System.Windows.Forms.Button buttonDuyet;
+        private System.Windows.Forms.TextBox textBoxSoLuong;
+        private System.Windows.Forms.Label label3;
     }
 }

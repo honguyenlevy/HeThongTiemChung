@@ -99,6 +99,7 @@ namespace HeThongTiemChung
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "KH_ThanhToan";
             this.Text = "KH_ThanhToan";
+            this.Load += new System.EventHandler(this.KH_ThanhToan_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

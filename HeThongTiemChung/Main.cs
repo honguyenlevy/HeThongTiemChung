@@ -12,6 +12,8 @@ namespace HeThongTiemChung
 {
     public partial class Main : Form
     {
+        public static DangNhap f1 ;
+
         public Main()
         {
             InitializeComponent();
@@ -43,7 +45,10 @@ namespace HeThongTiemChung
 
         private void labelDangNhap_Click(object sender, EventArgs e)
         {
-            OpenChilForm(new DangNhap(), sender);
+            f1 = new DangNhap();
+
+            OpenChilForm(f1, sender);
+           
         }
 
         private void labelDangKy_Click(object sender, EventArgs e)
