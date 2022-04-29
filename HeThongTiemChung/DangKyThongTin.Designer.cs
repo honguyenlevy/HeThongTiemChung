@@ -29,13 +29,11 @@ namespace HeThongTiemChung
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.checkBoxLaTreEm = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,10 +51,11 @@ namespace HeThongTiemChung
             this.textBoxHoTenNguoiGiamHo = new System.Windows.Forms.TextBox();
             this.textBoxSoDienThoaiNguoiGiamHo = new System.Windows.Forms.TextBox();
             this.comboBoxQuanHe = new System.Windows.Forms.ComboBox();
-            this.buttonSubmit = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
+            this.buttonSubmit = new System.Windows.Forms.Button();
+            this.checkBoxLaTreEm = new System.Windows.Forms.CheckBox();
             this.textBoxMaKH = new System.Windows.Forms.TextBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.label13 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -111,7 +110,6 @@ namespace HeThongTiemChung
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 350F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel2.Controls.Add(this.label2, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.checkBoxLaTreEm, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.label3, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.label4, 3, 2);
             this.tableLayoutPanel2.Controls.Add(this.label5, 5, 2);
@@ -129,22 +127,24 @@ namespace HeThongTiemChung
             this.tableLayoutPanel2.Controls.Add(this.textBoxHoTenNguoiGiamHo, 1, 8);
             this.tableLayoutPanel2.Controls.Add(this.textBoxSoDienThoaiNguoiGiamHo, 5, 8);
             this.tableLayoutPanel2.Controls.Add(this.comboBoxQuanHe, 3, 8);
-            this.tableLayoutPanel2.Controls.Add(this.buttonSubmit, 5, 10);
-            this.tableLayoutPanel2.Controls.Add(this.label12, 1, 10);
-            this.tableLayoutPanel2.Controls.Add(this.textBoxMaKH, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label12, 3, 6);
+            this.tableLayoutPanel2.Controls.Add(this.buttonSubmit, 5, 9);
+            this.tableLayoutPanel2.Controls.Add(this.checkBoxLaTreEm, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxMaKH, 5, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label13, 3, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 11;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowCount = 10;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1200, 603);
             this.tableLayoutPanel2.TabIndex = 0;
@@ -162,20 +162,6 @@ namespace HeThongTiemChung
             this.label2.Text = "1. Thông tin cá nhân";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // checkBoxLaTreEm
-            // 
-            this.checkBoxLaTreEm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.checkBoxLaTreEm.AutoSize = true;
-            this.checkBoxLaTreEm.Location = new System.Drawing.Point(443, 3);
-            this.checkBoxLaTreEm.Name = "checkBoxLaTreEm";
-            this.checkBoxLaTreEm.Size = new System.Drawing.Size(115, 54);
-            this.checkBoxLaTreEm.TabIndex = 1;
-            this.checkBoxLaTreEm.Text = "Là trẻ em";
-            this.checkBoxLaTreEm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxLaTreEm.UseVisualStyleBackColor = true;
-            this.checkBoxLaTreEm.CheckedChanged += new System.EventHandler(this.checkBoxLaTreEm_CheckedChanged);
-            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -183,7 +169,7 @@ namespace HeThongTiemChung
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(83, 120);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 40);
+            this.label3.Size = new System.Drawing.Size(95, 60);
             this.label3.TabIndex = 2;
             this.label3.Text = "Họ và tên";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -195,7 +181,7 @@ namespace HeThongTiemChung
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(443, 120);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 40);
+            this.label4.Size = new System.Drawing.Size(99, 60);
             this.label4.TabIndex = 3;
             this.label4.Text = "Ngày sinh";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -207,7 +193,7 @@ namespace HeThongTiemChung
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(803, 120);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 40);
+            this.label5.Size = new System.Drawing.Size(82, 60);
             this.label5.TabIndex = 4;
             this.label5.Text = "Giới tính";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -216,7 +202,7 @@ namespace HeThongTiemChung
             // 
             this.textBoxHoVaTen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxHoVaTen.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxHoVaTen.Location = new System.Drawing.Point(83, 163);
+            this.textBoxHoVaTen.Location = new System.Drawing.Point(83, 183);
             this.textBoxHoVaTen.Name = "textBoxHoVaTen";
             this.textBoxHoVaTen.Size = new System.Drawing.Size(344, 30);
             this.textBoxHoVaTen.TabIndex = 5;
@@ -225,7 +211,7 @@ namespace HeThongTiemChung
             // 
             this.dateTimePickerNgaySinh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateTimePickerNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerNgaySinh.Location = new System.Drawing.Point(443, 163);
+            this.dateTimePickerNgaySinh.Location = new System.Drawing.Point(443, 183);
             this.dateTimePickerNgaySinh.Name = "dateTimePickerNgaySinh";
             this.dateTimePickerNgaySinh.Size = new System.Drawing.Size(344, 30);
             this.dateTimePickerNgaySinh.TabIndex = 6;
@@ -236,7 +222,7 @@ namespace HeThongTiemChung
             this.comboBoxGioiTinh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxGioiTinh.ForeColor = System.Drawing.SystemColors.ControlText;
             this.comboBoxGioiTinh.FormattingEnabled = true;
-            this.comboBoxGioiTinh.Location = new System.Drawing.Point(803, 163);
+            this.comboBoxGioiTinh.Location = new System.Drawing.Point(803, 183);
             this.comboBoxGioiTinh.Name = "comboBoxGioiTinh";
             this.comboBoxGioiTinh.Size = new System.Drawing.Size(344, 33);
             this.comboBoxGioiTinh.TabIndex = 7;
@@ -246,9 +232,9 @@ namespace HeThongTiemChung
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(83, 200);
+            this.label6.Location = new System.Drawing.Point(83, 240);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(126, 40);
+            this.label6.Size = new System.Drawing.Size(126, 60);
             this.label6.TabIndex = 8;
             this.label6.Text = "Số điện thoại";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -258,9 +244,9 @@ namespace HeThongTiemChung
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(443, 200);
+            this.label7.Location = new System.Drawing.Point(443, 240);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 40);
+            this.label7.Size = new System.Drawing.Size(71, 60);
             this.label7.TabIndex = 9;
             this.label7.Text = "Địa chỉ";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -269,7 +255,7 @@ namespace HeThongTiemChung
             // 
             this.textBoxSoDienThoai.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxSoDienThoai.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxSoDienThoai.Location = new System.Drawing.Point(83, 243);
+            this.textBoxSoDienThoai.Location = new System.Drawing.Point(83, 303);
             this.textBoxSoDienThoai.Name = "textBoxSoDienThoai";
             this.textBoxSoDienThoai.Size = new System.Drawing.Size(344, 30);
             this.textBoxSoDienThoai.TabIndex = 10;
@@ -278,7 +264,7 @@ namespace HeThongTiemChung
             // 
             this.textBoxDiaChi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxDiaChi.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxDiaChi.Location = new System.Drawing.Point(443, 243);
+            this.textBoxDiaChi.Location = new System.Drawing.Point(443, 303);
             this.textBoxDiaChi.Name = "textBoxDiaChi";
             this.textBoxDiaChi.Size = new System.Drawing.Size(344, 30);
             this.textBoxDiaChi.TabIndex = 11;
@@ -288,7 +274,7 @@ namespace HeThongTiemChung
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(83, 280);
+            this.label8.Location = new System.Drawing.Point(83, 360);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(242, 60);
             this.label8.TabIndex = 12;
@@ -300,9 +286,9 @@ namespace HeThongTiemChung
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(83, 340);
+            this.label9.Location = new System.Drawing.Point(83, 420);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(196, 40);
+            this.label9.Size = new System.Drawing.Size(196, 60);
             this.label9.TabIndex = 13;
             this.label9.Text = "Họ tên người giám hộ";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -312,9 +298,9 @@ namespace HeThongTiemChung
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(443, 340);
+            this.label10.Location = new System.Drawing.Point(443, 420);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(88, 40);
+            this.label10.Size = new System.Drawing.Size(88, 60);
             this.label10.TabIndex = 14;
             this.label10.Text = "Quan hệ";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -324,9 +310,9 @@ namespace HeThongTiemChung
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(803, 340);
+            this.label11.Location = new System.Drawing.Point(803, 420);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(253, 40);
+            this.label11.Size = new System.Drawing.Size(253, 60);
             this.label11.TabIndex = 15;
             this.label11.Text = "Số điện thoại người giám hộ";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -335,7 +321,7 @@ namespace HeThongTiemChung
             // 
             this.textBoxHoTenNguoiGiamHo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxHoTenNguoiGiamHo.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxHoTenNguoiGiamHo.Location = new System.Drawing.Point(83, 383);
+            this.textBoxHoTenNguoiGiamHo.Location = new System.Drawing.Point(83, 483);
             this.textBoxHoTenNguoiGiamHo.Name = "textBoxHoTenNguoiGiamHo";
             this.textBoxHoTenNguoiGiamHo.Size = new System.Drawing.Size(344, 30);
             this.textBoxHoTenNguoiGiamHo.TabIndex = 16;
@@ -344,7 +330,7 @@ namespace HeThongTiemChung
             // 
             this.textBoxSoDienThoaiNguoiGiamHo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxSoDienThoaiNguoiGiamHo.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxSoDienThoaiNguoiGiamHo.Location = new System.Drawing.Point(803, 383);
+            this.textBoxSoDienThoaiNguoiGiamHo.Location = new System.Drawing.Point(803, 483);
             this.textBoxSoDienThoaiNguoiGiamHo.Name = "textBoxSoDienThoaiNguoiGiamHo";
             this.textBoxSoDienThoaiNguoiGiamHo.Size = new System.Drawing.Size(344, 30);
             this.textBoxSoDienThoaiNguoiGiamHo.TabIndex = 17;
@@ -354,15 +340,25 @@ namespace HeThongTiemChung
             this.comboBoxQuanHe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxQuanHe.ForeColor = System.Drawing.SystemColors.ControlText;
             this.comboBoxQuanHe.FormattingEnabled = true;
-            this.comboBoxQuanHe.Location = new System.Drawing.Point(443, 383);
+            this.comboBoxQuanHe.Location = new System.Drawing.Point(443, 483);
             this.comboBoxQuanHe.Name = "comboBoxQuanHe";
             this.comboBoxQuanHe.Size = new System.Drawing.Size(344, 33);
             this.comboBoxQuanHe.TabIndex = 18;
             // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(443, 365);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(344, 50);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "(Nếu là trẻ em cần có thông tin người giám hộ)";
+            // 
             // buttonSubmit
             // 
             this.buttonSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSubmit.Location = new System.Drawing.Point(1016, 443);
+            this.buttonSubmit.Location = new System.Drawing.Point(1016, 543);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(131, 42);
             this.buttonSubmit.TabIndex = 19;
@@ -370,28 +366,39 @@ namespace HeThongTiemChung
             this.buttonSubmit.UseVisualStyleBackColor = true;
             this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
-            // label12
+            // checkBoxLaTreEm
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(83, 440);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(334, 50);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "(Nếu là trẻ em cần có thông tin người giám hộ)";
+            this.checkBoxLaTreEm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBoxLaTreEm.AutoSize = true;
+            this.checkBoxLaTreEm.Location = new System.Drawing.Point(312, 3);
+            this.checkBoxLaTreEm.Name = "checkBoxLaTreEm";
+            this.checkBoxLaTreEm.Size = new System.Drawing.Size(115, 54);
+            this.checkBoxLaTreEm.TabIndex = 1;
+            this.checkBoxLaTreEm.Text = "Là trẻ em";
+            this.checkBoxLaTreEm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBoxLaTreEm.UseVisualStyleBackColor = true;
+            this.checkBoxLaTreEm.CheckedChanged += new System.EventHandler(this.checkBoxLaTreEm_CheckedChanged);
             // 
             // textBoxMaKH
             // 
-            this.textBoxMaKH.Location = new System.Drawing.Point(443, 63);
+            this.textBoxMaKH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxMaKH.Location = new System.Drawing.Point(803, 15);
             this.textBoxMaKH.Name = "textBoxMaKH";
             this.textBoxMaKH.Size = new System.Drawing.Size(344, 30);
             this.textBoxMaKH.TabIndex = 21;
             // 
-            // contextMenuStrip1
+            // label13
             // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(640, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(147, 60);
+            this.label13.TabIndex = 22;
+            this.label13.Text = "Mã khách hàng";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // DangKyThongTin
             // 
@@ -442,6 +449,6 @@ namespace HeThongTiemChung
         private System.Windows.Forms.Label label12;
         public System.Windows.Forms.TextBox textBoxHoVaTen;
         private System.Windows.Forms.TextBox textBoxMaKH;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Label label13;
     }
 }

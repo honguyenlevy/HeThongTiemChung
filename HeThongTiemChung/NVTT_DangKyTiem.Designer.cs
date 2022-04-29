@@ -60,11 +60,11 @@ namespace HeThongTiemChung
             this.radioButtonChonVaccine = new System.Windows.Forms.RadioButton();
             this.label13 = new System.Windows.Forms.Label();
             this.dateTimePickerThoiGianTiem = new System.Windows.Forms.DateTimePicker();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridViewVaccine = new System.Windows.Forms.DataGridView();
             this.textBoxTenGoi = new System.Windows.Forms.TextBox();
             this.textBoxTenVacxin = new System.Windows.Forms.TextBox();
             this.buttonSearchKH = new System.Windows.Forms.Button();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.dataGridViewVaccine = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVaccine)).BeginInit();
@@ -213,6 +213,7 @@ namespace HeThongTiemChung
             this.comboBoxTrungTam.Name = "comboBoxTrungTam";
             this.comboBoxTrungTam.Size = new System.Drawing.Size(344, 33);
             this.comboBoxTrungTam.TabIndex = 7;
+            this.comboBoxTrungTam.SelectedIndexChanged += new System.EventHandler(this.comboBoxTrungTam_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -464,6 +465,30 @@ namespace HeThongTiemChung
             this.dateTimePickerThoiGianTiem.Size = new System.Drawing.Size(344, 30);
             this.dateTimePickerThoiGianTiem.TabIndex = 35;
             // 
+            // textBoxTenGoi
+            // 
+            this.textBoxTenGoi.Location = new System.Drawing.Point(63, 223);
+            this.textBoxTenGoi.Name = "textBoxTenGoi";
+            this.textBoxTenGoi.Size = new System.Drawing.Size(344, 30);
+            this.textBoxTenGoi.TabIndex = 36;
+            // 
+            // textBoxTenVacxin
+            // 
+            this.textBoxTenVacxin.Location = new System.Drawing.Point(63, 293);
+            this.textBoxTenVacxin.Name = "textBoxTenVacxin";
+            this.textBoxTenVacxin.Size = new System.Drawing.Size(344, 30);
+            this.textBoxTenVacxin.TabIndex = 37;
+            // 
+            // buttonSearchKH
+            // 
+            this.buttonSearchKH.Location = new System.Drawing.Point(783, 83);
+            this.buttonSearchKH.Name = "buttonSearchKH";
+            this.buttonSearchKH.Size = new System.Drawing.Size(344, 23);
+            this.buttonSearchKH.TabIndex = 38;
+            this.buttonSearchKH.Text = "Search";
+            this.buttonSearchKH.UseVisualStyleBackColor = true;
+            this.buttonSearchKH.Click += new System.EventHandler(this.button1_Click);
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
@@ -490,30 +515,6 @@ namespace HeThongTiemChung
             this.dataGridViewVaccine.Size = new System.Drawing.Size(1443, 345);
             this.dataGridViewVaccine.TabIndex = 0;
             this.dataGridViewVaccine.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewVaccine_CellContentClick);
-            // 
-            // textBoxTenGoi
-            // 
-            this.textBoxTenGoi.Location = new System.Drawing.Point(63, 223);
-            this.textBoxTenGoi.Name = "textBoxTenGoi";
-            this.textBoxTenGoi.Size = new System.Drawing.Size(344, 30);
-            this.textBoxTenGoi.TabIndex = 36;
-            // 
-            // textBoxTenVacxin
-            // 
-            this.textBoxTenVacxin.Location = new System.Drawing.Point(63, 293);
-            this.textBoxTenVacxin.Name = "textBoxTenVacxin";
-            this.textBoxTenVacxin.Size = new System.Drawing.Size(344, 30);
-            this.textBoxTenVacxin.TabIndex = 37;
-            // 
-            // buttonSearchKH
-            // 
-            this.buttonSearchKH.Location = new System.Drawing.Point(783, 83);
-            this.buttonSearchKH.Name = "buttonSearchKH";
-            this.buttonSearchKH.Size = new System.Drawing.Size(344, 23);
-            this.buttonSearchKH.TabIndex = 38;
-            this.buttonSearchKH.Text = "Search";
-            this.buttonSearchKH.UseVisualStyleBackColor = true;
-            this.buttonSearchKH.Click += new System.EventHandler(this.button1_Click);
             // 
             // NVTT_DangKyTiem
             // 

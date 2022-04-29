@@ -53,7 +53,7 @@ namespace HeThongTiemChung
 
         private void labelDangXuat_Click(object sender, EventArgs e)
         {
-
+            OpenChilForm(new DangNhap(), sender);
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

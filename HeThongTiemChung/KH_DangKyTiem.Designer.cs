@@ -190,6 +190,7 @@ namespace HeThongTiemChung
             this.comboBoxTenGoiVaccine.Name = "comboBoxTenGoiVaccine";
             this.comboBoxTenGoiVaccine.Size = new System.Drawing.Size(344, 33);
             this.comboBoxTenGoiVaccine.TabIndex = 6;
+            this.comboBoxTenGoiVaccine.SelectedIndexChanged += new System.EventHandler(this.comboBoxTenGoiVaccine_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -212,6 +213,7 @@ namespace HeThongTiemChung
             this.comboBoxTrungTam.Name = "comboBoxTrungTam";
             this.comboBoxTrungTam.Size = new System.Drawing.Size(344, 33);
             this.comboBoxTrungTam.TabIndex = 7;
+            this.comboBoxTrungTam.SelectedIndexChanged += new System.EventHandler(this.comboBoxTrungTam_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -302,6 +304,7 @@ namespace HeThongTiemChung
             this.comboBoxTenVaccine.Name = "comboBoxTenVaccine";
             this.comboBoxTenVaccine.Size = new System.Drawing.Size(344, 33);
             this.comboBoxTenVaccine.TabIndex = 18;
+            this.comboBoxTenVaccine.SelectedIndexChanged += new System.EventHandler(this.comboBoxTenVaccine_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -464,6 +467,7 @@ namespace HeThongTiemChung
             this.dataGridViewVaccine.RowTemplate.Height = 24;
             this.dataGridViewVaccine.Size = new System.Drawing.Size(1443, 336);
             this.dataGridViewVaccine.TabIndex = 0;
+            this.dataGridViewVaccine.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewVaccine_CellContentClick);
             // 
             // KH_DangKyTiem
             // 
@@ -476,6 +480,7 @@ namespace HeThongTiemChung
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "KH_DangKyTiem";
             this.Text = "KH_DangKyPhieuTiemChung";
+            this.Load += new System.EventHandler(this.KH_DangKyTiem_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);

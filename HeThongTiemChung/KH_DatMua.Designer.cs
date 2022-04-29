@@ -69,13 +69,12 @@ namespace HeThongTiemChung
             // 
             // textBoxTen
             // 
-            this.textBoxTen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxTen.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxTen.Location = new System.Drawing.Point(516, 103);
+            this.textBoxTen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxTen.ForeColor = System.Drawing.Color.Black;
+            this.textBoxTen.Location = new System.Drawing.Point(516, 110);
             this.textBoxTen.Name = "textBoxTen";
             this.textBoxTen.Size = new System.Drawing.Size(364, 30);
             this.textBoxTen.TabIndex = 2;
-            this.textBoxTen.Text = "Tên gói vaccine / vaccine";
             // 
             // label1
             // 

@@ -46,6 +46,11 @@ namespace HeThongTiemChung
 
         private void DangKyThongTin_Load(object sender, EventArgs e)
         {
+            Random MaKH = new Random();
+            textBoxMaKH.Text = "KH" + MaKH.Next(00000001, 99999999).ToString();
+   
+
+
             comboBoxGioiTinh.DisplayMember = "Text";
             comboBoxGioiTinh.ValueMember = "Value";
 

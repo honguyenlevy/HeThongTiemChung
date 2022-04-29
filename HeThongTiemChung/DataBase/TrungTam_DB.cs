@@ -27,5 +27,22 @@ namespace HeThongTiemChung.DataBase
             return data;
 
         }
+        
+
+        public static string LayDiaChiTrungTam(string TenTrungTam)
+        {
+            string sql = "SELECT DIACHI FROM TRUNGTAM WHERE TENTRUNGTAM = N'"+TenTrungTam+"'";
+            
+            string ma = "";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader reader;
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+                ma = reader.GetValue(0).ToString();
+            reader.Close();
+            return ma;
+
+        }
+
     }
 }

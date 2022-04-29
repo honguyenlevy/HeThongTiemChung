@@ -360,6 +360,7 @@ namespace HeThongTiemChung
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "KH_ThanhToan_Dot";
             this.Text = "KH_ThanhToan_Dot";
+            this.Load += new System.EventHandler(this.KH_ThanhToan_Dot_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);

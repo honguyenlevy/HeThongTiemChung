@@ -16,7 +16,7 @@ namespace HeThongTiemChung.DataBase
         public static SqlConnection conn = ConnectData.SqlConnect();
         public static DataSet GetTDsVacxin()
         {
-            string sql = "select * from vacxin";
+            string sql = "SELECT TENVACXIN, GIATIEN, SOLUONGTON FROM VACXIN";
             
 
             DataSet data = new DataSet();
@@ -25,6 +25,35 @@ namespace HeThongTiemChung.DataBase
 
 
             return data;
+        }
+
+        public static string LayGiaVaccine(string TenVacxin)
+        {
+            string sql = "SELECT GIATIEN FROM VACXIN WHERE TENVACXIN = N'" + TenVacxin + "'";
+
+            string ma = "";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader reader;
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+                ma = reader.GetValue(0).ToString();
+            reader.Close();
+            return ma;
+
+        }
+
+        public static string LaySoLuongVaccine(string TenVacxin)
+        {
+            string sql = "SELECT SOLUONGTON FROM VACXIN WHERE TENVACXIN = N'" + TenVacxin + "'";
+
+            string ma = "";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader reader;
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+                ma = reader.GetValue(0).ToString();
+            reader.Close();
+            return ma;
 
         }
     }

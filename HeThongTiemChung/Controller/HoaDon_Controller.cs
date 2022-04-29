@@ -10,23 +10,14 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using HeThongTiemChung.DataBase;
 
+
 namespace HeThongTiemChung.Controller
 {
-    class TrungTam_Controller
+    class HoaDon_Controller
     {
-
-        public static DataSet LayThongTinTT()
+        public static DataSet LayDSHD()
         {
-
-            DataSet dt = TrungTam_DB.GetThongTinTrungTam();
-
-            return dt;
-
-        }
-
-        public static string LayDiaChiTrungTam(string TenTrungTam)
-        {
-            string dt = TrungTam_DB.LayDiaChiTrungTam(TenTrungTam);
+            DataSet dt = HoaDon_DB.LayDSHD();
             return dt;
         }
     }

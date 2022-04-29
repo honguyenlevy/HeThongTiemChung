@@ -21,5 +21,17 @@ namespace HeThongTiemChung.Controller
             DataSet dt = Vacxin_DB.GetTDsVacxin();
             return dt;
         }
+
+        public static string LayGiaVaccine(string TenVacxin)
+        {
+            string dt = Vacxin_DB.LayGiaVaccine(TenVacxin);
+            return dt;
+        }
+
+        public static string LaySoLuongVaccine(string TenVacxin)
+        {
+            string dt = Vacxin_DB.LaySoLuongVaccine(TenVacxin);
+            return dt;
+        }
     }
 }

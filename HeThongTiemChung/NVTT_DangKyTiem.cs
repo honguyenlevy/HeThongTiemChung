@@ -93,5 +93,10 @@ namespace HeThongTiemChung
                 textBoxDiaChi.Text = KH.Tables[0].Rows[0][1].ToString();
             }
         }
+
+        private void comboBoxTrungTam_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
