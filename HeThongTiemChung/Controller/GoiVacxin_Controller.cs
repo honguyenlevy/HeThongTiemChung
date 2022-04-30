@@ -16,20 +16,37 @@ namespace HeThongTiemChung.Controller
     {
         public static DataSet LayDSGoiVacXin()
         {
-            DataSet dt = GoiVaccxin_DB.GetTDsGoiVacxin();
+            DataSet dt = GoiVacxin_DB.GetTDsGoiVacxin();
             return dt;
         }
 
         public static string LayGiaGoiVaccine(string TenGoi)
         {
-            string dt = GoiVaccxin_DB.LayGiaGoiVaccine(TenGoi);
+            string dt = GoiVacxin_DB.LayGiaGoiVaccine(TenGoi);
             return dt;
         }
 
         public static string LaySoLuongGoiVaccine(string TenGoi)
         {
-            string dt = GoiVaccxin_DB.LaySoLuongGoiVaccine(TenGoi);
+            string dt = GoiVacxin_DB.LaySoLuongGoiVaccine(TenGoi);
             return dt;
+        }
+
+        public static void CapnhatSLDat(string MaVaccine, int SoLuong)
+        {
+            GoiVacxin_DB.CapNhatSoLuongDat(MaVaccine, SoLuong);
+        }
+
+
+        public static DataSet LayGoiVacXinCanDatMua()
+        {
+            DataSet dt = GoiVacxin_DB.LayGoiVaccineCanDatMua();
+            return dt;
+        }
+
+        public static void CapnhatSLTon(string MaVaccine, int SoLuong)
+        {
+            GoiVacxin_DB.CapNhatSoLuongTon(MaVaccine, SoLuong);
         }
     }
 }

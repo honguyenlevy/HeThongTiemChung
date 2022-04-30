@@ -11,9 +11,9 @@ namespace HeThongTiemChung
         public static string SqlConnectionString()
         {
 
-           return @"Data Source=HONGUYENLEVY;Initial Catalog=QUANLITIEMCHUNG;Integrated Security=True";
-           //return @"Data Source=LAPTOP-TBTQKC84\SQLEXPRESS;Initial Catalog=QUANLITIEMCHUNG;Integrated Security=True";
-
+            //return @"Data Source=HONGUYENLEVY;Initial Catalog=QUANLITIEMCHUNG;Integrated Security=True";
+            //return @"Data Source=LAPTOP-TBTQKC84\SQLEXPRESS;Initial Catalog=QUANLITIEMCHUNG;Integrated Security=True";
+            return @"Data Source=LAPTOP-TBTQKC84\SQLEXPRESS;Initial Catalog=QLTIEMCHUNG;Integrated Security=True";
         }
         public static SqlConnection SqlConnect()
         {

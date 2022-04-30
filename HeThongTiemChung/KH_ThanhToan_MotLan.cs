@@ -33,13 +33,16 @@ namespace HeThongTiemChung
                 textBoxSoThe.Focus();
                 return;
             }
+
+            string MaHd= dataGridViewThongTinHoaDon.CurrentRow.Cells[0].Value != null ? dataGridViewThongTinHoaDon.CurrentRow.Cells[0].Value.ToString() : "";
+            HoaDon_Controller.CapNhatTinhTrangHoaDon1Lan(MaHd, "NULL");
         }
 
         private void dataGridViewThongTinHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dataGridViewThongTinHoaDon.CurrentRow != null && dataGridViewThongTinHoaDon.CurrentRow.Index > -1)
             {
-                string value2 = dataGridViewThongTinHoaDon.CurrentRow.Cells[1].Value != null ? dataGridViewThongTinHoaDon.CurrentRow.Cells[1].Value.ToString() : "";
+                string value2 = dataGridViewThongTinHoaDon.CurrentRow.Cells[6].Value != null ? dataGridViewThongTinHoaDon.CurrentRow.Cells[6].Value.ToString() : "";
                 textBoxTongTien.Text = value2;
             }
         }

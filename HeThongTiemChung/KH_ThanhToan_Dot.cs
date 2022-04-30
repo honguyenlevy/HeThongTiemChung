@@ -53,6 +53,9 @@ namespace HeThongTiemChung
                 textBoxOTP.Focus();
                 return;
             }
+
+
+
         }
 
         private void KH_ThanhToan_Dot_Load(object sender, EventArgs e)

@@ -67,7 +67,7 @@
     <Compile Include="DataBase\ChitietHoaDon_DB.cs" />
     <Compile Include="DataBase\ChitietPhieuTiem_DB.cs" />
     <Compile Include="DataBase\DatMua_DB.cs" />
-    <Compile Include="DataBase\GoiVaccxin_DB.cs" />
+    <Compile Include="DataBase\GoiVacxin_DB.cs" />
     <Compile Include="DataBase\HoaDon_DB.cs" />
     <Compile Include="DataBase\KhachHang_DB.cs" />
     <Compile Include="DataBase\PhieuDangKy_DB.cs" />

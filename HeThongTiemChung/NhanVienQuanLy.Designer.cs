@@ -35,11 +35,13 @@ namespace HeThongTiemChung
             this.dataGridViewDonDat = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.radioButtonVaccine = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxMaDon = new System.Windows.Forms.TextBox();
-            this.buttonDuyet = new System.Windows.Forms.Button();
             this.textBoxSoLuong = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.buttonDuyet = new System.Windows.Forms.Button();
+            this.radioButtonGoiVaccine = new System.Windows.Forms.RadioButton();
             this.panelTopNhanVienTiepTan.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDonDat)).BeginInit();
@@ -116,12 +118,14 @@ namespace HeThongTiemChung
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.38931F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 507F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 595F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 81F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.tableLayoutPanel2.Controls.Add(this.radioButtonVaccine, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label2, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.textBoxMaDon, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.textBoxSoLuong, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.label3, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.buttonDuyet, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.radioButtonGoiVaccine, 0, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -132,42 +136,41 @@ namespace HeThongTiemChung
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1703, 110);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
+            // radioButtonVaccine
+            // 
+            this.radioButtonVaccine.AutoSize = true;
+            this.radioButtonVaccine.Location = new System.Drawing.Point(3, 3);
+            this.radioButtonVaccine.Name = "radioButtonVaccine";
+            this.radioButtonVaccine.Size = new System.Drawing.Size(104, 29);
+            this.radioButtonVaccine.TabIndex = 6;
+            this.radioButtonVaccine.TabStop = true;
+            this.radioButtonVaccine.Text = "Vaccine";
+            this.radioButtonVaccine.UseVisualStyleBackColor = true;
+            this.radioButtonVaccine.CheckedChanged += new System.EventHandler(this.radioButtonVaccine_CheckedChanged);
+            // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(438, 35);
+            this.label2.Location = new System.Drawing.Point(467, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 35);
+            this.label2.Size = new System.Drawing.Size(47, 35);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Mã đơn";
+            this.label2.Text = "Tên";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBoxMaDon
             // 
             this.textBoxMaDon.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxMaDon.Location = new System.Drawing.Point(522, 38);
+            this.textBoxMaDon.Location = new System.Drawing.Point(520, 38);
             this.textBoxMaDon.Name = "textBoxMaDon";
             this.textBoxMaDon.Size = new System.Drawing.Size(287, 30);
             this.textBoxMaDon.TabIndex = 1;
             // 
-            // buttonDuyet
-            // 
-            this.buttonDuyet.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonDuyet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
-            this.buttonDuyet.Location = new System.Drawing.Point(1467, 73);
-            this.buttonDuyet.Name = "buttonDuyet";
-            this.buttonDuyet.Size = new System.Drawing.Size(151, 34);
-            this.buttonDuyet.TabIndex = 2;
-            this.buttonDuyet.Text = "Duyệt";
-            this.buttonDuyet.UseVisualStyleBackColor = false;
-            this.buttonDuyet.Click += new System.EventHandler(this.buttonDuyet_Click);
-            // 
             // textBoxSoLuong
             // 
-            this.textBoxSoLuong.Location = new System.Drawing.Point(1029, 38);
+            this.textBoxSoLuong.Location = new System.Drawing.Point(1027, 38);
             this.textBoxSoLuong.Name = "textBoxSoLuong";
             this.textBoxSoLuong.Size = new System.Drawing.Size(560, 30);
             this.textBoxSoLuong.TabIndex = 3;
@@ -177,12 +180,37 @@ namespace HeThongTiemChung
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1521, 0);
+            this.label3.Location = new System.Drawing.Point(1519, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 35);
             this.label3.TabIndex = 4;
             this.label3.Text = "Số Lượng";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // buttonDuyet
+            // 
+            this.buttonDuyet.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDuyet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
+            this.buttonDuyet.Location = new System.Drawing.Point(1465, 73);
+            this.buttonDuyet.Name = "buttonDuyet";
+            this.buttonDuyet.Size = new System.Drawing.Size(151, 34);
+            this.buttonDuyet.TabIndex = 2;
+            this.buttonDuyet.Text = "Duyệt";
+            this.buttonDuyet.UseVisualStyleBackColor = false;
+            this.buttonDuyet.Click += new System.EventHandler(this.buttonDuyet_Click);
+            // 
+            // radioButtonGoiVaccine
+            // 
+            this.radioButtonGoiVaccine.AutoSize = true;
+            this.radioButtonGoiVaccine.Location = new System.Drawing.Point(3, 73);
+            this.radioButtonGoiVaccine.Name = "radioButtonGoiVaccine";
+            this.radioButtonGoiVaccine.Size = new System.Drawing.Size(139, 29);
+            this.radioButtonGoiVaccine.TabIndex = 7;
+            this.radioButtonGoiVaccine.TabStop = true;
+            this.radioButtonGoiVaccine.Text = "Gói Vaccine";
+            this.radioButtonGoiVaccine.UseVisualStyleBackColor = true;
+            this.radioButtonGoiVaccine.CheckedChanged += new System.EventHandler(this.radioButtonGoiVaccine_CheckedChanged);
             // 
             // NhanVienQuanLy
             // 
@@ -221,5 +249,7 @@ namespace HeThongTiemChung
         private System.Windows.Forms.Button buttonDuyet;
         private System.Windows.Forms.TextBox textBoxSoLuong;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RadioButton radioButtonVaccine;
+        private System.Windows.Forms.RadioButton radioButtonGoiVaccine;
     }
 }

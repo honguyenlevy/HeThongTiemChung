@@ -56,5 +56,36 @@ namespace HeThongTiemChung.DataBase
             return ma;
 
         }
+
+
+        public static void CapNhatSoLuongDatMua(string Mavaccine, int SoLuong)
+        {
+            string sql = "update vacxin set SLDat = SLDat + " +SoLuong + " where mavacxin = '" + Mavaccine+ "'" ;
+
+            ConnectData.RunSQL(sql);
+            
+        }
+
+        public static void CapNhatSoLuongTon(string Mavaccine, int SoLuong)
+        {
+            string sql = "update vacxin set SoLuongTon = SoLuongTon - " + SoLuong + " where mavacxin = '" + Mavaccine + "'";
+
+            ConnectData.RunSQL(sql);
+
+        }
+
+
+        public static DataSet LayDSVaccineCanDatMua()
+        {
+            string sql = " select* from VACXIN where sldat > 0";
+
+
+            DataSet data = new DataSet();
+            SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
+            dap.Fill(data);
+
+
+            return data;
+        }
     }
 }

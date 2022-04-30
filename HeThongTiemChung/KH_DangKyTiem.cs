@@ -59,33 +59,45 @@ namespace HeThongTiemChung
             Random Ma = new Random();
             string MaPDK = "DK" + Ma.Next(00000001, 99999999).ToString();
 
-            PhieuDangKy_Controller pdk = PhieuDangKy_Controller.TaoPhieuDangKy(MaPDK, "MaKH", dateTimePickerNgayDangKy.Text, dateTimePickerNgayMuonTiem.Text, comboBoxTrungTam.Text);
+            //PhieuDangKy_Controller pdk = PhieuDangKy_Controller.TaoPhieuDangKy(MaPDK, "MaKH", dateTimePickerNgayDangKy.Text, dateTimePickerNgayMuonTiem.Text, comboBoxTrungTam.Text);
 
+            
+            PhieuDangKy_Controller pdk = PhieuDangKy_Controller.TaoPhieuDangKy(MaPDK, "MaKH", dateTimePickerNgayDangKy.Text, dateTimePickerNgayMuonTiem.Text, "TT00000001");
             PhieuDangKy_Controller.ThemPhieuDangKy(pdk);
 
             string MaVaccine = comboBoxTenGoiVaccine.Text;
-            string Gia = textBoxGiaGoiVaccine.Text;
+            string Gia = textBoxGiaVaccine.Text;
+
+            int SoLuong = Int32.Parse(textBoxChonSoLuong.Text);
 
             if (radioButtonChonGoiVaccine.Checked == true) {
                 MaVaccine = comboBoxTenGoiVaccine.Text;
-                Gia = textBoxGiaVaccine.Text;
+                
+                Gia = textBoxGiaGoiVaccine.Text;
 
-              
-
+                GoiVacxin_Controller.CapnhatSLTon(MaVaccine, SoLuong);
             }
-            int SoLuong = Int32.Parse(textBoxChonSoLuong.Text);
-            
-            ChitietPhieuTiem_Controller ct = ChitietPhieuTiem_Controller.TaoChiTiet(MaPDK, MaVaccine, Int32.Parse(Gia), SoLuong);
 
-            ChitietPhieuTiem_Controller.ThemChiTiet(ct);
+            else
+            {
+                Vacxin_Controller.CapnhatSLTon(MaVaccine, SoLuong);
+            }
+            
+            
+            //ChitietPhieuTiem_Controller ct = ChitietPhieuTiem_Controller.TaoChiTiet(MaPDK, MaVaccine, Int32.Parse(Gia), SoLuong);
+
+            //ChitietPhieuTiem_Controller.ThemChiTiet(ct);
 
             Ma = new Random();
             string MaHD = "HD" + Ma.Next(00000001, 99999999).ToString();
+            MessageBox.Show(textBoxChonSoLuong.Text);
+            MessageBox.Show(Gia);
 
             int tongtien = Int32.Parse(textBoxChonSoLuong.Text) * Int32.Parse(Gia);
 
-            HoaDon_Controller hd = HoaDon_Controller.TaoHoaDon(MaHD, "MaKH", "NULL", 0, "Mot Lan", dateTimePickerNgayDangKy.Text, tongtien);
+            HoaDon_Controller hd = HoaDon_Controller.TaoHoaDon(MaHD, "KH000001", "NULL", 0, dateTimePickerNgayDangKy.Text, "Mot Lan", tongtien,"0","0");
             HoaDon_Controller.ThemHoaDon(hd);
+
 
 
 

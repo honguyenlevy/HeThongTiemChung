@@ -16,7 +16,7 @@ namespace HeThongTiemChung.DataBase
         public static SqlConnection conn = ConnectData.SqlConnect();
         public static DataSet LayDSHD(string sdt)
         {
-            string sql = "SELECT *  FROM HOADON where MAKHACHHANG IN (SELECT MAKHACHHANG from khachhang where sodienthoai = '" + sdt + "')";
+            string sql = "SELECT *  FROM HOADON where TinhTrang = '0' and MAKHACHHANG IN (SELECT MAKHACHHANG from khachhang where sodienthoai = '" + sdt + "')";
 
 
             DataSet data = new DataSet();
@@ -27,15 +27,26 @@ namespace HeThongTiemChung.DataBase
             return data;
         }
 
-        public static bool ThemHoaDon(string MaHD, string MaKh, string MaNV, int DuNo, string LoaiTT, string NgayLap, int Tongtien)
+        public static bool ThemHoaDon(string MaHD, string MaKh, string MaNV, int DuNo, string LoaiTT, string NgayLap, int Tongtien,string ThanhToanDot,string TinhTrang)
         {
+           
 
-
-            string sql = "insert into hoadon values('" + MaHD + "', '" + MaKh + "' , '" + MaNV + " ','" + DuNo + "', '" + LoaiTT + "', '" + NgayLap + "', '" + Tongtien+ "' )";
+            string sql = "insert into hoadon values('" + MaHD + "', '" + MaKh + "' , '" + MaNV + " ','" + DuNo + "', '" + LoaiTT + "', '" + NgayLap + "', '" + Tongtien+ "', '" + ThanhToanDot + "', '" + TinhTrang + "' )";
+            MessageBox.Show(sql);
 
             ConnectData.RunSQL(sql);
             return true;
 
+        }
+
+        public static void CapNhatTinhTrangHoaDon(string MaHD, string MaNV)
+        {
+            string sql = "update hoadon set MaNhanvien = " + MaNV + ", Tinhtrang = 1  where MaHoaDon = '" + MaHD + "' " ;
+
+            MessageBox.Show(sql);
+
+            ConnectData.RunSQL(sql);
+           
         }
     }
 }

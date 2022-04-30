@@ -13,6 +13,7 @@ namespace HeThongTiemChung
 {
     public partial class NhanVienKeToan : Form
     {
+        public static int SoLanThanhToan = 4;
         public static string MaKH;
         public NhanVienKeToan()
         {
@@ -32,6 +33,18 @@ namespace HeThongTiemChung
         private void buttonThanhToan_Click(object sender, EventArgs e)
         {
 
+            if (radioButtonThanhToanMotLan.Checked == true)
+            {
+                string MaHd = dataGridViewHoaDon.CurrentRow.Cells[0].Value != null ? dataGridViewHoaDon.CurrentRow.Cells[0].Value.ToString() : "";
+                HoaDon_Controller.CapNhatTinhTrangHoaDon1Lan(MaHd, DangNhap.SDT);
+            }
+            
+
+            else {
+                string MaHd = dataGridViewHoaDon.CurrentRow.Cells[0].Value != null ? dataGridViewHoaDon.CurrentRow.Cells[0].Value.ToString() : "";
+                HoaDon_Controller.CapNhatTinhTrangHoaDon1Lan(MaHd, DangNhap.SDT);
+            }
+        
         }
 
         private void textBoxSoDienThoaiKhachHang_TextChanged(object sender, EventArgs e)
@@ -41,7 +54,7 @@ namespace HeThongTiemChung
 
         private void NhanVienKeToan_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void buttonSearch_Click(object sender, EventArgs e)

@@ -20,26 +20,57 @@ namespace HeThongTiemChung
 
         private void buttonDuyet_Click(object sender, EventArgs e)
         {
-            int SoLuong = Int32.Parse(textBoxSoLuong.Text);
-            DatMua_Controller d = DatMua_Controller.TaoDatMua(textBoxMaDon.Text, -SoLuong);
-            DatMua_Controller.CapNhatDatMua(d);
+            
+            //DatMua_Controller d = DatMua_Controller.TaoDatMua(textBoxMaDon.Text, -SoLuong);
+            //DatMua_Controller.CapNhatDatMua(d);
+             int SoLuong = Int32.Parse(textBoxSoLuong.Text);
+            string Ma= dataGridViewDonDat.CurrentRow.Cells[0].Value != null ? dataGridViewDonDat.CurrentRow.Cells[0].Value.ToString() : "";
+            if (radioButtonVaccine.Checked == true)
+            {
+                Vacxin_Controller.CapnhatSLDat(Ma, -SoLuong);
+            }
+            else
+            {
+                GoiVacxin_Controller.CapnhatSLDat(Ma, -SoLuong);
+            }
         }
 
         private void dataGridViewDonDat_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridViewDonDat.CurrentRow != null && dataGridViewDonDat.CurrentRow.Index > -1)
+            if (radioButtonVaccine.Checked == true)
             {
-                textBoxMaDon.Text = dataGridViewDonDat.CurrentRow.Cells[1].Value != null ? dataGridViewDonDat.CurrentRow.Cells[1].Value.ToString() : "";
-                textBoxSoLuong.Text = dataGridViewDonDat.CurrentRow.Cells[2].Value != null ? dataGridViewDonDat.CurrentRow.Cells[2].Value.ToString() : "";
-
-
-
+                if (dataGridViewDonDat.CurrentRow != null && dataGridViewDonDat.CurrentRow.Index > -1)
+                {
+                    textBoxMaDon.Text = dataGridViewDonDat.CurrentRow.Cells[1].Value != null ? dataGridViewDonDat.CurrentRow.Cells[1].Value.ToString() : "";
+                    textBoxSoLuong.Text = dataGridViewDonDat.CurrentRow.Cells[4].Value != null ? dataGridViewDonDat.CurrentRow.Cells[4].Value.ToString() : "";
+                }
+            }
+            else
+            {
+                if (dataGridViewDonDat.CurrentRow != null && dataGridViewDonDat.CurrentRow.Index > -1)
+                {
+                    textBoxMaDon.Text = dataGridViewDonDat.CurrentRow.Cells[3].Value != null ? dataGridViewDonDat.CurrentRow.Cells[3].Value.ToString() : "";
+                    textBoxSoLuong.Text = dataGridViewDonDat.CurrentRow.Cells[4].Value != null ? dataGridViewDonDat.CurrentRow.Cells[4].Value.ToString() : "";
+                }
             }
         }
 
         private void NhanVienQuanLy_Load(object sender, EventArgs e)
         {
-            dataGridViewDonDat.DataSource = DatMua_Controller.LayDsDatMua().Tables[0];
+
+            radioButtonVaccine.Checked = true;
+
+
+        }
+
+        private void radioButtonVaccine_CheckedChanged(object sender, EventArgs e)
+        {
+            dataGridViewDonDat.DataSource = Vacxin_Controller.LayVacXinCanDatMua();
+        }
+
+        private void radioButtonGoiVaccine_CheckedChanged(object sender, EventArgs e)
+        {
+            dataGridViewDonDat.DataSource = GoiVacxin_Controller.LayGoiVacXinCanDatMua();
         }
     }
 }

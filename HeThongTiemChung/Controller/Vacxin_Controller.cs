@@ -33,5 +33,24 @@ namespace HeThongTiemChung.Controller
             string dt = Vacxin_DB.LaySoLuongVaccine(TenVacxin);
             return dt;
         }
+
+
+
+        public static void CapnhatSLDat(string MaVaccine, int SoLuong)
+        {
+            Vacxin_DB.CapNhatSoLuongDatMua(MaVaccine, SoLuong);
+        }
+
+
+        public static void CapnhatSLTon(string MaVaccine, int SoLuong)
+        {
+            Vacxin_DB.CapNhatSoLuongTon(MaVaccine, SoLuong);
+        }
+
+        public static DataSet LayVacXinCanDatMua()
+        {
+            DataSet dt = Vacxin_DB.LayDSVaccineCanDatMua();
+            return dt;
+        }
     }
 }
