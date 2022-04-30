@@ -86,6 +86,7 @@ namespace HeThongTiemChung
             // 
             // panelTopNhanVienTiepTan
             // 
+            this.panelTopNhanVienTiepTan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(130)))));
             this.panelTopNhanVienTiepTan.Controls.Add(this.label1);
             this.panelTopNhanVienTiepTan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTopNhanVienTiepTan.Location = new System.Drawing.Point(3, 3);
@@ -101,9 +102,9 @@ namespace HeThongTiemChung
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(57, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(595, 46);
+            this.label1.Size = new System.Drawing.Size(242, 46);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nhân viên kế toán / Lập hóa đơn";
+            this.label1.Text = "Lập hóa đơn";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panelNhanVienKeToan
@@ -133,6 +134,7 @@ namespace HeThongTiemChung
             // 
             // dataGridViewHoaDon
             // 
+            this.dataGridViewHoaDon.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.dataGridViewHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewHoaDon.Location = new System.Drawing.Point(3, 53);
@@ -319,12 +321,13 @@ namespace HeThongTiemChung
             // 
             this.buttonThanhToan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
             this.buttonThanhToan.Location = new System.Drawing.Point(556, 573);
             this.buttonThanhToan.Name = "buttonThanhToan";
             this.buttonThanhToan.Size = new System.Drawing.Size(216, 44);
             this.buttonThanhToan.TabIndex = 20;
             this.buttonThanhToan.Text = "Thanh toán";
-            this.buttonThanhToan.UseVisualStyleBackColor = true;
+            this.buttonThanhToan.UseVisualStyleBackColor = false;
             this.buttonThanhToan.Click += new System.EventHandler(this.buttonThanhToan_Click);
             // 
             // label3
@@ -472,18 +475,20 @@ namespace HeThongTiemChung
             // 
             // buttonSearch
             // 
+            this.buttonSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
             this.buttonSearch.Location = new System.Drawing.Point(778, 133);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(193, 34);
             this.buttonSearch.TabIndex = 24;
             this.buttonSearch.Text = "Search";
-            this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.UseVisualStyleBackColor = false;
             this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // NhanVienKeToan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(1718, 703);
             this.Controls.Add(this.panelNhanVienKeToan);
             this.Controls.Add(this.tableLayoutPanel1);

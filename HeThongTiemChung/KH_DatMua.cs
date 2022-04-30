@@ -32,6 +32,13 @@ namespace HeThongTiemChung
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
+            if (textBoxSoLuong.Text.Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập số lượng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxSoLuong.Focus();
+                return;
+            }
+
             DatMua_Controller a = DatMua_Controller.TaoDatMua(textBoxTen.Text, Int32.Parse(textBoxSoLuong.Text));
             DatMua_Controller.CapNhatDatMua(a);
         }

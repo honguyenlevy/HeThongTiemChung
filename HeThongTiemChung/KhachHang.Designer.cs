@@ -30,18 +30,19 @@ namespace HeThongTiemChung
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelDangKyTiem = new System.Windows.Forms.Label();
             this.labelDatMua = new System.Windows.Forms.Label();
             this.labelThanhToan = new System.Windows.Forms.Label();
             this.panelTopKhachHang = new System.Windows.Forms.Panel();
-            this.panelKhachHang = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelDangKyTiem = new System.Windows.Forms.Label();
+            this.panelKhachHang = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelTopKhachHang.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(130)))));
             this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
@@ -58,19 +59,6 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1200, 62);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // labelDangKyTiem
-            // 
-            this.labelDangKyTiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelDangKyTiem.AutoSize = true;
-            this.labelDangKyTiem.Location = new System.Drawing.Point(663, 0);
-            this.labelDangKyTiem.Name = "labelDangKyTiem";
-            this.labelDangKyTiem.Size = new System.Drawing.Size(160, 62);
-            this.labelDangKyTiem.TabIndex = 1;
-            this.labelDangKyTiem.Text = "Đăng ký tiêm phiếu tiêm chủng";
-            this.labelDangKyTiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labelDangKyTiem.Click += new System.EventHandler(this.labelDangKyTiem_Click);
             // 
             // labelDatMua
             // 
@@ -107,14 +95,6 @@ namespace HeThongTiemChung
             this.panelTopKhachHang.Size = new System.Drawing.Size(654, 56);
             this.panelTopKhachHang.TabIndex = 4;
             // 
-            // panelKhachHang
-            // 
-            this.panelKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelKhachHang.Location = new System.Drawing.Point(0, 62);
-            this.panelKhachHang.Name = "panelKhachHang";
-            this.panelKhachHang.Size = new System.Drawing.Size(1200, 641);
-            this.panelKhachHang.TabIndex = 1;
-            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -128,10 +108,32 @@ namespace HeThongTiemChung
             this.label1.Text = "Khách hàng";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // labelDangKyTiem
+            // 
+            this.labelDangKyTiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelDangKyTiem.AutoSize = true;
+            this.labelDangKyTiem.Location = new System.Drawing.Point(663, 0);
+            this.labelDangKyTiem.Name = "labelDangKyTiem";
+            this.labelDangKyTiem.Size = new System.Drawing.Size(160, 62);
+            this.labelDangKyTiem.TabIndex = 1;
+            this.labelDangKyTiem.Text = "Đăng ký tiêm phiếu tiêm chủng";
+            this.labelDangKyTiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelDangKyTiem.Click += new System.EventHandler(this.labelDangKyTiem_Click);
+            // 
+            // panelKhachHang
+            // 
+            this.panelKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelKhachHang.Location = new System.Drawing.Point(0, 62);
+            this.panelKhachHang.Name = "panelKhachHang";
+            this.panelKhachHang.Size = new System.Drawing.Size(1200, 641);
+            this.panelKhachHang.TabIndex = 1;
+            // 
             // KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(1200, 703);
             this.Controls.Add(this.panelKhachHang);
             this.Controls.Add(this.tableLayoutPanel1);

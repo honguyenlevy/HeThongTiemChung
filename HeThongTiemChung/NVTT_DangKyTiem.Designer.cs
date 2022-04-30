@@ -354,13 +354,14 @@ namespace HeThongTiemChung
             // 
             // buttonSubmit
             // 
+            this.buttonSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
             this.buttonSubmit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonSubmit.Location = new System.Drawing.Point(1143, 363);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(344, 44);
             this.buttonSubmit.TabIndex = 16;
             this.buttonSubmit.Text = "Submit";
-            this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.UseVisualStyleBackColor = false;
             this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // label12
@@ -481,12 +482,13 @@ namespace HeThongTiemChung
             // 
             // buttonSearchKH
             // 
+            this.buttonSearchKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
             this.buttonSearchKH.Location = new System.Drawing.Point(783, 83);
             this.buttonSearchKH.Name = "buttonSearchKH";
             this.buttonSearchKH.Size = new System.Drawing.Size(344, 23);
             this.buttonSearchKH.TabIndex = 38;
             this.buttonSearchKH.Text = "Search";
-            this.buttonSearchKH.UseVisualStyleBackColor = true;
+            this.buttonSearchKH.UseVisualStyleBackColor = false;
             this.buttonSearchKH.Click += new System.EventHandler(this.button1_Click);
             // 
             // tableLayoutPanel3
@@ -506,6 +508,7 @@ namespace HeThongTiemChung
             // 
             // dataGridViewVaccine
             // 
+            this.dataGridViewVaccine.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.dataGridViewVaccine.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewVaccine.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewVaccine.Location = new System.Drawing.Point(144, 3);
@@ -520,6 +523,7 @@ namespace HeThongTiemChung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(1610, 772);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel1);

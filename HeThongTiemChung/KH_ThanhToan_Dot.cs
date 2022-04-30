@@ -25,12 +25,34 @@ namespace HeThongTiemChung
             {
                 string value1 = dataGridViewThongTinHoaDon.CurrentRow.Cells[0].Value != null ? dataGridViewThongTinHoaDon.CurrentRow.Cells[0].Value.ToString() : "";
                 textBoxSoLanThanhToan.Text = value1;
+
+                string value2 = dataGridViewThongTinHoaDon.CurrentRow.Cells[1].Value != null ? dataGridViewThongTinHoaDon.CurrentRow.Cells[1].Value.ToString() : "";
+                textBoxTongTien.Text = value2;
             }
         }
 
         private void buttonThanhToan_Click(object sender, EventArgs e)
         {
+            if (comboBoxTenNganHang.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải chọn tên ngân hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                comboBoxTenNganHang.Focus();
+                return;
+            }
 
+            if (textBoxSoThe.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập số thẻ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxSoThe.Focus();
+                return;
+            }
+
+            if (textBoxOTP.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập OTP", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxOTP.Focus();
+                return;
+            }
         }
 
         private void KH_ThanhToan_Dot_Load(object sender, EventArgs e)
@@ -48,6 +70,11 @@ namespace HeThongTiemChung
 
 
            
+        }
+
+        private void comboBoxLanThanhToan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //textBoxDiaChi.Text = TrungTam_Controller.LayDiaChiTrungTam(comboBoxTrungTam.Text);
         }
     }
 }

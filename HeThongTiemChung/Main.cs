@@ -45,14 +45,14 @@ namespace HeThongTiemChung
 
         private void labelDangNhap_Click(object sender, EventArgs e)
         {
-            f1 = new DangNhap();
-
-            OpenChilForm(f1, sender);
+            labelDangNhap.Visible = false;
+            OpenChilForm(new DangNhap(), sender);
            
         }
 
         private void labelDangKy_Click(object sender, EventArgs e)
         {
+            labelDangNhap.Visible = true;
             OpenChilForm(new DangKyThongTin(), sender);
         }
 

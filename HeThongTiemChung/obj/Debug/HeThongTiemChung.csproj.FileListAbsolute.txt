@@ -63,3 +63,36 @@ C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiem
 C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.csproj.GenerateResource.cache
 C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.exe
 C:\Users\ACER\OneDrive - VNU-HCMUS\Documents\GitHub\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.pdb
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\bin\Debug\HeThongTiemChung.exe.config
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\bin\Debug\HeThongTiemChung.exe
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\bin\Debug\HeThongTiemChung.pdb
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.csproj.AssemblyReference.cache
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.BoPhanQuanLy.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.KH_DangKyTiem.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.DangKyThongTin.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.DangNhap.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.KhachHang.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.KH_DatMua.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.KH_ThanhToan.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.KH_ThanhToan_Dot.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.KH_ThanhToan_MotLan.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.Main.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NhanVien.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NhanVienKeToan.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NhanVienQuanLy.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NhanVienTiepTan.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NhapThongTinCaNhan.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NVTT_DangKyTiem.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NVTT_DatMua.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NV_DangKyLichRanh.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.NV_XemLichLamViec.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.Properties.Resources.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.TopDangKyLichRanh.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.TopDangKyTiem.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.TopDatMua.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.TopThanhToan.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.TopXemLichLamViec.resources
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.csproj.GenerateResource.cache
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.csproj.CoreCompileInputs.cache
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.exe
+D:\gitPTTK\HeThongTiemChung\HeThongTiemChung\obj\Debug\HeThongTiemChung.pdb

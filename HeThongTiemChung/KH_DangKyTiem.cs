@@ -37,9 +37,28 @@ namespace HeThongTiemChung
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
+            if (radioButtonChonGoiVaccine.Checked== true)
+            {
+                if (textBoxChonSoLuong.Text.Length > textBoxSoLuongTonGoiVaccine.Text.Length)
+                {
+                    MessageBox.Show("Số lượng bạn nhập lớn hơn số lượng tồn vui lòng nhập lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    textBoxChonSoLuong.Focus();
+                    return;
+                }
+            }
+            else
+            {
+                if (textBoxChonSoLuong.Text.Length > textBoxGiaVaccine.Text.Length)
+                {
+                    MessageBox.Show("Số lượng bạn nhập lớn hơn số lượng tồn vui lòng nhập lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    textBoxChonSoLuong.Focus();
+                    return;
+                }
+            }
 
             Random Ma = new Random();
             string MaPDK = "DK" + Ma.Next(00000001, 99999999).ToString();
+
             PhieuDangKy_Controller pdk = PhieuDangKy_Controller.TaoPhieuDangKy(MaPDK, "MaKH", dateTimePickerNgayDangKy.Text, dateTimePickerNgayMuonTiem.Text, comboBoxTrungTam.Text);
 
             PhieuDangKy_Controller.ThemPhieuDangKy(pdk);
@@ -112,13 +131,9 @@ namespace HeThongTiemChung
         }
 
         private void KH_DangKyTiem_Load(object sender, EventArgs e)
-        {
-
-           
+        {             
 
             radioButtonChonVaccine.Checked = true;
-
-
 
             DataSet dt = TrungTam_Controller.LayThongTinTT();
             comboBoxTrungTam.DataSource = dt.Tables[0];

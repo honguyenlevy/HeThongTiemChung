@@ -40,16 +40,17 @@ namespace HeThongTiemChung
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(130)))));
             this.tableLayoutPanel1.ColumnCount = 5;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.225806F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96.77419F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 212F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 182F));
-            this.tableLayoutPanel1.Controls.Add(this.labelDangKy, 2, 0);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
+            this.tableLayoutPanel1.Controls.Add(this.labelDangKy, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelDangXuat, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.labelDangNhap, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.labelDangNhap, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -64,7 +65,7 @@ namespace HeThongTiemChung
             this.labelDangKy.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelDangKy.AutoSize = true;
-            this.labelDangKy.Location = new System.Drawing.Point(876, 0);
+            this.labelDangKy.Location = new System.Drawing.Point(1087, 0);
             this.labelDangKy.Name = "labelDangKy";
             this.labelDangKy.Size = new System.Drawing.Size(163, 100);
             this.labelDangKy.TabIndex = 2;
@@ -90,7 +91,7 @@ namespace HeThongTiemChung
             this.labelDangXuat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelDangXuat.AutoSize = true;
-            this.labelDangXuat.Location = new System.Drawing.Point(1268, 0);
+            this.labelDangXuat.Location = new System.Drawing.Point(1267, 0);
             this.labelDangXuat.Name = "labelDangXuat";
             this.labelDangXuat.Size = new System.Drawing.Size(101, 100);
             this.labelDangXuat.TabIndex = 3;
@@ -103,7 +104,7 @@ namespace HeThongTiemChung
             this.labelDangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelDangNhap.AutoSize = true;
-            this.labelDangNhap.Location = new System.Drawing.Point(1088, 0);
+            this.labelDangNhap.Location = new System.Drawing.Point(875, 0);
             this.labelDangNhap.Name = "labelDangNhap";
             this.labelDangNhap.Size = new System.Drawing.Size(108, 100);
             this.labelDangNhap.TabIndex = 1;
@@ -123,6 +124,7 @@ namespace HeThongTiemChung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(1448, 703);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.tableLayoutPanel1);

@@ -33,13 +33,62 @@ namespace HeThongTiemChung
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
+            if (textBoxHoVaTen.Text.Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập họ và tên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxHoVaTen.Focus();
+                return;
+            }
+
+            if (comboBoxGioiTinh.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải chọn giới tính", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                comboBoxGioiTinh.Focus();
+                return;
+            }
+
+            if (textBoxSoDienThoai.Text.Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxSoDienThoai.Focus();
+                return;
+            }
+
+            if (textBoxDiaChi.Text.Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập địa chỉ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxDiaChi.Focus();
+                return;
+            }
+
             KhachHang_Controller a = KhachHang_Controller.TaoMoiKH(textBoxMaKH.Text,textBoxHoVaTen.Text, dateTimePickerNgaySinh.Text, comboBoxGioiTinh.Text, textBoxSoDienThoai.Text, textBoxDiaChi.Text);
 
             bool ok = KhachHang_Controller.ThemKhachHang(a);
 
             if(checkBoxLaTreEm.Checked==true)
             {
-               ThanNhan_Controller  b = ThanNhan_Controller.TaoMoiThanNhan(textBoxMaKH.Text,textBoxHoTenNguoiGiamHo.Text, comboBoxQuanHe.Text, textBoxSoDienThoaiNguoiGiamHo.Text);
+                if (textBoxHoTenNguoiGiamHo.Text.Length == 0)
+                {
+                    MessageBox.Show("Bạn phải nhập họ tên người giám hộ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    textBoxHoTenNguoiGiamHo.Focus();
+                    return;
+                }
+
+                if (textBoxSoDienThoaiNguoiGiamHo.Text.Length == 0)
+                {
+                    MessageBox.Show("Bạn phải nhập số điện thoại người giám hộ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    textBoxSoDienThoaiNguoiGiamHo.Focus();
+                    return;
+                }
+
+                if (comboBoxQuanHe.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Bạn phải chọn quan hệ như thế nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    comboBoxQuanHe.Focus();
+                    return;
+                }
+
+                ThanNhan_Controller  b = ThanNhan_Controller.TaoMoiThanNhan(textBoxMaKH.Text,textBoxHoTenNguoiGiamHo.Text, comboBoxQuanHe.Text, textBoxSoDienThoaiNguoiGiamHo.Text);
                 ThanNhan_Controller.ThemThanNhan(b);
             }
         }
@@ -48,17 +97,12 @@ namespace HeThongTiemChung
         {
             Random MaKH = new Random();
             textBoxMaKH.Text = "KH" + MaKH.Next(00000001, 99999999).ToString();
-   
-
 
             comboBoxGioiTinh.DisplayMember = "Text";
             comboBoxGioiTinh.ValueMember = "Value";
 
             comboBoxGioiTinh.Items.Add(new { Text = "Nam", Value = "Nam" });
             comboBoxGioiTinh.Items.Add(new { Text = "Nu", Value = "Nu" });
-
-
-
 
             comboBoxQuanHe.DisplayMember = "Text";
             comboBoxQuanHe.ValueMember = "Value";

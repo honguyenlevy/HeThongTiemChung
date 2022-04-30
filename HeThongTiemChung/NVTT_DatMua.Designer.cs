@@ -41,11 +41,11 @@ namespace HeThongTiemChung
             this.textBoxSoDienThoaiKhachHang = new System.Windows.Forms.TextBox();
             this.textBoxTenKhachHang = new System.Windows.Forms.TextBox();
             this.buttonSearchKH = new System.Windows.Forms.Button();
+            this.textBoxSoLuong = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridViewVaccine = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.textBoxSoLuong = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVaccine)).BeginInit();
@@ -68,9 +68,9 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.Controls.Add(this.label3, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.textBoxSoDienThoaiKhachHang, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.textBoxTenKhachHang, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.buttonSearchKH, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.textBoxSoLuong, 3, 7);
             this.tableLayoutPanel1.Controls.Add(this.label4, 3, 6);
+            this.tableLayoutPanel1.Controls.Add(this.buttonSearchKH, 4, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -141,12 +141,13 @@ namespace HeThongTiemChung
             // 
             this.buttonSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
             this.buttonSubmit.Location = new System.Drawing.Point(716, 233);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(184, 44);
             this.buttonSubmit.TabIndex = 1;
             this.buttonSubmit.Text = "Submit";
-            this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.UseVisualStyleBackColor = false;
             this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // label2
@@ -187,47 +188,16 @@ namespace HeThongTiemChung
             // 
             // buttonSearchKH
             // 
-            this.buttonSearchKH.Location = new System.Drawing.Point(906, 103);
+            this.buttonSearchKH.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonSearchKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
+            this.buttonSearchKH.Location = new System.Drawing.Point(906, 133);
             this.buttonSearchKH.Name = "buttonSearchKH";
-            this.buttonSearchKH.Size = new System.Drawing.Size(294, 23);
+            this.buttonSearchKH.Size = new System.Drawing.Size(294, 24);
             this.buttonSearchKH.TabIndex = 12;
             this.buttonSearchKH.Text = "Search";
-            this.buttonSearchKH.UseVisualStyleBackColor = true;
+            this.buttonSearchKH.UseVisualStyleBackColor = false;
             this.buttonSearchKH.Click += new System.EventHandler(this.buttonSearchKH_Click);
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Controls.Add(this.dataGridViewVaccine, 1, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 293);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1200, 410);
-            this.tableLayoutPanel2.TabIndex = 2;
-            // 
-            // dataGridViewVaccine
-            // 
-            this.dataGridViewVaccine.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewVaccine.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewVaccine.Location = new System.Drawing.Point(23, 3);
-            this.dataGridViewVaccine.Name = "dataGridViewVaccine";
-            this.dataGridViewVaccine.RowHeadersWidth = 51;
-            this.dataGridViewVaccine.RowTemplate.Height = 24;
-            this.dataGridViewVaccine.Size = new System.Drawing.Size(1154, 404);
-            this.dataGridViewVaccine.TabIndex = 0;
-            this.dataGridViewVaccine.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewVaccine_CellContentClick);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // textBoxSoLuong
             // 
@@ -248,10 +218,46 @@ namespace HeThongTiemChung
             this.label4.Text = "Số Lượng";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Controls.Add(this.dataGridViewVaccine, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 293);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 410F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1200, 410);
+            this.tableLayoutPanel2.TabIndex = 2;
+            // 
+            // dataGridViewVaccine
+            // 
+            this.dataGridViewVaccine.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
+            this.dataGridViewVaccine.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewVaccine.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewVaccine.Location = new System.Drawing.Point(23, 3);
+            this.dataGridViewVaccine.Name = "dataGridViewVaccine";
+            this.dataGridViewVaccine.RowHeadersWidth = 51;
+            this.dataGridViewVaccine.RowTemplate.Height = 24;
+            this.dataGridViewVaccine.Size = new System.Drawing.Size(1154, 404);
+            this.dataGridViewVaccine.TabIndex = 0;
+            this.dataGridViewVaccine.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewVaccine_CellContentClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // NVTT_DatMua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(1200, 703);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);

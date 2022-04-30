@@ -41,6 +41,7 @@ namespace HeThongTiemChung
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(130)))));
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
@@ -87,9 +88,8 @@ namespace HeThongTiemChung
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(57, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 46);
+            this.label1.Size = new System.Drawing.Size(0, 46);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nhân viên";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelXemLichLamViec
@@ -117,6 +117,7 @@ namespace HeThongTiemChung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(1200, 703);
             this.Controls.Add(this.panelNhanVien);
             this.Controls.Add(this.tableLayoutPanel1);

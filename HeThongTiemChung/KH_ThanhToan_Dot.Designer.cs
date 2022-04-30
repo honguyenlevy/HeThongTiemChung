@@ -231,12 +231,13 @@ namespace HeThongTiemChung
             // 
             this.buttonThanhToan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
             this.buttonThanhToan.Location = new System.Drawing.Point(830, 463);
             this.buttonThanhToan.Name = "buttonThanhToan";
             this.buttonThanhToan.Size = new System.Drawing.Size(167, 44);
             this.buttonThanhToan.TabIndex = 22;
             this.buttonThanhToan.Text = "Thanh toán";
-            this.buttonThanhToan.UseVisualStyleBackColor = true;
+            this.buttonThanhToan.UseVisualStyleBackColor = false;
             this.buttonThanhToan.Click += new System.EventHandler(this.buttonThanhToan_Click);
             // 
             // label3
@@ -293,6 +294,7 @@ namespace HeThongTiemChung
             this.comboBoxLanThanhToan.Name = "comboBoxLanThanhToan";
             this.comboBoxLanThanhToan.Size = new System.Drawing.Size(294, 33);
             this.comboBoxLanThanhToan.TabIndex = 29;
+            this.comboBoxLanThanhToan.SelectedIndexChanged += new System.EventHandler(this.comboBoxLanThanhToan_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -339,6 +341,7 @@ namespace HeThongTiemChung
             // 
             // dataGridViewThongTinHoaDon
             // 
+            this.dataGridViewThongTinHoaDon.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.dataGridViewThongTinHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewThongTinHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewThongTinHoaDon.Location = new System.Drawing.Point(3, 53);
@@ -353,6 +356,7 @@ namespace HeThongTiemChung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(1719, 703);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel2);

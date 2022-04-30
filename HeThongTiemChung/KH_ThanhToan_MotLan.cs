@@ -20,12 +20,28 @@ namespace HeThongTiemChung
 
         private void buttonThanhToan_Click(object sender, EventArgs e)
         {
+            if (comboBoxTenNganHang.Text.Length == 0)
+            {
+                MessageBox.Show("Bạn phải chọn tên ngân hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                comboBoxTenNganHang.Focus();
+                return;
+            }
 
+            if (textBoxSoThe.Text.Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập số thẻ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxSoThe.Focus();
+                return;
+            }
         }
 
         private void dataGridViewThongTinHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (dataGridViewThongTinHoaDon.CurrentRow != null && dataGridViewThongTinHoaDon.CurrentRow.Index > -1)
+            {
+                string value2 = dataGridViewThongTinHoaDon.CurrentRow.Cells[1].Value != null ? dataGridViewThongTinHoaDon.CurrentRow.Cells[1].Value.ToString() : "";
+                textBoxTongTien.Text = value2;
+            }
         }
 
         private void KH_ThanhToan_MotLan_Load(object sender, EventArgs e)

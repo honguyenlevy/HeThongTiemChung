@@ -86,6 +86,7 @@ namespace HeThongTiemChung
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(130)))));
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
@@ -124,10 +125,11 @@ namespace HeThongTiemChung
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.496403F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 95.50359F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel3.Controls.Add(this.dataGridView1, 1, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(1066, 62);
@@ -140,13 +142,14 @@ namespace HeThongTiemChung
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(27, 53);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(524, 585);
+            this.dataGridView1.Size = new System.Drawing.Size(522, 585);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel1
@@ -161,6 +164,7 @@ namespace HeThongTiemChung
             // 
             // tableLayoutPanel4
             // 
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.tableLayoutPanel4.ColumnCount = 10;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
@@ -609,28 +613,31 @@ namespace HeThongTiemChung
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Location = new System.Drawing.Point(868, 273);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 54);
             this.button1.TabIndex = 33;
             this.button1.Text = "Accept";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.UseWaitCursor = true;
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Location = new System.Drawing.Point(768, 273);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 54);
             this.button2.TabIndex = 34;
             this.button2.Text = "Refuse";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.UseWaitCursor = true;
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.tableLayoutPanel2.ColumnCount = 5;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 146F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 280F));
@@ -678,27 +685,26 @@ namespace HeThongTiemChung
             // textBoxTenNhanVien
             // 
             this.textBoxTenNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxTenNhanVien.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxTenNhanVien.ForeColor = System.Drawing.SystemColors.ControlText;
             this.textBoxTenNhanVien.Location = new System.Drawing.Point(149, 103);
             this.textBoxTenNhanVien.Name = "textBoxTenNhanVien";
             this.textBoxTenNhanVien.Size = new System.Drawing.Size(274, 30);
             this.textBoxTenNhanVien.TabIndex = 2;
-            this.textBoxTenNhanVien.Text = "Tên nhân viên";
             // 
             // textBoxViTri
             // 
             this.textBoxViTri.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxViTri.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxViTri.ForeColor = System.Drawing.SystemColors.ControlText;
             this.textBoxViTri.Location = new System.Drawing.Point(449, 103);
             this.textBoxViTri.Name = "textBoxViTri";
             this.textBoxViTri.Size = new System.Drawing.Size(274, 30);
             this.textBoxViTri.TabIndex = 3;
-            this.textBoxViTri.Text = "Vị trí";
             // 
             // BoPhanQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(1643, 703);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel3);
