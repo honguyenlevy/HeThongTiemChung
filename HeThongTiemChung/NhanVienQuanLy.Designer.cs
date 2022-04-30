@@ -118,7 +118,7 @@ namespace HeThongTiemChung
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.38931F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 507F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 595F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
             this.tableLayoutPanel2.Controls.Add(this.radioButtonVaccine, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label2, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.textBoxMaDon, 2, 1);
@@ -153,7 +153,7 @@ namespace HeThongTiemChung
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(467, 35);
+            this.label2.Location = new System.Drawing.Point(466, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 35);
             this.label2.TabIndex = 0;
@@ -163,14 +163,14 @@ namespace HeThongTiemChung
             // textBoxMaDon
             // 
             this.textBoxMaDon.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxMaDon.Location = new System.Drawing.Point(520, 38);
+            this.textBoxMaDon.Location = new System.Drawing.Point(519, 38);
             this.textBoxMaDon.Name = "textBoxMaDon";
             this.textBoxMaDon.Size = new System.Drawing.Size(287, 30);
             this.textBoxMaDon.TabIndex = 1;
             // 
             // textBoxSoLuong
             // 
-            this.textBoxSoLuong.Location = new System.Drawing.Point(1027, 38);
+            this.textBoxSoLuong.Location = new System.Drawing.Point(1026, 38);
             this.textBoxSoLuong.Name = "textBoxSoLuong";
             this.textBoxSoLuong.Size = new System.Drawing.Size(560, 30);
             this.textBoxSoLuong.TabIndex = 3;
@@ -180,7 +180,7 @@ namespace HeThongTiemChung
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1519, 0);
+            this.label3.Location = new System.Drawing.Point(1518, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 35);
             this.label3.TabIndex = 4;
@@ -192,7 +192,7 @@ namespace HeThongTiemChung
             this.buttonDuyet.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonDuyet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
-            this.buttonDuyet.Location = new System.Drawing.Point(1465, 73);
+            this.buttonDuyet.Location = new System.Drawing.Point(1464, 73);
             this.buttonDuyet.Name = "buttonDuyet";
             this.buttonDuyet.Size = new System.Drawing.Size(151, 34);
             this.buttonDuyet.TabIndex = 2;

@@ -36,7 +36,7 @@ namespace HeThongTiemChung
             this.label10 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePickerNgayLap = new System.Windows.Forms.DateTimePicker();
-            this.textBoxSoLanThanhToan = new System.Windows.Forms.TextBox();
+            this.textBoxSoTienConNo = new System.Windows.Forms.TextBox();
             this.comboBoxTenNganHang = new System.Windows.Forms.ComboBox();
             this.textBoxSoThe = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -73,7 +73,7 @@ namespace HeThongTiemChung
             this.tableLayoutPanel2.Controls.Add(this.label10, 3, 8);
             this.tableLayoutPanel2.Controls.Add(this.label4, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.dateTimePickerNgayLap, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.textBoxSoLanThanhToan, 3, 3);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxSoTienConNo, 3, 3);
             this.tableLayoutPanel2.Controls.Add(this.comboBoxTenNganHang, 1, 9);
             this.tableLayoutPanel2.Controls.Add(this.textBoxSoThe, 3, 9);
             this.tableLayoutPanel2.Controls.Add(this.label5, 5, 2);
@@ -105,6 +105,7 @@ namespace HeThongTiemChung
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1188, 703);
             this.tableLayoutPanel2.TabIndex = 1;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // label2
             // 
@@ -175,14 +176,14 @@ namespace HeThongTiemChung
             this.dateTimePickerNgayLap.Size = new System.Drawing.Size(294, 30);
             this.dateTimePickerNgayLap.TabIndex = 6;
             // 
-            // textBoxSoLanThanhToan
+            // textBoxSoTienConNo
             // 
-            this.textBoxSoLanThanhToan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxSoLanThanhToan.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxSoLanThanhToan.Location = new System.Drawing.Point(393, 143);
-            this.textBoxSoLanThanhToan.Name = "textBoxSoLanThanhToan";
-            this.textBoxSoLanThanhToan.Size = new System.Drawing.Size(294, 30);
-            this.textBoxSoLanThanhToan.TabIndex = 20;
+            this.textBoxSoTienConNo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxSoTienConNo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.textBoxSoTienConNo.Location = new System.Drawing.Point(393, 143);
+            this.textBoxSoTienConNo.Name = "textBoxSoTienConNo";
+            this.textBoxSoTienConNo.Size = new System.Drawing.Size(294, 30);
+            this.textBoxSoTienConNo.TabIndex = 20;
             // 
             // comboBoxTenNganHang
             // 
@@ -222,9 +223,9 @@ namespace HeThongTiemChung
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(393, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 40);
+            this.label1.Size = new System.Drawing.Size(134, 40);
             this.label1.TabIndex = 23;
-            this.label1.Text = "Số lần thanh toán";
+            this.label1.Text = "Số tiền còn lại";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // buttonThanhToan
@@ -281,9 +282,9 @@ namespace HeThongTiemChung
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(83, 240);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(142, 40);
+            this.label7.Size = new System.Drawing.Size(272, 40);
             this.label7.TabIndex = 28;
-            this.label7.Text = "Lần thanh toán";
+            this.label7.Text = "Chọn Tổng số Lần thanh toán";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // comboBoxLanThanhToan
@@ -383,7 +384,7 @@ namespace HeThongTiemChung
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePickerNgayLap;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxSoLanThanhToan;
+        private System.Windows.Forms.TextBox textBoxSoTienConNo;
         private System.Windows.Forms.ComboBox comboBoxTenNganHang;
         private System.Windows.Forms.TextBox textBoxSoThe;
         private System.Windows.Forms.Button buttonThanhToan;

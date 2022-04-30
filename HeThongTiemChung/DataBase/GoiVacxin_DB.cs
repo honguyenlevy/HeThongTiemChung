@@ -63,7 +63,7 @@ namespace HeThongTiemChung.DataBase
         public static void CapNhatSoLuongDat(string Mavaccine, int SoLuong)
         {
             string sql = "update goitiem set SLDat = SLDat + " + SoLuong + " where magoi = '" + Mavaccine + "'";
-
+            
             ConnectData.RunSQL(sql);
 
         }
@@ -72,14 +72,14 @@ namespace HeThongTiemChung.DataBase
         public static void CapNhatSoLuongTon(string Mavaccine, int SoLuong)
         {
             string sql = "update goitiem set Soluong = Soluong - " + SoLuong + " where magoi = '" + Mavaccine + "'";
-
+            MessageBox.Show(sql);
             ConnectData.RunSQL(sql);
 
         }
 
         public static DataSet LayGoiVaccineCanDatMua()
         {
-            string sql = "select * from goitiem where sldat>0;";
+            string sql = "select * from goitiem where sldat > 0;";
 
 
             DataSet data = new DataSet();

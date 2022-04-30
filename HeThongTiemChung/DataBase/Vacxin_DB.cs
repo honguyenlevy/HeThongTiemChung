@@ -77,7 +77,7 @@ namespace HeThongTiemChung.DataBase
 
         public static DataSet LayDSVaccineCanDatMua()
         {
-            string sql = " select* from VACXIN where sldat > 0";
+            string sql = " select * from VACXIN  where sldat >0";
 
 
             DataSet data = new DataSet();

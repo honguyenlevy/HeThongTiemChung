@@ -36,6 +36,7 @@ namespace HeThongTiemChung.DataBase
             dap.Fill(data);
 
 
+
             return data;
         }
     }

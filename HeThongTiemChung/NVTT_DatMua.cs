@@ -30,10 +30,31 @@ namespace HeThongTiemChung
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-            DatMua_Controller a = DatMua_Controller.TaoDatMua(textBoxTen.Text, Int32.Parse(textBoxSoLuong.Text));
-            DatMua_Controller.CapNhatDatMua(a);
+            if (textBoxSoLuong.Text.Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập số lượng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxSoLuong.Focus();
+                return;
+            }
 
-            MessageBox.Show("ĐẶT MUA THÀNH CÔNG");
+            string MaVaccine = dataGridViewVaccine.CurrentRow.Cells[0].Value != null ? dataGridViewVaccine.CurrentRow.Cells[0].Value.ToString() : "";
+
+            if (radioButtonChonVaccine.Checked == true)
+            {
+                Vacxin_Controller.CapnhatSLDat(MaVaccine, Int32.Parse(textBoxSoLuong.Text));
+                dataGridViewVaccine.DataSource = Vacxin_Controller.LayDSVacXin().Tables[0];
+            }
+            else
+            {
+                GoiVacxin_Controller.CapnhatSLDat(MaVaccine, Int32.Parse(textBoxSoLuong.Text));
+
+
+                dataGridViewVaccine.DataSource = GoiVacxin_Controller.LayDSGoiVacXin().Tables[0];
+            }
+
+            MessageBox.Show("ĐÃ ĐẶT HÀNG THÀNH CÔNG !");
+            textBoxTen.Text = "";
+            textBoxSoLuong.Text = "";
         }
 
         private void dataGridViewVaccine_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -60,7 +81,7 @@ namespace HeThongTiemChung
 
         private void NVTT_DatMua_Load(object sender, EventArgs e)
         {
-            //dataGridViewVaccine.DataSource = Vacxin_Controller.LayDSVacXin().Tables[0];
+            
             radioButtonChonVaccine.Checked = true;
         }
 

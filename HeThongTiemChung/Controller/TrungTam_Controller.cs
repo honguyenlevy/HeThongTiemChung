@@ -29,5 +29,11 @@ namespace HeThongTiemChung.Controller
             string dt = TrungTam_DB.LayDiaChiTrungTam(TenTrungTam);
             return dt;
         }
+
+        public static string LayMaTrungTam(string TenTrungTam)
+        {
+            string dt = TrungTam_DB.LayMaTrungTam(TenTrungTam);
+            return dt;
+        }
     }
 }

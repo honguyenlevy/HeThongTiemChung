@@ -53,6 +53,21 @@ namespace HeThongTiemChung.Controller
 
         }
 
- 
+
+        public static string LayMaKH(string SDT)
+        {
+
+            DataSet dt = KhachHang_DB.LayThongTinKH(SDT);
+
+            string MaKH = "";
+            if (dt.Tables[0].Rows.Count > 0)
+            {
+               MaKH = dt.Tables[0].Rows[0][0].ToString();
+            }
+
+            return MaKH;
+
+        }
+
     }
 }

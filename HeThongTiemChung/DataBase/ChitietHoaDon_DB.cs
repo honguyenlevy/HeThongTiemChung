@@ -13,16 +13,21 @@ namespace HeThongTiemChung.DataBase
 {
     class ChitietHoaDon_DB
     {
+        
         public static SqlConnection conn = ConnectData.SqlConnect();
-        public static bool ThemChitietHoaDon(string MaHoaDon, int LanThanhToan, int SoTien)
+
+        
+        public static bool ThemChitietHoaDon(string MaHoaDon,  int SoTien)
         {
 
 
-            string sql = "insert into chitietthanhtoan values('" + MaHoaDon + "', '" + LanThanhToan + "' , '" + SoTien + "' )";
+            string sql = "insert into ct_ttdot (MaHoaDon,SoTien) values('" + MaHoaDon +  "' , '" + SoTien + "' )";
 
             ConnectData.RunSQL(sql);
             return true;
 
         }
+
+
     }
 }

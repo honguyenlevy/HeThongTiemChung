@@ -16,11 +16,11 @@ namespace HeThongTiemChung.DataBase
     {
         public static SqlConnection conn = ConnectData.SqlConnect();
 
-        public static bool ThemChiTiet(string MaHD, string MaVaccine, int Gia, int SoLuong)
+        public static bool ThemChiTiet(string MaPhieu,  int SoLuong, int TinhTrang ,string MaVaccine)
         {
             
 
-            string sql = "insert into chitietphieutiem values('" + MaHD + "', '" + MaVaccine + "' , '" + Gia + " ','" + SoLuong  + "' )";
+            string sql = "insert into chitietdangky values('" + MaPhieu + "', '" + SoLuong + "' , '" + TinhTrang + " ','" + MaVaccine  + "' )";
 
             ConnectData.RunSQL(sql);
             return true;

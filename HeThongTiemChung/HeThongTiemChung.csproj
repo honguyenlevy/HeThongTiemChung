@@ -55,7 +55,6 @@
     <Compile Include="ConnectData.cs" />
     <Compile Include="Controller\ChitietHoaDon_Controller.cs" />
     <Compile Include="Controller\ChitietPhieuTiem_Controller.cs" />
-    <Compile Include="Controller\DatMua_Controller.cs" />
     <Compile Include="Controller\GoiVacxin_Controller.cs" />
     <Compile Include="Controller\HoaDon_Controller.cs" />
     <Compile Include="Controller\KhachHang_Controller.cs" />
@@ -66,7 +65,6 @@
     <Compile Include="Controller\Vacxin_Controller.cs" />
     <Compile Include="DataBase\ChitietHoaDon_DB.cs" />
     <Compile Include="DataBase\ChitietPhieuTiem_DB.cs" />
-    <Compile Include="DataBase\DatMua_DB.cs" />
     <Compile Include="DataBase\GoiVacxin_DB.cs" />
     <Compile Include="DataBase\HoaDon_DB.cs" />
     <Compile Include="DataBase\KhachHang_DB.cs" />

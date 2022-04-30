@@ -32,17 +32,17 @@ namespace HeThongTiemChung
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePickerNgayLap = new System.Windows.Forms.DateTimePicker();
-            this.textBoxTongTien = new System.Windows.Forms.TextBox();
+            this.buttonThanhToan = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.dateTimePickerNgayLap = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxTongTien = new System.Windows.Forms.TextBox();
+            this.comboBoxTenNganHang = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBoxSoThe = new System.Windows.Forms.TextBox();
-            this.comboBoxTenNganHang = new System.Windows.Forms.ComboBox();
             this.dataGridViewThongTinHoaDon = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonThanhToan = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewThongTinHoaDon)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
@@ -105,35 +105,18 @@ namespace HeThongTiemChung
             this.label4.Text = "Ngày lập";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // buttonThanhToan
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(566, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 34);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Tổng tiền";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // dateTimePickerNgayLap
-            // 
-            this.dateTimePickerNgayLap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePickerNgayLap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerNgayLap.Location = new System.Drawing.Point(3, 88);
-            this.dateTimePickerNgayLap.Name = "dateTimePickerNgayLap";
-            this.dateTimePickerNgayLap.Size = new System.Drawing.Size(504, 30);
-            this.dateTimePickerNgayLap.TabIndex = 6;
-            // 
-            // textBoxTongTien
-            // 
-            this.textBoxTongTien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTongTien.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxTongTien.Location = new System.Drawing.Point(566, 88);
-            this.textBoxTongTien.Name = "textBoxTongTien";
-            this.textBoxTongTien.Size = new System.Drawing.Size(505, 30);
-            this.textBoxTongTien.TabIndex = 20;
+            this.buttonThanhToan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
+            this.buttonThanhToan.Location = new System.Drawing.Point(887, 275);
+            this.buttonThanhToan.Name = "buttonThanhToan";
+            this.buttonThanhToan.Size = new System.Drawing.Size(184, 67);
+            this.buttonThanhToan.TabIndex = 22;
+            this.buttonThanhToan.Text = "Thanh toán";
+            this.buttonThanhToan.UseVisualStyleBackColor = false;
+            this.buttonThanhToan.Click += new System.EventHandler(this.buttonThanhToan_Click);
             // 
             // label8
             // 
@@ -160,6 +143,46 @@ namespace HeThongTiemChung
             this.label9.Text = "Tên ngân hàng";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // dateTimePickerNgayLap
+            // 
+            this.dateTimePickerNgayLap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePickerNgayLap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerNgayLap.Location = new System.Drawing.Point(3, 88);
+            this.dateTimePickerNgayLap.Name = "dateTimePickerNgayLap";
+            this.dateTimePickerNgayLap.Size = new System.Drawing.Size(504, 30);
+            this.dateTimePickerNgayLap.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(566, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 34);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Tổng tiền";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBoxTongTien
+            // 
+            this.textBoxTongTien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxTongTien.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.textBoxTongTien.Location = new System.Drawing.Point(566, 88);
+            this.textBoxTongTien.Name = "textBoxTongTien";
+            this.textBoxTongTien.Size = new System.Drawing.Size(505, 30);
+            this.textBoxTongTien.TabIndex = 20;
+            // 
+            // comboBoxTenNganHang
+            // 
+            this.comboBoxTenNganHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxTenNganHang.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.comboBoxTenNganHang.FormattingEnabled = true;
+            this.comboBoxTenNganHang.Location = new System.Drawing.Point(3, 224);
+            this.comboBoxTenNganHang.Name = "comboBoxTenNganHang";
+            this.comboBoxTenNganHang.Size = new System.Drawing.Size(504, 33);
+            this.comboBoxTenNganHang.TabIndex = 18;
+            // 
             // label10
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -180,16 +203,6 @@ namespace HeThongTiemChung
             this.textBoxSoThe.Name = "textBoxSoThe";
             this.textBoxSoThe.Size = new System.Drawing.Size(505, 30);
             this.textBoxSoThe.TabIndex = 21;
-            // 
-            // comboBoxTenNganHang
-            // 
-            this.comboBoxTenNganHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxTenNganHang.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.comboBoxTenNganHang.FormattingEnabled = true;
-            this.comboBoxTenNganHang.Location = new System.Drawing.Point(3, 225);
-            this.comboBoxTenNganHang.Name = "comboBoxTenNganHang";
-            this.comboBoxTenNganHang.Size = new System.Drawing.Size(504, 33);
-            this.comboBoxTenNganHang.TabIndex = 18;
             // 
             // dataGridViewThongTinHoaDon
             // 
@@ -221,19 +234,6 @@ namespace HeThongTiemChung
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1200, 703);
             this.tableLayoutPanel3.TabIndex = 4;
-            // 
-            // buttonThanhToan
-            // 
-            this.buttonThanhToan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
-            this.buttonThanhToan.Location = new System.Drawing.Point(887, 275);
-            this.buttonThanhToan.Name = "buttonThanhToan";
-            this.buttonThanhToan.Size = new System.Drawing.Size(184, 67);
-            this.buttonThanhToan.TabIndex = 22;
-            this.buttonThanhToan.Text = "Thanh toán";
-            this.buttonThanhToan.UseVisualStyleBackColor = false;
-            this.buttonThanhToan.Click += new System.EventHandler(this.buttonThanhToan_Click);
             // 
             // KH_ThanhToan_MotLan
             // 

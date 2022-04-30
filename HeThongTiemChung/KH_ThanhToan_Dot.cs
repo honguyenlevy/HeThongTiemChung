@@ -14,6 +14,9 @@ namespace HeThongTiemChung
 {
     public partial class KH_ThanhToan_Dot : Form
     {
+
+        int SoTienPhaiTra;
+
         public KH_ThanhToan_Dot()
         {
             InitializeComponent();
@@ -21,13 +24,16 @@ namespace HeThongTiemChung
 
         private void dataGridViewThongTinHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
             if (dataGridViewThongTinHoaDon.CurrentRow != null && dataGridViewThongTinHoaDon.CurrentRow.Index > -1)
             {
-                string value1 = dataGridViewThongTinHoaDon.CurrentRow.Cells[0].Value != null ? dataGridViewThongTinHoaDon.CurrentRow.Cells[0].Value.ToString() : "";
-                textBoxSoLanThanhToan.Text = value1;
+                textBoxSoTienConNo.Text= dataGridViewThongTinHoaDon.CurrentRow.Cells[7].Value != null ? dataGridViewThongTinHoaDon.CurrentRow.Cells[7].Value.ToString() : "";
+               
 
-                string value2 = dataGridViewThongTinHoaDon.CurrentRow.Cells[1].Value != null ? dataGridViewThongTinHoaDon.CurrentRow.Cells[1].Value.ToString() : "";
-                textBoxTongTien.Text = value2;
+                textBoxTongTien.Text = dataGridViewThongTinHoaDon.CurrentRow.Cells[6].Value != null ? dataGridViewThongTinHoaDon.CurrentRow.Cells[6].Value.ToString() : "";
+
+               
+                
             }
         }
 
@@ -54,7 +60,12 @@ namespace HeThongTiemChung
                 return;
             }
 
+            string MaHd= dataGridViewThongTinHoaDon.CurrentRow.Cells[0].Value != null ? dataGridViewThongTinHoaDon.CurrentRow.Cells[0].Value.ToString() : "";
 
+            ChitietHoaDon_Controller ct = ChitietHoaDon_Controller.TaoChitietHoaDon(MaHd, SoTienPhaiTra);
+            ChitietHoaDon_Controller.ThemchiTietHoaDon(ct);
+
+            HoaDon_Controller.CapNhatSoTienConNo(MaHd, SoTienPhaiTra);
 
         }
 
@@ -72,12 +83,30 @@ namespace HeThongTiemChung
             comboBoxTenNganHang.Items.Add(new { Text = "AChaubank", Value = "AChaubank" });
 
 
-           
+
+            comboBoxLanThanhToan.DisplayMember = "Text";
+            comboBoxLanThanhToan.ValueMember = "Value";
+
+            comboBoxLanThanhToan.Items.Add(new { Text = "1", Value = "1" });
+            comboBoxLanThanhToan.Items.Add(new { Text = "2", Value = "2" });
+            comboBoxLanThanhToan.Items.Add(new { Text = "3", Value = "3" });
+            comboBoxLanThanhToan.Items.Add(new { Text = "4", Value = "4" });
+            comboBoxLanThanhToan.Items.Add(new { Text = "5", Value = "5" });
+
+
         }
 
         private void comboBoxLanThanhToan_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //textBoxDiaChi.Text = TrungTam_Controller.LayDiaChiTrungTam(comboBoxTrungTam.Text);
+            SoTienPhaiTra = Int32.Parse(textBoxSoTienConNo.Text) / Int32.Parse(comboBoxLanThanhToan.Text);
+            string SoTienPhaiTra_Str = "";
+            SoTienPhaiTra_Str += SoTienPhaiTra;
+            textBoxSoLanCanThanhToan.Text = SoTienPhaiTra_Str;
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

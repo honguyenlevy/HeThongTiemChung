@@ -61,8 +61,11 @@ namespace HeThongTiemChung
 
             //PhieuDangKy_Controller pdk = PhieuDangKy_Controller.TaoPhieuDangKy(MaPDK, "MaKH", dateTimePickerNgayDangKy.Text, dateTimePickerNgayMuonTiem.Text, comboBoxTrungTam.Text);
 
+            string MaKH = KhachHang_Controller.LayMaKH(DangNhap.SDT);
+
+            string MaTT = TrungTam_Controller.LayMaTrungTam(comboBoxTrungTam.Text);
             
-            PhieuDangKy_Controller pdk = PhieuDangKy_Controller.TaoPhieuDangKy(MaPDK, "MaKH", dateTimePickerNgayDangKy.Text, dateTimePickerNgayMuonTiem.Text, "TT00000001");
+            PhieuDangKy_Controller pdk = PhieuDangKy_Controller.TaoPhieuDangKy(MaPDK, MaKH, dateTimePickerNgayDangKy.Text, dateTimePickerNgayMuonTiem.Text, MaTT);
             PhieuDangKy_Controller.ThemPhieuDangKy(pdk);
 
             string MaVaccine = comboBoxTenGoiVaccine.Text;
@@ -95,7 +98,7 @@ namespace HeThongTiemChung
 
             int tongtien = Int32.Parse(textBoxChonSoLuong.Text) * Int32.Parse(Gia);
 
-            HoaDon_Controller hd = HoaDon_Controller.TaoHoaDon(MaHD, "KH000001", "NULL", 0, dateTimePickerNgayDangKy.Text, "Mot Lan", tongtien,"0","0");
+            HoaDon_Controller hd = HoaDon_Controller.TaoHoaDon(MaHD, MaKH, "NULL", 0, dateTimePickerNgayDangKy.Text, "Mot Lan", tongtien,tongtien,"0");
             HoaDon_Controller.ThemHoaDon(hd);
 
 
@@ -143,7 +146,8 @@ namespace HeThongTiemChung
         }
 
         private void KH_DangKyTiem_Load(object sender, EventArgs e)
-        {             
+        {
+            
 
             radioButtonChonVaccine.Checked = true;
 
@@ -201,6 +205,11 @@ namespace HeThongTiemChung
             }
 
 
+
+        }
+
+        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
 
         }
     }

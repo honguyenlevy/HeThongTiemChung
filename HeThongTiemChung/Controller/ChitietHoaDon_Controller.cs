@@ -9,15 +9,15 @@ namespace HeThongTiemChung.Controller
     class ChitietHoaDon_Controller
     {
         private string MaHoaDon;
-        private int LanThanhToan;
+        
         private int SoTien;
 
 
-        public ChitietHoaDon_Controller TaoChitietHoaDon( string MaHoaDon,int LanThanhToan, int SoTien)
+        public static ChitietHoaDon_Controller TaoChitietHoaDon( string MaHoaDon, int SoTien)
         {
             ChitietHoaDon_Controller ct = new ChitietHoaDon_Controller();
             ct.MaHoaDon = MaHoaDon;
-            ct.LanThanhToan = LanThanhToan;
+          
             ct.SoTien = SoTien;
 
             return ct;
@@ -25,7 +25,7 @@ namespace HeThongTiemChung.Controller
 
         public static void ThemchiTietHoaDon(ChitietHoaDon_Controller ct)
         {
-            ChitietHoaDon_DB.ThemChitietHoaDon(ct.MaHoaDon, ct.LanThanhToan, ct.SoTien);
+            ChitietHoaDon_DB.ThemChitietHoaDon(ct.MaHoaDon, ct.SoTien);
 
         }
     }

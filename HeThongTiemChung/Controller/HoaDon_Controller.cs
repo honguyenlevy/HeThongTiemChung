@@ -22,10 +22,10 @@ namespace HeThongTiemChung.Controller
         private string LoaiThanhToan;
         private string NgayLap;
         private int TongTien;
-       private string ThanhToanDot;
+        private int SoTienConNo;
         private string TinhTrang;
 
-       public static  HoaDon_Controller TaoHoaDon(string MaHD,string MaKh,string MaNV, int DuNo, string LoaiTT, string NgayLap,int Tongtien ,string ThanhToanDot, string TinhTrang)
+       public static  HoaDon_Controller TaoHoaDon(string MaHD,string MaKh,string MaNV, int DuNo, string LoaiTT, string NgayLap,int Tongtien ,int SoTienConNo, string TinhTrang)
         {
             HoaDon_Controller hd = new HoaDon_Controller();
             hd.MaHoaDon = MaHD;
@@ -35,7 +35,7 @@ namespace HeThongTiemChung.Controller
             hd.LoaiThanhToan = LoaiTT;
             hd.NgayLap = NgayLap;
             hd.TongTien = Tongtien;
-            hd.ThanhToanDot = ThanhToanDot;
+            hd.SoTienConNo = SoTienConNo;
             hd.TinhTrang = TinhTrang;
 
             return hd;
@@ -43,7 +43,7 @@ namespace HeThongTiemChung.Controller
         }
         public static void ThemHoaDon(HoaDon_Controller Hd)
         {
-            HoaDon_DB.ThemHoaDon(Hd.MaHoaDon, Hd.MaKhachHang, Hd.MaNhanVien, Hd.DuNo, Hd.LoaiThanhToan, Hd.NgayLap, Hd.TongTien,Hd.ThanhToanDot,Hd.TinhTrang);
+            HoaDon_DB.ThemHoaDon(Hd.MaHoaDon, Hd.MaKhachHang, Hd.MaNhanVien, Hd.DuNo, Hd.LoaiThanhToan, Hd.NgayLap, Hd.TongTien,Hd.SoTienConNo,Hd.TinhTrang);
         }
         public static DataSet LayDSHD(string sdt)
         {
@@ -55,6 +55,11 @@ namespace HeThongTiemChung.Controller
         public static void CapNhatTinhTrangHoaDon1Lan(string MaHD, string MaNV)
         {
             HoaDon_DB.CapNhatTinhTrangHoaDon(MaHD, MaNV);
+        }
+
+        public static void CapNhatSoTienConNo(string MaHd, int SoTien)
+        {
+            HoaDon_DB.CapNhatSoTienConNo(MaHd, SoTien);
         }
     }
 }

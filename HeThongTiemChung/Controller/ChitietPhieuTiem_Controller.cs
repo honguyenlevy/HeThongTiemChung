@@ -9,18 +9,18 @@ namespace HeThongTiemChung.Controller
 {
     class ChitietPhieuTiem_Controller
     {
-        private string MaHoaDon;
+        private string MaPhieu;
         private string MaVaccine;
-        private int Gia;
+        private int TinhTrang;
         private int SoLuong;
 
 
-        public static ChitietPhieuTiem_Controller TaoChiTiet(string MaHD, string MaVaccine, int Gia, int SoLuong)
+        public static ChitietPhieuTiem_Controller TaoChiTiet(string MaHD, int SoLuong, int TinhTrang, string MaVaccine  )
         {
             ChitietPhieuTiem_Controller ct = new ChitietPhieuTiem_Controller();
-            ct.MaHoaDon = MaHD;
+            ct.MaPhieu = MaHD;
             ct.MaVaccine = MaVaccine;
-            ct.Gia = Gia;
+            ct.TinhTrang = TinhTrang;
             ct.SoLuong = SoLuong;
 
             return ct;
@@ -29,7 +29,7 @@ namespace HeThongTiemChung.Controller
         public static void ThemChiTiet(ChitietPhieuTiem_Controller ct)
         {
 
-            ChitietPhieuTiem_DB.ThemChiTiet(ct.MaHoaDon, ct.MaVaccine, ct.Gia, ct.SoLuong);
+            ChitietPhieuTiem_DB.ThemChiTiet(ct.MaPhieu, ct.SoLuong,ct.TinhTrang,ct.MaVaccine);
         }
     }
 }

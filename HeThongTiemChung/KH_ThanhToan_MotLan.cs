@@ -36,6 +36,8 @@ namespace HeThongTiemChung
 
             string MaHd= dataGridViewThongTinHoaDon.CurrentRow.Cells[0].Value != null ? dataGridViewThongTinHoaDon.CurrentRow.Cells[0].Value.ToString() : "";
             HoaDon_Controller.CapNhatTinhTrangHoaDon1Lan(MaHd, "NULL");
+
+            dataGridViewThongTinHoaDon.DataSource = HoaDon_Controller.LayDSHD(DangNhap.SDT).Tables[0];
         }
 
         private void dataGridViewThongTinHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
