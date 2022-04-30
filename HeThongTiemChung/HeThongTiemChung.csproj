@@ -75,7 +75,6 @@
     <Compile Include="DataBase\ThanNhan_DB.cs" />
     <Compile Include="DataBase\TrungTam_DB.cs" />
     <Compile Include="DataBase\Vacxin_DB.cs" />
-    <Compile Include="HoaDon_Controller.cs" />
     <Compile Include="KH_DangKyTiem.cs">
       <SubType>Form</SubType>
     </Compile>

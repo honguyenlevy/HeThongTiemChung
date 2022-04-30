@@ -46,6 +46,13 @@ namespace HeThongTiemChung
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
+            if (textBoxSoDienThoaiKhachHang.Text.Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập số điện thoại khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxSoDienThoaiKhachHang.Focus();
+                return;
+            }
+
             DataSet KH = KhachHang_Controller.LayThongTinKH(textBoxSoDienThoaiKhachHang.Text);
             if (KH.Tables.Count < 1)
             {
