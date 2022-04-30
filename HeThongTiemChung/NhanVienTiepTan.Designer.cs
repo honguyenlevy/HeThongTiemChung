@@ -35,8 +35,10 @@ namespace HeThongTiemChung
             this.labelDatMua = new System.Windows.Forms.Label();
             this.labelDangKyTiem = new System.Windows.Forms.Label();
             this.panelNhanVienTiepTan = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelTopNhanVienTiepTan.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -50,12 +52,12 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.Controls.Add(this.panelTopNhanVienTiepTan, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelDatMua, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelDangKyTiem, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1200, 62);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1194, 99);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // panelTopNhanVienTiepTan
@@ -64,7 +66,7 @@ namespace HeThongTiemChung
             this.panelTopNhanVienTiepTan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTopNhanVienTiepTan.Location = new System.Drawing.Point(3, 3);
             this.panelTopNhanVienTiepTan.Name = "panelTopNhanVienTiepTan";
-            this.panelTopNhanVienTiepTan.Size = new System.Drawing.Size(834, 56);
+            this.panelTopNhanVienTiepTan.Size = new System.Drawing.Size(828, 93);
             this.panelTopNhanVienTiepTan.TabIndex = 4;
             // 
             // label1
@@ -84,9 +86,9 @@ namespace HeThongTiemChung
             this.labelDatMua.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelDatMua.AutoSize = true;
-            this.labelDatMua.Location = new System.Drawing.Point(1023, 0);
+            this.labelDatMua.Location = new System.Drawing.Point(1017, 0);
             this.labelDatMua.Name = "labelDatMua";
-            this.labelDatMua.Size = new System.Drawing.Size(157, 62);
+            this.labelDatMua.Size = new System.Drawing.Size(157, 99);
             this.labelDatMua.TabIndex = 2;
             this.labelDatMua.Text = "Đặt mua vaccine";
             this.labelDatMua.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -97,9 +99,9 @@ namespace HeThongTiemChung
             this.labelDangKyTiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelDangKyTiem.AutoSize = true;
-            this.labelDangKyTiem.Location = new System.Drawing.Point(843, 0);
+            this.labelDangKyTiem.Location = new System.Drawing.Point(837, 0);
             this.labelDangKyTiem.Name = "labelDangKyTiem";
-            this.labelDangKyTiem.Size = new System.Drawing.Size(160, 62);
+            this.labelDangKyTiem.Size = new System.Drawing.Size(160, 99);
             this.labelDangKyTiem.TabIndex = 1;
             this.labelDangKyTiem.Text = "Đăng ký tiêm phiếu tiêm chủng";
             this.labelDangKyTiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -108,10 +110,27 @@ namespace HeThongTiemChung
             // panelNhanVienTiepTan
             // 
             this.panelNhanVienTiepTan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelNhanVienTiepTan.Location = new System.Drawing.Point(0, 62);
+            this.panelNhanVienTiepTan.Location = new System.Drawing.Point(3, 108);
             this.panelNhanVienTiepTan.Name = "panelNhanVienTiepTan";
-            this.panelNhanVienTiepTan.Size = new System.Drawing.Size(1200, 641);
+            this.panelNhanVienTiepTan.Size = new System.Drawing.Size(1194, 592);
             this.panelNhanVienTiepTan.TabIndex = 2;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panelNhanVienTiepTan, 0, 1);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1200, 703);
+            this.tableLayoutPanel2.TabIndex = 3;
             // 
             // NhanVienTiepTan
             // 
@@ -119,8 +138,7 @@ namespace HeThongTiemChung
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(1200, 703);
-            this.Controls.Add(this.panelNhanVienTiepTan);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tableLayoutPanel2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "NhanVienTiepTan";
@@ -130,6 +148,7 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.PerformLayout();
             this.panelTopNhanVienTiepTan.ResumeLayout(false);
             this.panelTopNhanVienTiepTan.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -142,5 +161,6 @@ namespace HeThongTiemChung
         private System.Windows.Forms.Label labelDatMua;
         private System.Windows.Forms.Label labelDangKyTiem;
         private System.Windows.Forms.Panel panelNhanVienTiepTan;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }

@@ -37,54 +37,53 @@ namespace HeThongTiemChung
             this.buttonSubmit = new System.Windows.Forms.Button();
             this.textBoxSoLuong = new System.Windows.Forms.TextBox();
             this.labelSL = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridViewVaccine = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVaccine)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 143F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 370F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 370F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 390F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.textBoxTen, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.radioButtonChonGoiVaccine, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.radioButtonChonVaccine, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.buttonSubmit, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBoxSoLuong, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.labelSL, 1, 3);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel1.Controls.Add(this.textBoxTen, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.buttonSubmit, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxSoLuong, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.labelSL, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(63, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1200, 215);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1074, 169);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // textBoxTen
             // 
             this.textBoxTen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxTen.ForeColor = System.Drawing.Color.Black;
-            this.textBoxTen.Location = new System.Drawing.Point(516, 110);
+            this.textBoxTen.Location = new System.Drawing.Point(360, 69);
             this.textBoxTen.Name = "textBoxTen";
-            this.textBoxTen.Size = new System.Drawing.Size(364, 30);
+            this.textBoxTen.Size = new System.Drawing.Size(352, 30);
             this.textBoxTen.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(277, 112);
+            this.label1.Location = new System.Drawing.Point(121, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(233, 25);
             this.label1.TabIndex = 0;
@@ -96,9 +95,9 @@ namespace HeThongTiemChung
             this.radioButtonChonGoiVaccine.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButtonChonGoiVaccine.AutoSize = true;
-            this.radioButtonChonGoiVaccine.Location = new System.Drawing.Point(326, 53);
+            this.radioButtonChonGoiVaccine.Location = new System.Drawing.Point(3, 3);
             this.radioButtonChonGoiVaccine.Name = "radioButtonChonGoiVaccine";
-            this.radioButtonChonGoiVaccine.Size = new System.Drawing.Size(184, 44);
+            this.radioButtonChonGoiVaccine.Size = new System.Drawing.Size(170, 44);
             this.radioButtonChonGoiVaccine.TabIndex = 6;
             this.radioButtonChonGoiVaccine.TabStop = true;
             this.radioButtonChonGoiVaccine.Text = "Chọn gói vaccine";
@@ -110,7 +109,7 @@ namespace HeThongTiemChung
             this.radioButtonChonVaccine.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.radioButtonChonVaccine.AutoSize = true;
-            this.radioButtonChonVaccine.Location = new System.Drawing.Point(516, 53);
+            this.radioButtonChonVaccine.Location = new System.Drawing.Point(179, 3);
             this.radioButtonChonVaccine.Name = "radioButtonChonVaccine";
             this.radioButtonChonVaccine.Size = new System.Drawing.Size(153, 44);
             this.radioButtonChonVaccine.TabIndex = 7;
@@ -124,9 +123,9 @@ namespace HeThongTiemChung
             this.buttonSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
-            this.buttonSubmit.Location = new System.Drawing.Point(886, 153);
+            this.buttonSubmit.Location = new System.Drawing.Point(718, 115);
             this.buttonSubmit.Name = "buttonSubmit";
-            this.buttonSubmit.Size = new System.Drawing.Size(184, 44);
+            this.buttonSubmit.Size = new System.Drawing.Size(184, 51);
             this.buttonSubmit.TabIndex = 1;
             this.buttonSubmit.Text = "Submit";
             this.buttonSubmit.UseVisualStyleBackColor = false;
@@ -134,50 +133,68 @@ namespace HeThongTiemChung
             // 
             // textBoxSoLuong
             // 
-            this.textBoxSoLuong.Location = new System.Drawing.Point(516, 153);
+            this.textBoxSoLuong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSoLuong.Location = new System.Drawing.Point(360, 125);
             this.textBoxSoLuong.Name = "textBoxSoLuong";
-            this.textBoxSoLuong.Size = new System.Drawing.Size(364, 30);
+            this.textBoxSoLuong.Size = new System.Drawing.Size(352, 30);
             this.textBoxSoLuong.TabIndex = 8;
             // 
             // labelSL
             // 
             this.labelSL.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelSL.AutoSize = true;
-            this.labelSL.Location = new System.Drawing.Point(413, 162);
+            this.labelSL.Location = new System.Drawing.Point(257, 128);
             this.labelSL.Name = "labelSL";
             this.labelSL.Size = new System.Drawing.Size(97, 25);
             this.labelSL.TabIndex = 9;
             this.labelSL.Text = "Số Lượng";
             this.labelSL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Controls.Add(this.dataGridViewVaccine, 1, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 215);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1200, 488);
-            this.tableLayoutPanel2.TabIndex = 1;
-            // 
             // dataGridViewVaccine
             // 
             this.dataGridViewVaccine.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.dataGridViewVaccine.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewVaccine.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewVaccine.Location = new System.Drawing.Point(23, 3);
+            this.dataGridViewVaccine.Location = new System.Drawing.Point(63, 178);
             this.dataGridViewVaccine.Name = "dataGridViewVaccine";
             this.dataGridViewVaccine.RowHeadersWidth = 51;
             this.dataGridViewVaccine.RowTemplate.Height = 24;
-            this.dataGridViewVaccine.Size = new System.Drawing.Size(1154, 482);
+            this.dataGridViewVaccine.Size = new System.Drawing.Size(1074, 486);
             this.dataGridViewVaccine.TabIndex = 0;
             this.dataGridViewVaccine.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewVaccine_CellContentClick);
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel3.Controls.Add(this.dataGridViewVaccine, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel1, 1, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 3;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1200, 703);
+            this.tableLayoutPanel3.TabIndex = 2;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.radioButtonChonGoiVaccine, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.radioButtonChonVaccine, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(360, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(352, 50);
+            this.tableLayoutPanel2.TabIndex = 10;
             // 
             // KH_DatMua
             // 
@@ -185,8 +202,7 @@ namespace HeThongTiemChung
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(1200, 703);
-            this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tableLayoutPanel3);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "KH_DatMua";
@@ -194,8 +210,10 @@ namespace HeThongTiemChung
             this.Load += new System.EventHandler(this.KH_DatMua_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVaccine)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -205,12 +223,13 @@ namespace HeThongTiemChung
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxTen;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.DataGridView dataGridViewVaccine;
         private System.Windows.Forms.Button buttonSubmit;
         private System.Windows.Forms.RadioButton radioButtonChonGoiVaccine;
         private System.Windows.Forms.RadioButton radioButtonChonVaccine;
         private System.Windows.Forms.TextBox textBoxSoLuong;
         private System.Windows.Forms.Label labelSL;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }
