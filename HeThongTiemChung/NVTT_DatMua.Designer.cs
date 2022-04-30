@@ -29,6 +29,7 @@ namespace HeThongTiemChung
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.radioButtonChonGoiVaccine = new System.Windows.Forms.RadioButton();
             this.radioButtonChonVaccine = new System.Windows.Forms.RadioButton();
@@ -42,6 +43,9 @@ namespace HeThongTiemChung
             this.buttonSearchKH = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridViewVaccine = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.textBoxSoLuong = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVaccine)).BeginInit();
@@ -65,6 +69,8 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.Controls.Add(this.textBoxSoDienThoaiKhachHang, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.textBoxTenKhachHang, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.buttonSearchKH, 4, 3);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxSoLuong, 3, 7);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 3, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -217,6 +223,31 @@ namespace HeThongTiemChung
             this.dataGridViewVaccine.TabIndex = 0;
             this.dataGridViewVaccine.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewVaccine_CellContentClick);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // textBoxSoLuong
+            // 
+            this.textBoxSoLuong.Location = new System.Drawing.Point(536, 203);
+            this.textBoxSoLuong.Name = "textBoxSoLuong";
+            this.textBoxSoLuong.Size = new System.Drawing.Size(364, 30);
+            this.textBoxSoLuong.TabIndex = 13;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(536, 170);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(97, 30);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Số Lượng";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // NVTT_DatMua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -252,5 +283,8 @@ namespace HeThongTiemChung
         private System.Windows.Forms.TextBox textBoxSoDienThoaiKhachHang;
         private System.Windows.Forms.TextBox textBoxTenKhachHang;
         private System.Windows.Forms.Button buttonSearchKH;
+        private System.Windows.Forms.TextBox textBoxSoLuong;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

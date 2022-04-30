@@ -30,7 +30,10 @@ namespace HeThongTiemChung
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
+            DatMua_Controller a = DatMua_Controller.TaoDatMua(textBoxTen.Text, Int32.Parse(textBoxSoLuong.Text));
+            DatMua_Controller.CapNhatDatMua(a);
 
+            MessageBox.Show("ĐẶT MUA THÀNH CÔNG");
         }
 
         private void dataGridViewVaccine_CellContentClick(object sender, DataGridViewCellEventArgs e)
