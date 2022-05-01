@@ -53,9 +53,9 @@ namespace HeThongTiemChung
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxSoTienConNo = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.textBoxTenKhachHang = new System.Windows.Forms.TextBox();
             this.buttonSearch = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -394,18 +394,6 @@ namespace HeThongTiemChung
             this.textBoxSoTienConNo.Size = new System.Drawing.Size(397, 30);
             this.textBoxSoTienConNo.TabIndex = 25;
             // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 143);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(154, 39);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Tên khách hàng";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // textBoxTenKhachHang
             // 
             this.textBoxTenKhachHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -428,6 +416,18 @@ namespace HeThongTiemChung
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = false;
             this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 143);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(154, 39);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Tên khách hàng";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
             // 

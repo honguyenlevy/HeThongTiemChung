@@ -24,20 +24,22 @@ namespace HeThongTiemChung
 
         private void radioButtonThanhToanDot_CheckedChanged(object sender, EventArgs e)
         {
-            comboBoxLanThanhToan.Visible = false;
+            comboBoxLanThanhToan.Visible = true;
         }
 
         private void radioButtonThanhToanMotLan_CheckedChanged(object sender, EventArgs e)
         {
-            comboBoxLanThanhToan.Visible = true;
+            comboBoxLanThanhToan.Visible = false;
             if (radioButtonThanhToanMotLan.Checked == true) {
                 comboBoxLanThanhToan.Text = "";
-                textBoxSoTienPhaiThanhToan.Text = dataGridViewHoaDon.CurrentRow.Cells[7].Value != null ? dataGridViewHoaDon.CurrentRow.Cells[7].Value.ToString() : "";
+                //textBoxSoTienPhaiThanhToan.Text = dataGridViewHoaDon.CurrentRow.Cells[7].Value != null ? dataGridViewHoaDon.CurrentRow.Cells[7].Value.ToString() : "";
             }
         }
 
         private void buttonThanhToan_Click(object sender, EventArgs e)
         {
+            textBoxSoTienPhaiThanhToan.Text = dataGridViewHoaDon.CurrentRow.Cells[7].Value != null ? dataGridViewHoaDon.CurrentRow.Cells[7].Value.ToString() : "";
+
             if (textBoxSoDienThoaiKhachHang.Text.Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập số điện thoại khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -96,9 +98,10 @@ namespace HeThongTiemChung
                 ChitietHoaDon_Controller.ThemchiTietHoaDon(ct);
 
                 HoaDon_Controller.CapNhatSoTienConNo(MaHd, SoTienPhaiTra);
+                
             }
 
-            textBoxSoDienThoaiKhachHang.Text = "";
+            //textBoxSoDienThoaiKhachHang.Text = "";
             radioButtonThanhToanDot.Checked = false;
             radioButtonThanhToanMotLan.Checked = false;
             radioButtonThe.Checked = false;
@@ -106,9 +109,11 @@ namespace HeThongTiemChung
             textBoxTongSoTien.Text = "";
             textBoxSoTienConNo.Text = "";
             comboBoxLanThanhToan.Text = "";
-            textBoxSoTienPhaiThanhToan.Text = "";
+            textBoxSoTienPhaiThanhToan.Text = "0";
+
+            MaKH = textBoxSoDienThoaiKhachHang.Text;
             
-            dataGridViewHoaDon.DataSource = HoaDon_Controller.LayDSHD(MaKH);
+            dataGridViewHoaDon.DataSource = HoaDon_Controller.LayDSHD(MaKH).Tables[0];
         }
 
         private void textBoxSoDienThoaiKhachHang_TextChanged(object sender, EventArgs e)
@@ -188,7 +193,7 @@ namespace HeThongTiemChung
 
         private void radioButtonTienMat_CheckedChanged(object sender, EventArgs e)
         {
-            comboBoxLanThanhToan.Visible = false;
+            //comboBoxLanThanhToan.Visible = false;
         }
 
         private void label1_Click(object sender, EventArgs e)

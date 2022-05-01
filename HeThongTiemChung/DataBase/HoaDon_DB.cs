@@ -43,7 +43,7 @@ namespace HeThongTiemChung.DataBase
         {
             string sql = "update hoadon set MaNhanvien = '" + MaNV + "' , Tinhtrang = 1  where MaHoaDon = '" + MaHD + "' " ;
 
-            MessageBox.Show(sql);
+          
 
             ConnectData.RunSQL(sql);
            
@@ -55,7 +55,7 @@ namespace HeThongTiemChung.DataBase
         {
             string sql = "update hoadon set SOTIENCONLAI =  SOTIENCONLAI -" +SoTien + "  where MaHoaDon = '" + MaHD + "' ";
 
-            MessageBox.Show(sql);
+            
 
             ConnectData.RunSQL(sql);
 
