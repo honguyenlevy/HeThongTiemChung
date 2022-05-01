@@ -39,6 +39,20 @@ namespace HeThongTiemChung
 
         private void buttonThanhToan_Click(object sender, EventArgs e)
         {
+            if (textBoxSoTienConNo.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải chọn hóa đơn để biết số tiền còn lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxSoTienConNo.Focus();
+                return;
+            }
+
+            if (comboBoxLanThanhToan.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải chọn số lần thanh toán", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                comboBoxLanThanhToan.Focus();
+                return;
+            }
+
             if (comboBoxTenNganHang.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải chọn tên ngân hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -67,6 +81,15 @@ namespace HeThongTiemChung
 
             HoaDon_Controller.CapNhatSoTienConNo(MaHd, SoTienPhaiTra);
 
+            textBoxSoTienConNo.Text = "";
+            textBoxTongTien.Text = "";
+            comboBoxLanThanhToan.Text = "";
+            textBoxSoTienCanThanhToan.Text = "";
+            comboBoxTenNganHang.Text = "";
+            textBoxSoThe.Text = "";
+            textBoxOTP.Text = "";
+
+            dataGridViewThongTinHoaDon.DataSource = HoaDon_Controller.LayDSHD(DangNhap.SDT).Tables[0];
         }
 
         private void KH_ThanhToan_Dot_Load(object sender, EventArgs e)
@@ -101,7 +124,7 @@ namespace HeThongTiemChung
             SoTienPhaiTra = Int32.Parse(textBoxSoTienConNo.Text) / Int32.Parse(comboBoxLanThanhToan.Text);
             string SoTienPhaiTra_Str = "";
             SoTienPhaiTra_Str += SoTienPhaiTra;
-            textBoxSoLanCanThanhToan.Text = SoTienPhaiTra_Str;
+            textBoxSoTienCanThanhToan.Text = SoTienPhaiTra_Str;
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)

@@ -54,15 +54,15 @@ namespace HeThongTiemChung
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.textBoxSoDienThoaiKhachHang = new System.Windows.Forms.TextBox();
-            this.textBoxTenKhachHang = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.radioButtonChonGoiVaccine = new System.Windows.Forms.RadioButton();
             this.radioButtonChonVaccine = new System.Windows.Forms.RadioButton();
             this.label13 = new System.Windows.Forms.Label();
             this.dateTimePickerThoiGianTiem = new System.Windows.Forms.DateTimePicker();
             this.textBoxTenGoi = new System.Windows.Forms.TextBox();
             this.textBoxTenVacxin = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.buttonSearchKH = new System.Windows.Forms.Button();
+            this.textBoxTenKhachHang = new System.Windows.Forms.TextBox();
             this.dataGridViewVaccine = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
@@ -104,15 +104,15 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.Controls.Add(this.label12, 6, 5);
             this.tableLayoutPanel1.Controls.Add(this.label14, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.textBoxSoDienThoaiKhachHang, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBoxTenKhachHang, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label15, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.radioButtonChonGoiVaccine, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.radioButtonChonVaccine, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.label13, 6, 7);
             this.tableLayoutPanel1.Controls.Add(this.dateTimePickerThoiGianTiem, 6, 8);
             this.tableLayoutPanel1.Controls.Add(this.textBoxTenGoi, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.textBoxTenVacxin, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.buttonSearchKH, 4, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label15, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.buttonSearchKH, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxTenKhachHang, 4, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(83, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -231,6 +231,7 @@ namespace HeThongTiemChung
             this.textBoxGiaGoiVaccine.ForeColor = System.Drawing.SystemColors.ControlText;
             this.textBoxGiaGoiVaccine.Location = new System.Drawing.Point(372, 291);
             this.textBoxGiaGoiVaccine.Name = "textBoxGiaGoiVaccine";
+            this.textBoxGiaGoiVaccine.ReadOnly = true;
             this.textBoxGiaGoiVaccine.Size = new System.Drawing.Size(327, 30);
             this.textBoxGiaGoiVaccine.TabIndex = 10;
             // 
@@ -240,6 +241,7 @@ namespace HeThongTiemChung
             this.textBoxGiaVaccine.ForeColor = System.Drawing.SystemColors.ControlText;
             this.textBoxGiaVaccine.Location = new System.Drawing.Point(372, 387);
             this.textBoxGiaVaccine.Name = "textBoxGiaVaccine";
+            this.textBoxGiaVaccine.ReadOnly = true;
             this.textBoxGiaVaccine.Size = new System.Drawing.Size(327, 30);
             this.textBoxGiaVaccine.TabIndex = 13;
             // 
@@ -260,6 +262,7 @@ namespace HeThongTiemChung
             this.textBoxDiaChi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxDiaChi.Location = new System.Drawing.Point(1110, 195);
             this.textBoxDiaChi.Name = "textBoxDiaChi";
+            this.textBoxDiaChi.ReadOnly = true;
             this.textBoxDiaChi.Size = new System.Drawing.Size(330, 30);
             this.textBoxDiaChi.TabIndex = 9;
             // 
@@ -281,6 +284,7 @@ namespace HeThongTiemChung
             this.textBoxSoLuongTonGoiVaccine.ForeColor = System.Drawing.SystemColors.ControlText;
             this.textBoxSoLuongTonGoiVaccine.Location = new System.Drawing.Point(741, 291);
             this.textBoxSoLuongTonGoiVaccine.Name = "textBoxSoLuongTonGoiVaccine";
+            this.textBoxSoLuongTonGoiVaccine.ReadOnly = true;
             this.textBoxSoLuongTonGoiVaccine.Size = new System.Drawing.Size(327, 30);
             this.textBoxSoLuongTonGoiVaccine.TabIndex = 15;
             // 
@@ -314,6 +318,7 @@ namespace HeThongTiemChung
             this.textBoxSoLuongTonVaccine.ForeColor = System.Drawing.SystemColors.ControlText;
             this.textBoxSoLuongTonVaccine.Location = new System.Drawing.Point(741, 387);
             this.textBoxSoLuongTonVaccine.Name = "textBoxSoLuongTonVaccine";
+            this.textBoxSoLuongTonVaccine.ReadOnly = true;
             this.textBoxSoLuongTonVaccine.Size = new System.Drawing.Size(327, 30);
             this.textBoxSoLuongTonVaccine.TabIndex = 20;
             // 
@@ -394,27 +399,6 @@ namespace HeThongTiemChung
             this.textBoxSoDienThoaiKhachHang.Size = new System.Drawing.Size(327, 30);
             this.textBoxSoDienThoaiKhachHang.TabIndex = 29;
             // 
-            // textBoxTenKhachHang
-            // 
-            this.textBoxTenKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxTenKhachHang.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxTenKhachHang.Location = new System.Drawing.Point(372, 99);
-            this.textBoxTenKhachHang.Name = "textBoxTenKhachHang";
-            this.textBoxTenKhachHang.Size = new System.Drawing.Size(327, 30);
-            this.textBoxTenKhachHang.TabIndex = 30;
-            // 
-            // label15
-            // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(372, 48);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(154, 48);
-            this.label15.TabIndex = 31;
-            this.label15.Text = "Tên khách hàng";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // radioButtonChonGoiVaccine
             // 
             this.radioButtonChonGoiVaccine.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -468,6 +452,7 @@ namespace HeThongTiemChung
             // 
             this.textBoxTenGoi.Location = new System.Drawing.Point(3, 291);
             this.textBoxTenGoi.Name = "textBoxTenGoi";
+            this.textBoxTenGoi.ReadOnly = true;
             this.textBoxTenGoi.Size = new System.Drawing.Size(327, 30);
             this.textBoxTenGoi.TabIndex = 36;
             // 
@@ -475,20 +460,43 @@ namespace HeThongTiemChung
             // 
             this.textBoxTenVacxin.Location = new System.Drawing.Point(3, 387);
             this.textBoxTenVacxin.Name = "textBoxTenVacxin";
+            this.textBoxTenVacxin.ReadOnly = true;
             this.textBoxTenVacxin.Size = new System.Drawing.Size(327, 30);
             this.textBoxTenVacxin.TabIndex = 37;
             // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(741, 48);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(154, 48);
+            this.label15.TabIndex = 31;
+            this.label15.Text = "Tên khách hàng";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // buttonSearchKH
             // 
+            this.buttonSearchKH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSearchKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
-            this.buttonSearchKH.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonSearchKH.Location = new System.Drawing.Point(741, 99);
+            this.buttonSearchKH.Location = new System.Drawing.Point(372, 99);
             this.buttonSearchKH.Name = "buttonSearchKH";
             this.buttonSearchKH.Size = new System.Drawing.Size(327, 42);
             this.buttonSearchKH.TabIndex = 38;
             this.buttonSearchKH.Text = "Search";
             this.buttonSearchKH.UseVisualStyleBackColor = false;
-            this.buttonSearchKH.Click += new System.EventHandler(this.button1_Click);
+            this.buttonSearchKH.Click += new System.EventHandler(this.buttonSearchKH_Click);
+            // 
+            // textBoxTenKhachHang
+            // 
+            this.textBoxTenKhachHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxTenKhachHang.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.textBoxTenKhachHang.Location = new System.Drawing.Point(741, 105);
+            this.textBoxTenKhachHang.Name = "textBoxTenKhachHang";
+            this.textBoxTenKhachHang.ReadOnly = true;
+            this.textBoxTenKhachHang.Size = new System.Drawing.Size(327, 30);
+            this.textBoxTenKhachHang.TabIndex = 30;
             // 
             // dataGridViewVaccine
             // 

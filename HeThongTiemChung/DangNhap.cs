@@ -58,7 +58,7 @@ namespace HeThongTiemChung
 
             if (textBoxSDT.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Bạn phải nhập SDT", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn phải nhập số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 textBoxSDT.Focus();
                 return;
             }

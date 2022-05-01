@@ -170,6 +170,7 @@ namespace HeThongTiemChung
             this.textBoxTongTien.ForeColor = System.Drawing.SystemColors.ControlText;
             this.textBoxTongTien.Location = new System.Drawing.Point(566, 88);
             this.textBoxTongTien.Name = "textBoxTongTien";
+            this.textBoxTongTien.ReadOnly = true;
             this.textBoxTongTien.Size = new System.Drawing.Size(505, 30);
             this.textBoxTongTien.TabIndex = 20;
             // 

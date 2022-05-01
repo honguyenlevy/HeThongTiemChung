@@ -107,6 +107,19 @@ namespace HeThongTiemChung
                 dataGridViewVaccine.DataSource = Vacxin_Controller.LayDSVacXin().Tables[0];
             }
 
+            textBoxSoDienThoaiKhachHang.Text = "";
+            textBoxTenKhachHang.Text = "";
+            textBoxTenGoi.Text = "";
+            textBoxSoLuongTonGoiVaccine.Text = "";
+            textBoxGiaGoiVaccine.Text = "";
+            textBoxTenVacxin.Text = "";
+            textBoxSoLuongTonVaccine.Text = "";
+            textBoxGiaVaccine.Text = "";
+            textBoxChonSoLuong.Text = "";
+
+            dataGridViewVaccine.DataSource = Vacxin_Controller.LayDSVacXin().Tables[0];
+            radioButtonChonVaccine.Checked = true;
+
         }
 
         private void NVTT_DangKyTiem_Load(object sender, EventArgs e)
@@ -118,8 +131,8 @@ namespace HeThongTiemChung
             radioButtonChonVaccine.Checked = true;
 
             comboBoxTrungTam.DataSource = dt.Tables[0];
-            comboBoxTrungTam.DisplayMember = "MATRUNGTAM";
-            comboBoxTrungTam.ValueMember = "MATRUNGTAM";
+            comboBoxTrungTam.DisplayMember = "TENTRUNGTAM";
+            comboBoxTrungTam.ValueMember = "TENTRUNGTAM";
             comboBoxTrungTam.SelectedIndex = -1;
 
         }
@@ -156,25 +169,38 @@ namespace HeThongTiemChung
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            DataSet KH = KhachHang_Controller.LayThongTinKH(textBoxSoDienThoaiKhachHang.Text);
-            if (KH.Tables.Count < 1)
-            {
-                MessageBox.Show("KHÔNG CÓ KHÁCH HÀNG ");
-            }
-            else
-            {
-                MessageBox.Show("Co khach");
-                
-                textBoxTenKhachHang.Text = KH.Tables[0].Rows[0][3].ToString();
-                textBoxDiaChi.Text = KH.Tables[0].Rows[0][1].ToString();
-            }
-        }
+       
 
         private void comboBoxTrungTam_SelectedIndexChanged(object sender, EventArgs e)
         {
+            textBoxDiaChi.Text = TrungTam_Controller.LayDiaChiTrungTam(comboBoxTrungTam.Text);
+        }
 
+        private void buttonSearchKH_Click(object sender, EventArgs e)
+        {
+            if (textBoxSoDienThoaiKhachHang.Text.Length == 0)
+            {
+                MessageBox.Show("Bạn hãy nhập số điện thoại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxSoDienThoaiKhachHang.Focus();
+                return;
+            }
+
+
+            DataSet KH = KhachHang_Controller.LayThongTinKH(textBoxSoDienThoaiKhachHang.Text);
+
+
+            if (KH.Tables[0].Rows.Count < 1)
+            {
+                MessageBox.Show("KHÔNG CÓ KHÁCH HÀNG ");
+                return;
+            }
+            else
+            {
+                //MessageBox.Show("Co khach");
+
+                textBoxTenKhachHang.Text = KH.Tables[0].Rows[0][3].ToString();
+                
+            }
         }
     }
 }

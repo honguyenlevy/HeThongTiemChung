@@ -20,6 +20,13 @@ namespace HeThongTiemChung
 
         private void buttonThanhToan_Click(object sender, EventArgs e)
         {
+            if (textBoxTongTien.Text.Length == 0)
+            {
+                MessageBox.Show("Bạn phải chọn hóa đơn để thanh toán", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxTongTien.Focus();
+                return;
+            }
+
             if (comboBoxTenNganHang.Text.Length == 0)
             {
                 MessageBox.Show("Bạn phải chọn tên ngân hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -36,6 +43,14 @@ namespace HeThongTiemChung
 
             string MaHd= dataGridViewThongTinHoaDon.CurrentRow.Cells[0].Value != null ? dataGridViewThongTinHoaDon.CurrentRow.Cells[0].Value.ToString() : "";
             HoaDon_Controller.CapNhatTinhTrangHoaDon1Lan(MaHd, "NULL");
+
+            dataGridViewThongTinHoaDon.DataSource = HoaDon_Controller.LayDSHD(DangNhap.SDT).Tables[0];
+
+            HoaDon_Controller.CapNhatSoTienConNo(MaHd, Int32.Parse(textBoxTongTien.Text));
+
+            textBoxTongTien.Text = "";
+            comboBoxTenNganHang.Text = "";
+            textBoxSoThe.Text = "";
 
             dataGridViewThongTinHoaDon.DataSource = HoaDon_Controller.LayDSHD(DangNhap.SDT).Tables[0];
         }

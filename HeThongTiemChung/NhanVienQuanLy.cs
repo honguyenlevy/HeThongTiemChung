@@ -20,11 +20,18 @@ namespace HeThongTiemChung
 
         private void buttonDuyet_Click(object sender, EventArgs e)
         {
+            if (textBoxTenVaccine.Text.Length == 0)
+            {
+                MessageBox.Show("Bạn phải chọn đơn đặt mua để duyệt", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxTenVaccine.Focus();
+                return;
+            }
+
             
             //DatMua_Controller d = DatMua_Controlle
             //TaoDatMua(textBoxMaDon.Text, -SoLuong);
             //DatMua_Controller.CapNhatDatMua(d);
-             int SoLuong = Int32.Parse(textBoxSoLuong.Text);
+            int SoLuong = Int32.Parse(textBoxSoLuong.Text);
             string Ma= dataGridViewDonDat.CurrentRow.Cells[0].Value != null ? dataGridViewDonDat.CurrentRow.Cells[0].Value.ToString() : "";
             if (radioButtonVaccine.Checked == true)
             {
@@ -38,6 +45,9 @@ namespace HeThongTiemChung
 
             }
             textBoxSoLuong.Text = "";
+            textBoxTenVaccine.Text = "";
+            radioButtonVaccine.Checked = true;
+            dataGridViewDonDat.DataSource = Vacxin_Controller.LayVacXinCanDatMua().Tables[0];
         }
 
         private void dataGridViewDonDat_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -46,7 +56,7 @@ namespace HeThongTiemChung
             {
                 if (dataGridViewDonDat.CurrentRow != null && dataGridViewDonDat.CurrentRow.Index > -1)
                 {
-                    textBoxMaDon.Text = dataGridViewDonDat.CurrentRow.Cells[1].Value != null ? dataGridViewDonDat.CurrentRow.Cells[1].Value.ToString() : "";
+                    textBoxTenVaccine.Text = dataGridViewDonDat.CurrentRow.Cells[1].Value != null ? dataGridViewDonDat.CurrentRow.Cells[1].Value.ToString() : "";
                     textBoxSoLuong.Text = dataGridViewDonDat.CurrentRow.Cells[4].Value != null ? dataGridViewDonDat.CurrentRow.Cells[4].Value.ToString() : "";
                 }
             }
@@ -54,7 +64,7 @@ namespace HeThongTiemChung
             {
                 if (dataGridViewDonDat.CurrentRow != null && dataGridViewDonDat.CurrentRow.Index > -1)
                 {
-                    textBoxMaDon.Text = dataGridViewDonDat.CurrentRow.Cells[3].Value != null ? dataGridViewDonDat.CurrentRow.Cells[3].Value.ToString() : "";
+                    textBoxTenVaccine.Text = dataGridViewDonDat.CurrentRow.Cells[3].Value != null ? dataGridViewDonDat.CurrentRow.Cells[3].Value.ToString() : "";
                     textBoxSoLuong.Text = dataGridViewDonDat.CurrentRow.Cells[4].Value != null ? dataGridViewDonDat.CurrentRow.Cells[4].Value.ToString() : "";
                 }
             }

@@ -52,5 +52,11 @@ namespace HeThongTiemChung.Controller
             DataSet dt = Vacxin_DB.LayDSVaccineCanDatMua();
             return dt;
         }
+
+        public static DataSet KH_LayDSVacXin()
+        {
+            DataSet dt = Vacxin_DB.KH_GetTDsVacxin();
+            return dt;
+        }
     }
 }

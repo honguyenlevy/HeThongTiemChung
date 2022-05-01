@@ -48,5 +48,11 @@ namespace HeThongTiemChung.Controller
         {
             GoiVacxin_DB.CapNhatSoLuongTon(MaVaccine, SoLuong);
         }
+
+        public static DataSet KH_LayDSGoiVacXin()
+        {
+            DataSet dt = GoiVacxin_DB.KH_GetTDsGoiVacxin();
+            return dt;
+        }
     }
 }

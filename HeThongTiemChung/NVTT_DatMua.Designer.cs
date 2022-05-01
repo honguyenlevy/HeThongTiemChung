@@ -34,7 +34,6 @@ namespace HeThongTiemChung
             this.radioButtonChonVaccine = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxTen = new System.Windows.Forms.TextBox();
-            this.buttonSubmit = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxSoDienThoaiKhachHang = new System.Windows.Forms.TextBox();
@@ -42,6 +41,7 @@ namespace HeThongTiemChung
             this.textBoxSoLuong = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.buttonSearchKH = new System.Windows.Forms.Button();
+            this.buttonSubmit = new System.Windows.Forms.Button();
             this.dataGridViewVaccine = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
@@ -52,22 +52,22 @@ namespace HeThongTiemChung
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.330033F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.0033F));
             this.tableLayoutPanel1.Controls.Add(this.radioButtonChonGoiVaccine, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.radioButtonChonVaccine, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.textBoxTen, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.textBoxSoDienThoaiKhachHang, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBoxTenKhachHang, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.textBoxSoLuong, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.label4, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.buttonSearchKH, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.buttonSubmit, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.buttonSearchKH, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxTenKhachHang, 3, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(63, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -77,7 +77,6 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1074, 204);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
@@ -86,7 +85,7 @@ namespace HeThongTiemChung
             this.radioButtonChonGoiVaccine.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButtonChonGoiVaccine.AutoSize = true;
-            this.radioButtonChonGoiVaccine.Location = new System.Drawing.Point(242, 3);
+            this.radioButtonChonGoiVaccine.Location = new System.Drawing.Point(170, 3);
             this.radioButtonChonGoiVaccine.Name = "radioButtonChonGoiVaccine";
             this.radioButtonChonGoiVaccine.Size = new System.Drawing.Size(184, 34);
             this.radioButtonChonGoiVaccine.TabIndex = 6;
@@ -100,7 +99,7 @@ namespace HeThongTiemChung
             this.radioButtonChonVaccine.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.radioButtonChonVaccine.AutoSize = true;
-            this.radioButtonChonVaccine.Location = new System.Drawing.Point(464, 3);
+            this.radioButtonChonVaccine.Location = new System.Drawing.Point(363, 3);
             this.radioButtonChonVaccine.Name = "radioButtonChonVaccine";
             this.radioButtonChonVaccine.Size = new System.Drawing.Size(153, 34);
             this.radioButtonChonVaccine.TabIndex = 7;
@@ -127,21 +126,9 @@ namespace HeThongTiemChung
             this.textBoxTen.ForeColor = System.Drawing.SystemColors.ControlText;
             this.textBoxTen.Location = new System.Drawing.Point(3, 167);
             this.textBoxTen.Name = "textBoxTen";
-            this.textBoxTen.Size = new System.Drawing.Size(423, 30);
+            this.textBoxTen.ReadOnly = true;
+            this.textBoxTen.Size = new System.Drawing.Size(351, 30);
             this.textBoxTen.TabIndex = 2;
-            // 
-            // buttonSubmit
-            // 
-            this.buttonSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
-            this.buttonSubmit.Location = new System.Drawing.Point(893, 163);
-            this.buttonSubmit.Name = "buttonSubmit";
-            this.buttonSubmit.Size = new System.Drawing.Size(178, 38);
-            this.buttonSubmit.TabIndex = 1;
-            this.buttonSubmit.Text = "Submit";
-            this.buttonSubmit.UseVisualStyleBackColor = false;
-            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // label2
             // 
@@ -160,7 +147,7 @@ namespace HeThongTiemChung
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(464, 40);
+            this.label3.Location = new System.Drawing.Point(720, 40);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(154, 40);
             this.label3.TabIndex = 9;
@@ -173,24 +160,25 @@ namespace HeThongTiemChung
             this.textBoxSoDienThoaiKhachHang.ForeColor = System.Drawing.SystemColors.ControlText;
             this.textBoxSoDienThoaiKhachHang.Location = new System.Drawing.Point(3, 85);
             this.textBoxSoDienThoaiKhachHang.Name = "textBoxSoDienThoaiKhachHang";
-            this.textBoxSoDienThoaiKhachHang.Size = new System.Drawing.Size(423, 30);
+            this.textBoxSoDienThoaiKhachHang.Size = new System.Drawing.Size(351, 30);
             this.textBoxSoDienThoaiKhachHang.TabIndex = 10;
             // 
             // textBoxTenKhachHang
             // 
             this.textBoxTenKhachHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxTenKhachHang.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxTenKhachHang.Location = new System.Drawing.Point(464, 85);
+            this.textBoxTenKhachHang.Location = new System.Drawing.Point(720, 85);
             this.textBoxTenKhachHang.Name = "textBoxTenKhachHang";
-            this.textBoxTenKhachHang.Size = new System.Drawing.Size(423, 30);
+            this.textBoxTenKhachHang.ReadOnly = true;
+            this.textBoxTenKhachHang.Size = new System.Drawing.Size(351, 30);
             this.textBoxTenKhachHang.TabIndex = 11;
             // 
             // textBoxSoLuong
             // 
             this.textBoxSoLuong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSoLuong.Location = new System.Drawing.Point(464, 167);
+            this.textBoxSoLuong.Location = new System.Drawing.Point(363, 167);
             this.textBoxSoLuong.Name = "textBoxSoLuong";
-            this.textBoxSoLuong.Size = new System.Drawing.Size(423, 30);
+            this.textBoxSoLuong.Size = new System.Drawing.Size(351, 30);
             this.textBoxSoLuong.TabIndex = 13;
             // 
             // label4
@@ -198,7 +186,7 @@ namespace HeThongTiemChung
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(464, 120);
+            this.label4.Location = new System.Drawing.Point(363, 120);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 40);
             this.label4.TabIndex = 14;
@@ -210,13 +198,26 @@ namespace HeThongTiemChung
             this.buttonSearchKH.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonSearchKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
-            this.buttonSearchKH.Location = new System.Drawing.Point(893, 83);
+            this.buttonSearchKH.Location = new System.Drawing.Point(363, 83);
             this.buttonSearchKH.Name = "buttonSearchKH";
             this.buttonSearchKH.Size = new System.Drawing.Size(178, 34);
             this.buttonSearchKH.TabIndex = 12;
             this.buttonSearchKH.Text = "Search";
             this.buttonSearchKH.UseVisualStyleBackColor = false;
             this.buttonSearchKH.Click += new System.EventHandler(this.buttonSearchKH_Click);
+            // 
+            // buttonSubmit
+            // 
+            this.buttonSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
+            this.buttonSubmit.Location = new System.Drawing.Point(720, 163);
+            this.buttonSubmit.Name = "buttonSubmit";
+            this.buttonSubmit.Size = new System.Drawing.Size(178, 38);
+            this.buttonSubmit.TabIndex = 1;
+            this.buttonSubmit.Text = "Submit";
+            this.buttonSubmit.UseVisualStyleBackColor = false;
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // dataGridViewVaccine
             // 

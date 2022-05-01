@@ -11,33 +11,41 @@ using System.Data.SqlClient;
 
 namespace HeThongTiemChung.DataBase
 {
-   
-    class KhachHang_DB
+    class DatMua_DB
     {
+
         public static SqlConnection conn = ConnectData.SqlConnect();
 
-        public static  bool ThemKhachHang(string MaKH,string HoTen,  string NgaySinh,string GioiTinh, string SDT , string DiaChi )
+        public static bool CapNhatDatMua(string MaVaccine, int SoLuong)
         {
-            // Làm hàm random mã nè ( thay cho số 4)
 
-            string sql = "insert into khachhang values('" +MaKH +"', '" + DiaChi + "' , '" + GioiTinh +" ','" + HoTen + "','" + NgaySinh +"','" + SDT +"' )";
+
+            string sql = "update datmua set soluong = soluong + " + SoLuong + " where mavaccine = '" + MaVaccine + "'";
 
             ConnectData.RunSQL(sql);
             return true;
 
         }
 
-        public static DataSet LayThongTinKH(string SDT)
+
+        public static DataSet LayDSHD(string sdt)
         {
-            string sql = "select * from khachhang where sodienthoai = '" + SDT +"'";
+            DataSet dt = HoaDon_DB.LayDSHD(sdt);
+            return dt;
+        }
+
+
+        public static DataSet LayDsDatMua()
+        {
+            string sql = "SELECT *  from datmua where soluong >0";
 
 
             DataSet data = new DataSet();
             SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
             dap.Fill(data);
+
+
             return data;
         }
-
-        
     }
 }

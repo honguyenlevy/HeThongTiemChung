@@ -87,5 +87,18 @@ namespace HeThongTiemChung.DataBase
 
             return data;
         }
+
+        public static DataSet KH_GetTDsVacxin()
+        {
+            string sql = "SELECT MAVACXIN, TENVACXIN, GIATIEN, SOLUONGTON FROM VACXIN";
+
+
+            DataSet data = new DataSet();
+            SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
+            dap.Fill(data);
+
+
+            return data;
+        }
     }
 }

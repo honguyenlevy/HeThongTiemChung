@@ -37,6 +37,16 @@ namespace HeThongTiemChung
                 return;
             }
 
+            string SoLuongVaccine = dataGridViewVaccine.CurrentRow.Cells[3].Value != null ? dataGridViewVaccine.CurrentRow.Cells[3].Value.ToString() : "";
+
+
+            if (Int32.Parse(textBoxSoLuong.Text) <= Int32.Parse(SoLuongVaccine))
+            {
+                MessageBox.Show("Số lượng đặt mua lớn hơn số lượng tồn, vui lòng tiến hành đăng ký tiêm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxSoLuong.Focus();
+                return;
+            }
+
             string MaVaccine = dataGridViewVaccine.CurrentRow.Cells[0].Value != null ? dataGridViewVaccine.CurrentRow.Cells[0].Value.ToString() : "";
 
             if (radioButtonChonVaccine.Checked == true)
@@ -53,8 +63,14 @@ namespace HeThongTiemChung
             }
 
             MessageBox.Show("ĐÃ ĐẶT HÀNG THÀNH CÔNG !");
+
+            textBoxSoDienThoaiKhachHang.Text = "";
+            textBoxTenKhachHang.Text = "";
             textBoxTen.Text = "";
             textBoxSoLuong.Text = "";
+
+            radioButtonChonVaccine.Checked = true;
+            dataGridViewVaccine.DataSource = Vacxin_Controller.LayDSVacXin().Tables[0];
         }
 
         private void dataGridViewVaccine_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -83,6 +99,7 @@ namespace HeThongTiemChung
         {
             
             radioButtonChonVaccine.Checked = true;
+            dataGridViewVaccine.DataSource = Vacxin_Controller.LayDSVacXin().Tables[0];
         }
 
         private void buttonSearchKH_Click(object sender, EventArgs e)

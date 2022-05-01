@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 
 namespace HeThongTiemChung.DataBase
 {
-    class GoiVacxin_DB
+    class GoiVaccxin_DB
     {
         public static SqlConnection conn = ConnectData.SqlConnect();
         public static DataSet GetTDsGoiVacxin()
@@ -56,51 +56,6 @@ namespace HeThongTiemChung.DataBase
                 ma = reader.GetValue(0).ToString();
             reader.Close();
             return ma;
-
-        }
-
-
-        public static void CapNhatSoLuongDat(string Mavaccine, int SoLuong)
-        {
-            string sql = "update goitiem set SLDat = SLDat + " + SoLuong + " where magoi = '" + Mavaccine + "'";
-            
-            ConnectData.RunSQL(sql);
-
-        }
-
-
-        public static void CapNhatSoLuongTon(string Mavaccine, int SoLuong)
-        {
-            string sql = "update goitiem set Soluong = Soluong - " + SoLuong + " where magoi = '" + Mavaccine + "'";
-            MessageBox.Show(sql);
-            ConnectData.RunSQL(sql);
-
-        }
-
-        public static DataSet LayGoiVaccineCanDatMua()
-        {
-            string sql = "select * from goitiem where sldat > 0;";
-
-
-            DataSet data = new DataSet();
-            SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
-            dap.Fill(data);
-
-
-            return data;
-        }
-
-        public static DataSet KH_GetTDsGoiVacxin()
-        {
-            string sql = "SELECT MAGOI, GIAGOI, TENGOI, SOLUONG FROM GOITIEM";
-
-
-            DataSet data = new DataSet();
-            SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
-            dap.Fill(data);
-
-
-            return data;
 
         }
     }

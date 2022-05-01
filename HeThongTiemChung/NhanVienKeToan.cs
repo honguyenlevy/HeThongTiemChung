@@ -24,11 +24,12 @@ namespace HeThongTiemChung
 
         private void radioButtonThanhToanDot_CheckedChanged(object sender, EventArgs e)
         {
-
+            comboBoxLanThanhToan.Visible = false;
         }
 
         private void radioButtonThanhToanMotLan_CheckedChanged(object sender, EventArgs e)
         {
+            comboBoxLanThanhToan.Visible = true;
             if (radioButtonThanhToanMotLan.Checked == true) {
                 comboBoxLanThanhToan.Text = "";
                 textBoxSoTienPhaiThanhToan.Text = dataGridViewHoaDon.CurrentRow.Cells[7].Value != null ? dataGridViewHoaDon.CurrentRow.Cells[7].Value.ToString() : "";
@@ -37,7 +38,46 @@ namespace HeThongTiemChung
 
         private void buttonThanhToan_Click(object sender, EventArgs e)
         {
-        
+            if (textBoxSoDienThoaiKhachHang.Text.Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập số điện thoại khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxSoDienThoaiKhachHang.Focus();
+                return;
+            }
+
+            if (radioButtonThe.Checked == false)
+            {
+                if (radioButtonTienMat.Checked == false)
+                {
+                    if(radioButtonThanhToanMotLan.Checked == false)
+                    {
+                        if(radioButtonThanhToanDot.Checked == false)
+                        {
+                            MessageBox.Show("Bạn phải chọn hình thức thanh toán", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            return;
+                        }    
+                    }    
+                }    
+            }
+
+
+            if (textBoxSoTienConNo.Text.Length == 0)
+            {
+                MessageBox.Show("Bạn phải chọn hóa đơn cần thanh toán", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBoxSoTienConNo.Focus();
+                return;
+            }
+
+            if (radioButtonThanhToanDot.Checked == true)
+            {
+                if (comboBoxLanThanhToan.Text.Trim().Length == 0)
+                {
+                    MessageBox.Show("Bạn phải chọn lần thanh toán", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    comboBoxLanThanhToan.Focus();
+                    return;
+                }               
+            }
+
             if (radioButtonThanhToanMotLan.Checked == true)
             {
 
@@ -58,6 +98,15 @@ namespace HeThongTiemChung
                 HoaDon_Controller.CapNhatSoTienConNo(MaHd, SoTienPhaiTra);
             }
 
+            textBoxSoDienThoaiKhachHang.Text = "";
+            radioButtonThanhToanDot.Checked = false;
+            radioButtonThanhToanMotLan.Checked = false;
+            radioButtonThe.Checked = false;
+            radioButtonTienMat.Checked = false;
+            textBoxTongSoTien.Text = "";
+            textBoxSoTienConNo.Text = "";
+            comboBoxLanThanhToan.Text = "";
+            textBoxSoTienPhaiThanhToan.Text = "";
             
             dataGridViewHoaDon.DataSource = HoaDon_Controller.LayDSHD(MaKH);
         }
@@ -139,7 +188,17 @@ namespace HeThongTiemChung
 
         private void radioButtonTienMat_CheckedChanged(object sender, EventArgs e)
         {
-          
+            comboBoxLanThanhToan.Visible = false;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButtonThe_CheckedChanged(object sender, EventArgs e)
+        {
+            comboBoxLanThanhToan.Visible = false;
         }
     }
 }
