@@ -75,9 +75,7 @@ namespace HeThongTiemChung
             comboBoxTenNganHang.Items.Add(new { Text = "Agribank", Value = "Agribank" });
             comboBoxTenNganHang.Items.Add(new { Text = "Vietcombank", Value = "Vietcombank" });
             comboBoxTenNganHang.Items.Add(new { Text = "AChaubank", Value = "AChaubank" });
-
-
-            
+           
         }
     }
 }

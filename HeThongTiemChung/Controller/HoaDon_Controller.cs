@@ -41,10 +41,12 @@ namespace HeThongTiemChung.Controller
             return hd;
 
         }
+
         public static void ThemHoaDon(HoaDon_Controller Hd)
         {
             HoaDon_DB.ThemHoaDon(Hd.MaHoaDon, Hd.MaKhachHang, Hd.MaNhanVien, Hd.DuNo, Hd.LoaiThanhToan, Hd.NgayLap, Hd.TongTien,Hd.SoTienConNo,Hd.TinhTrang);
         }
+
         public static DataSet LayDSHD(string sdt)
         {
             DataSet dt = HoaDon_DB.LayDSHD( sdt );
@@ -57,9 +59,9 @@ namespace HeThongTiemChung.Controller
             HoaDon_DB.CapNhatTinhTrangHoaDon(MaHD, MaNV);
         }
 
-        public static void CapNhatSoTienConNo(string MaHd, int SoTien)
+        public static void CapNhatSoTienConNo(string MaHD, int SoTien)
         {
-            HoaDon_DB.CapNhatSoTienConNo(MaHd, SoTien);
+            HoaDon_DB.CapNhatSoTienConNo(MaHD, SoTien);
         }
     }
 }

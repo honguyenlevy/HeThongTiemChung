@@ -35,8 +35,10 @@ namespace HeThongTiemChung
             this.label1 = new System.Windows.Forms.Label();
             this.labelXemLichLamViec = new System.Windows.Forms.Label();
             this.panelNhanVien = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelTopNhanVienTiepTan.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -50,12 +52,12 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.Controls.Add(this.labelDangKyLichRanh, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panelTopNhanVienTiepTan, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelXemLichLamViec, 2, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1200, 62);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1194, 99);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // labelDangKyLichRanh
@@ -63,9 +65,9 @@ namespace HeThongTiemChung
             this.labelDangKyLichRanh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelDangKyLichRanh.AutoSize = true;
-            this.labelDangKyLichRanh.Location = new System.Drawing.Point(843, 0);
+            this.labelDangKyLichRanh.Location = new System.Drawing.Point(837, 0);
             this.labelDangKyLichRanh.Name = "labelDangKyLichRanh";
-            this.labelDangKyLichRanh.Size = new System.Drawing.Size(162, 62);
+            this.labelDangKyLichRanh.Size = new System.Drawing.Size(162, 99);
             this.labelDangKyLichRanh.TabIndex = 1;
             this.labelDangKyLichRanh.Text = "Đăng ký lịch rảnh";
             this.labelDangKyLichRanh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -77,7 +79,7 @@ namespace HeThongTiemChung
             this.panelTopNhanVienTiepTan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTopNhanVienTiepTan.Location = new System.Drawing.Point(3, 3);
             this.panelTopNhanVienTiepTan.Name = "panelTopNhanVienTiepTan";
-            this.panelTopNhanVienTiepTan.Size = new System.Drawing.Size(834, 56);
+            this.panelTopNhanVienTiepTan.Size = new System.Drawing.Size(828, 93);
             this.panelTopNhanVienTiepTan.TabIndex = 4;
             // 
             // label1
@@ -97,9 +99,9 @@ namespace HeThongTiemChung
             this.labelXemLichLamViec.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelXemLichLamViec.AutoSize = true;
-            this.labelXemLichLamViec.Location = new System.Drawing.Point(1023, 0);
+            this.labelXemLichLamViec.Location = new System.Drawing.Point(1017, 0);
             this.labelXemLichLamViec.Name = "labelXemLichLamViec";
-            this.labelXemLichLamViec.Size = new System.Drawing.Size(163, 62);
+            this.labelXemLichLamViec.Size = new System.Drawing.Size(163, 99);
             this.labelXemLichLamViec.TabIndex = 2;
             this.labelXemLichLamViec.Text = "Xem lịch làm việc";
             this.labelXemLichLamViec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -108,10 +110,26 @@ namespace HeThongTiemChung
             // panelNhanVien
             // 
             this.panelNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelNhanVien.Location = new System.Drawing.Point(0, 62);
+            this.panelNhanVien.Location = new System.Drawing.Point(3, 108);
             this.panelNhanVien.Name = "panelNhanVien";
-            this.panelNhanVien.Size = new System.Drawing.Size(1200, 641);
+            this.panelNhanVien.Size = new System.Drawing.Size(1194, 592);
             this.panelNhanVien.TabIndex = 3;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panelNhanVien, 0, 1);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1200, 703);
+            this.tableLayoutPanel2.TabIndex = 4;
             // 
             // NhanVien
             // 
@@ -119,8 +137,7 @@ namespace HeThongTiemChung
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(1200, 703);
-            this.Controls.Add(this.panelNhanVien);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tableLayoutPanel2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "NhanVien";
@@ -130,6 +147,7 @@ namespace HeThongTiemChung
             this.tableLayoutPanel1.PerformLayout();
             this.panelTopNhanVienTiepTan.ResumeLayout(false);
             this.panelTopNhanVienTiepTan.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -142,5 +160,6 @@ namespace HeThongTiemChung
         private System.Windows.Forms.Label labelXemLichLamViec;
         private System.Windows.Forms.Label labelDangKyLichRanh;
         private System.Windows.Forms.Panel panelNhanVien;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }

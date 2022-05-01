@@ -29,6 +29,7 @@ namespace HeThongTiemChung
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -179,7 +180,7 @@ namespace HeThongTiemChung
             this.comboBoxTenNganHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxTenNganHang.ForeColor = System.Drawing.SystemColors.ControlText;
             this.comboBoxTenNganHang.FormattingEnabled = true;
-            this.comboBoxTenNganHang.Location = new System.Drawing.Point(3, 224);
+            this.comboBoxTenNganHang.Location = new System.Drawing.Point(3, 225);
             this.comboBoxTenNganHang.Name = "comboBoxTenNganHang";
             this.comboBoxTenNganHang.Size = new System.Drawing.Size(504, 33);
             this.comboBoxTenNganHang.TabIndex = 18;
@@ -207,8 +208,17 @@ namespace HeThongTiemChung
             // 
             // dataGridViewThongTinHoaDon
             // 
+            this.dataGridViewThongTinHoaDon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewThongTinHoaDon.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.dataGridViewThongTinHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(231)))), ((int)(((byte)(117)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(181)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewThongTinHoaDon.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewThongTinHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewThongTinHoaDon.Location = new System.Drawing.Point(63, 354);
             this.dataGridViewThongTinHoaDon.Name = "dataGridViewThongTinHoaDon";

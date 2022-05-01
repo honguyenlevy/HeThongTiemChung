@@ -40,7 +40,7 @@ namespace HeThongTiemChung
         private void Main_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
-            //OpenChilForm(new DangNhap(), sender);
+            //OpenChilForm(new BoPhanQuanLy(), sender);
         }
 
         private void labelDangNhap_Click(object sender, EventArgs e)
@@ -62,6 +62,11 @@ namespace HeThongTiemChung
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
         {
 
         }

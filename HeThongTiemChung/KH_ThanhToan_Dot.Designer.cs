@@ -29,6 +29,7 @@ namespace HeThongTiemChung
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -100,7 +101,7 @@ namespace HeThongTiemChung
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(853, 661);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(681, 661);
             this.tableLayoutPanel2.TabIndex = 1;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
@@ -123,7 +124,7 @@ namespace HeThongTiemChung
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(3, 396);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(245, 66);
+            this.label8.Size = new System.Drawing.Size(196, 66);
             this.label8.TabIndex = 12;
             this.label8.Text = "3. Thông tin thẻ ngân hàng";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -145,7 +146,7 @@ namespace HeThongTiemChung
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(300, 462);
+            this.label10.Location = new System.Drawing.Point(241, 462);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(69, 66);
             this.label10.TabIndex = 14;
@@ -170,17 +171,18 @@ namespace HeThongTiemChung
             this.dateTimePickerNgayLap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerNgayLap.Location = new System.Drawing.Point(3, 135);
             this.dateTimePickerNgayLap.Name = "dateTimePickerNgayLap";
-            this.dateTimePickerNgayLap.Size = new System.Drawing.Size(249, 30);
+            this.dateTimePickerNgayLap.Size = new System.Drawing.Size(198, 30);
             this.dateTimePickerNgayLap.TabIndex = 6;
+            this.dateTimePickerNgayLap.ValueChanged += new System.EventHandler(this.dateTimePickerNgayLap_ValueChanged);
             // 
             // textBoxSoTienConNo
             // 
             this.textBoxSoTienConNo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxSoTienConNo.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxSoTienConNo.Location = new System.Drawing.Point(300, 135);
+            this.textBoxSoTienConNo.Location = new System.Drawing.Point(241, 135);
             this.textBoxSoTienConNo.Name = "textBoxSoTienConNo";
             this.textBoxSoTienConNo.ReadOnly = true;
-            this.textBoxSoTienConNo.Size = new System.Drawing.Size(249, 30);
+            this.textBoxSoTienConNo.Size = new System.Drawing.Size(198, 30);
             this.textBoxSoTienConNo.TabIndex = 20;
             // 
             // comboBoxTenNganHang
@@ -190,16 +192,17 @@ namespace HeThongTiemChung
             this.comboBoxTenNganHang.FormattingEnabled = true;
             this.comboBoxTenNganHang.Location = new System.Drawing.Point(3, 531);
             this.comboBoxTenNganHang.Name = "comboBoxTenNganHang";
-            this.comboBoxTenNganHang.Size = new System.Drawing.Size(249, 33);
+            this.comboBoxTenNganHang.Size = new System.Drawing.Size(198, 33);
             this.comboBoxTenNganHang.TabIndex = 18;
+            this.comboBoxTenNganHang.SelectedIndexChanged += new System.EventHandler(this.comboBoxTenNganHang_SelectedIndexChanged);
             // 
             // textBoxSoThe
             // 
             this.textBoxSoThe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxSoThe.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxSoThe.Location = new System.Drawing.Point(300, 531);
+            this.textBoxSoThe.Location = new System.Drawing.Point(241, 531);
             this.textBoxSoThe.Name = "textBoxSoThe";
-            this.textBoxSoThe.Size = new System.Drawing.Size(249, 30);
+            this.textBoxSoThe.Size = new System.Drawing.Size(198, 30);
             this.textBoxSoThe.TabIndex = 21;
             // 
             // label5
@@ -207,7 +210,7 @@ namespace HeThongTiemChung
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(597, 66);
+            this.label5.Location = new System.Drawing.Point(479, 66);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 66);
             this.label5.TabIndex = 4;
@@ -219,7 +222,7 @@ namespace HeThongTiemChung
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(300, 66);
+            this.label1.Location = new System.Drawing.Point(241, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 66);
             this.label1.TabIndex = 23;
@@ -231,7 +234,7 @@ namespace HeThongTiemChung
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(597, 462);
+            this.label3.Location = new System.Drawing.Point(479, 462);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 66);
             this.label3.TabIndex = 25;
@@ -242,9 +245,9 @@ namespace HeThongTiemChung
             // 
             this.textBoxOTP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxOTP.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxOTP.Location = new System.Drawing.Point(597, 531);
+            this.textBoxOTP.Location = new System.Drawing.Point(479, 531);
             this.textBoxOTP.Name = "textBoxOTP";
-            this.textBoxOTP.Size = new System.Drawing.Size(253, 30);
+            this.textBoxOTP.Size = new System.Drawing.Size(199, 30);
             this.textBoxOTP.TabIndex = 26;
             this.textBoxOTP.Text = "\r\n";
             // 
@@ -255,7 +258,7 @@ namespace HeThongTiemChung
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(3, 198);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(212, 66);
+            this.label6.Size = new System.Drawing.Size(174, 66);
             this.label6.TabIndex = 27;
             this.label6.Text = "2. Thông tin thanh toán";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -267,7 +270,7 @@ namespace HeThongTiemChung
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(3, 264);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(219, 66);
+            this.label7.Size = new System.Drawing.Size(165, 66);
             this.label7.TabIndex = 28;
             this.label7.Text = "Chọn tổng số lần thanh toán";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -278,7 +281,7 @@ namespace HeThongTiemChung
             this.comboBoxLanThanhToan.FormattingEnabled = true;
             this.comboBoxLanThanhToan.Location = new System.Drawing.Point(3, 333);
             this.comboBoxLanThanhToan.Name = "comboBoxLanThanhToan";
-            this.comboBoxLanThanhToan.Size = new System.Drawing.Size(249, 33);
+            this.comboBoxLanThanhToan.Size = new System.Drawing.Size(198, 33);
             this.comboBoxLanThanhToan.TabIndex = 29;
             this.comboBoxLanThanhToan.SelectedIndexChanged += new System.EventHandler(this.comboBoxLanThanhToan_SelectedIndexChanged);
             // 
@@ -287,9 +290,9 @@ namespace HeThongTiemChung
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(300, 264);
+            this.label11.Location = new System.Drawing.Point(241, 264);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(207, 66);
+            this.label11.Size = new System.Drawing.Size(169, 66);
             this.label11.TabIndex = 30;
             this.label11.Text = "Số tiền cần thanh toán";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -298,19 +301,19 @@ namespace HeThongTiemChung
             // 
             this.textBoxSoTienCanThanhToan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxSoTienCanThanhToan.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBoxSoTienCanThanhToan.Location = new System.Drawing.Point(300, 333);
+            this.textBoxSoTienCanThanhToan.Location = new System.Drawing.Point(241, 333);
             this.textBoxSoTienCanThanhToan.Name = "textBoxSoTienCanThanhToan";
             this.textBoxSoTienCanThanhToan.ReadOnly = true;
-            this.textBoxSoTienCanThanhToan.Size = new System.Drawing.Size(249, 30);
+            this.textBoxSoTienCanThanhToan.Size = new System.Drawing.Size(198, 30);
             this.textBoxSoTienCanThanhToan.TabIndex = 24;
             // 
             // textBoxTongTien
             // 
             this.textBoxTongTien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxTongTien.Location = new System.Drawing.Point(597, 135);
+            this.textBoxTongTien.Location = new System.Drawing.Point(479, 135);
             this.textBoxTongTien.Name = "textBoxTongTien";
             this.textBoxTongTien.ReadOnly = true;
-            this.textBoxTongTien.Size = new System.Drawing.Size(253, 30);
+            this.textBoxTongTien.Size = new System.Drawing.Size(199, 30);
             this.textBoxTongTien.TabIndex = 31;
             // 
             // buttonThanhToan
@@ -318,7 +321,7 @@ namespace HeThongTiemChung
             this.buttonThanhToan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(79)))));
-            this.buttonThanhToan.Location = new System.Drawing.Point(683, 597);
+            this.buttonThanhToan.Location = new System.Drawing.Point(511, 597);
             this.buttonThanhToan.Name = "buttonThanhToan";
             this.buttonThanhToan.Size = new System.Drawing.Size(167, 61);
             this.buttonThanhToan.TabIndex = 22;
@@ -328,14 +331,23 @@ namespace HeThongTiemChung
             // 
             // dataGridViewThongTinHoaDon
             // 
+            this.dataGridViewThongTinHoaDon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewThongTinHoaDon.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(179)))));
             this.dataGridViewThongTinHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(231)))), ((int)(((byte)(117)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(181)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewThongTinHoaDon.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewThongTinHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewThongTinHoaDon.Location = new System.Drawing.Point(947, 3);
+            this.dataGridViewThongTinHoaDon.Location = new System.Drawing.Point(775, 3);
             this.dataGridViewThongTinHoaDon.Name = "dataGridViewThongTinHoaDon";
             this.dataGridViewThongTinHoaDon.RowHeadersWidth = 51;
             this.dataGridViewThongTinHoaDon.RowTemplate.Height = 24;
-            this.dataGridViewThongTinHoaDon.Size = new System.Drawing.Size(681, 661);
+            this.dataGridViewThongTinHoaDon.Size = new System.Drawing.Size(853, 661);
             this.dataGridViewThongTinHoaDon.TabIndex = 0;
             this.dataGridViewThongTinHoaDon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewThongTinHoaDon_CellContentClick);
             // 
@@ -343,8 +355,8 @@ namespace HeThongTiemChung
             // 
             this.tableLayoutPanel3.ColumnCount = 4;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel3.Controls.Add(this.dataGridViewThongTinHoaDon, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel2, 1, 0);

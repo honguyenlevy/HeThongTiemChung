@@ -31,8 +31,7 @@ namespace HeThongTiemChung
                
 
                 textBoxTongTien.Text = dataGridViewThongTinHoaDon.CurrentRow.Cells[6].Value != null ? dataGridViewThongTinHoaDon.CurrentRow.Cells[6].Value.ToString() : "";
-
-               
+                             
                 
             }
         }
@@ -128,6 +127,16 @@ namespace HeThongTiemChung
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dateTimePickerNgayLap_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxTenNganHang_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
